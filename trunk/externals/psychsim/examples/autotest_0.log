@@ -1,0 +1,404 @@
+[2016-06-10 10:33:47] Created: user autotest, level 0, ability badSensor, explanation confidence
+[2016-06-10 10:33:47] NBC sensor: False
+[2016-06-10 10:33:47] Camera: False
+[2016-06-10 10:33:47] Microphone: nobody
+[2016-06-10 10:33:47] Posterior belief in NBC: 3%
+[2016-06-10 10:33:47] Posterior belief in none: 96%
+[2016-06-10 10:33:47] Posterior belief in armed: 0%
+[2016-06-10 10:33:47] Value of recommend protected: 0.50
+[2016-06-10 10:33:47] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:47] Recommend protection: no
+[2016-06-10 10:33:47] Message: I have finished surveying the Warehouse. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:47] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:47] Received command: None
+[2016-06-10 10:33:47] ER(robot-moveto-CityOffice) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-OpiumDen) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-AnimalFeedStore) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-BlackMarket) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-DoctorsOffice) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-BlueMosque) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-FurnitureStore) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:47] ER(robot-moveto-Warehouse) = 0.00
+[2016-06-10 10:33:47] Location: CityOffice
+[2016-06-10 10:33:47] NBC sensor: False
+[2016-06-10 10:33:47] Camera: False
+[2016-06-10 10:33:47] Microphone: suspicious
+[2016-06-10 10:33:47] Posterior belief in NBC: 2%
+[2016-06-10 10:33:47] Posterior belief in none: 63%
+[2016-06-10 10:33:47] Posterior belief in armed: 34%
+[2016-06-10 10:33:47] Value of recommend protected: 0.50
+[2016-06-10 10:33:47] Value of recommend unprotected: 0.63
+[2016-06-10 10:33:47] Recommend protection: no
+[2016-06-10 10:33:47] Message: I have finished surveying the City Office. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:33:47] Protective: None Warehouse armed True Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:48] Received command: None
+[2016-06-10 10:33:48] ER(robot-moveto-CityOffice) = 0.00
+[2016-06-10 10:33:48] ER(robot-moveto-OpiumDen) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-AnimalFeedStore) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-BlackMarket) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-DoctorsOffice) = 0.43
+[2016-06-10 10:33:48] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-BlueMosque) = 0.53
+[2016-06-10 10:33:48] ER(robot-moveto-FurnitureStore) = 0.26
+[2016-06-10 10:33:48] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-FarmSupply) = 0.24
+[2016-06-10 10:33:48] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:48] Location: BlueMosque
+[2016-06-10 10:33:48] NBC sensor: False
+[2016-06-10 10:33:48] Camera: False
+[2016-06-10 10:33:48] Microphone: friendly
+[2016-06-10 10:33:48] Posterior belief in NBC: 3%
+[2016-06-10 10:33:48] Posterior belief in none: 96%
+[2016-06-10 10:33:48] Posterior belief in armed: 0%
+[2016-06-10 10:33:48] Value of recommend protected: 0.50
+[2016-06-10 10:33:48] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:48] Recommend protection: no
+[2016-06-10 10:33:48] Message: I have finished surveying the Blue Mosque. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:33:48] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:48] Received command: None
+[2016-06-10 10:33:48] ER(robot-moveto-CityOffice) = -0.47
+[2016-06-10 10:33:48] ER(robot-moveto-OpiumDen) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-AnimalFeedStore) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-BlackMarket) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-DoctorsOffice) = 0.19
+[2016-06-10 10:33:48] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-BlueMosque) = 0.00
+[2016-06-10 10:33:48] ER(robot-moveto-FurnitureStore) = 0.15
+[2016-06-10 10:33:48] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-FarmSupply) = 0.36
+[2016-06-10 10:33:48] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:48] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:48] Location: OpiumDen
+[2016-06-10 10:33:48] NBC sensor: False
+[2016-06-10 10:33:48] Camera: False
+[2016-06-10 10:33:48] Microphone: friendly
+[2016-06-10 10:33:48] Posterior belief in NBC: 3%
+[2016-06-10 10:33:48] Posterior belief in none: 96%
+[2016-06-10 10:33:48] Posterior belief in armed: 0%
+[2016-06-10 10:33:48] Value of recommend protected: 0.50
+[2016-06-10 10:33:48] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:48] Recommend protection: no
+[2016-06-10 10:33:48] Message: I have finished surveying the Opium Den. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:33:48] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:49] Received command: None
+[2016-06-10 10:33:49] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-OpiumDen) = 0.00
+[2016-06-10 10:33:49] ER(robot-moveto-AnimalFeedStore) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BlackMarket) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-DoctorsOffice) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FurnitureStore) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:49] Location: AnimalFeedStore
+[2016-06-10 10:33:49] NBC sensor: False
+[2016-06-10 10:33:49] Camera: False
+[2016-06-10 10:33:49] Microphone: suspicious
+[2016-06-10 10:33:49] Posterior belief in NBC: 2%
+[2016-06-10 10:33:49] Posterior belief in none: 63%
+[2016-06-10 10:33:49] Posterior belief in armed: 34%
+[2016-06-10 10:33:49] Value of recommend protected: 0.50
+[2016-06-10 10:33:49] Value of recommend unprotected: 0.63
+[2016-06-10 10:33:49] Recommend protection: no
+[2016-06-10 10:33:49] Message: I have finished surveying the Animal Feed Store. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:33:49] Protective: None Warehouse armed True Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:49] Received command: None
+[2016-06-10 10:33:49] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-AnimalFeedStore) = 0.00
+[2016-06-10 10:33:49] ER(robot-moveto-BlackMarket) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-DoctorsOffice) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FurnitureStore) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:49] Location: BlackMarket
+[2016-06-10 10:33:49] NBC sensor: False
+[2016-06-10 10:33:49] Camera: False
+[2016-06-10 10:33:49] Microphone: nobody
+[2016-06-10 10:33:49] Posterior belief in NBC: 3%
+[2016-06-10 10:33:49] Posterior belief in none: 96%
+[2016-06-10 10:33:49] Posterior belief in armed: 0%
+[2016-06-10 10:33:49] Value of recommend protected: 0.50
+[2016-06-10 10:33:49] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:49] Recommend protection: no
+[2016-06-10 10:33:49] Message: I have finished surveying the Black Market. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:49] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:49] Received command: None
+[2016-06-10 10:33:49] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BlackMarket) = 0.00
+[2016-06-10 10:33:49] ER(robot-moveto-DoctorsOffice) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FurnitureStore) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:49] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:49] Location: DoctorsOffice
+[2016-06-10 10:33:49] NBC sensor: False
+[2016-06-10 10:33:49] Camera: False
+[2016-06-10 10:33:49] Microphone: suspicious
+[2016-06-10 10:33:49] Posterior belief in NBC: 2%
+[2016-06-10 10:33:49] Posterior belief in none: 63%
+[2016-06-10 10:33:49] Posterior belief in armed: 34%
+[2016-06-10 10:33:50] Value of recommend protected: 0.50
+[2016-06-10 10:33:50] Value of recommend unprotected: 0.63
+[2016-06-10 10:33:50] Recommend protection: no
+[2016-06-10 10:33:50] Message: I have finished surveying the Doctor's Office. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:33:50] Protective: None Warehouse armed True Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:50] Received command: None
+[2016-06-10 10:33:50] ER(robot-moveto-CityOffice) = -0.57
+[2016-06-10 10:33:50] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-DoctorsOffice) = 0.00
+[2016-06-10 10:33:50] ER(robot-moveto-Courthouse) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-BlueMosque) = -0.81
+[2016-06-10 10:33:50] ER(robot-moveto-FurnitureStore) = 0.40
+[2016-06-10 10:33:50] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-FarmSupply) = 0.20
+[2016-06-10 10:33:50] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:50] Location: Courthouse
+[2016-06-10 10:33:50] NBC sensor: False
+[2016-06-10 10:33:50] Camera: False
+[2016-06-10 10:33:50] Microphone: nobody
+[2016-06-10 10:33:50] Posterior belief in NBC: 3%
+[2016-06-10 10:33:50] Posterior belief in none: 96%
+[2016-06-10 10:33:50] Posterior belief in armed: 0%
+[2016-06-10 10:33:50] Value of recommend protected: 0.50
+[2016-06-10 10:33:50] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:50] Recommend protection: no
+[2016-06-10 10:33:50] Message: I have finished surveying the Courthouse. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:50] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:50] Received command: None
+[2016-06-10 10:33:50] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-DoctorsOffice) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-Courthouse) = 0.00
+[2016-06-10 10:33:50] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:50] ER(robot-moveto-FurnitureStore) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:50] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:50] Location: FurnitureStore
+[2016-06-10 10:33:50] NBC sensor: False
+[2016-06-10 10:33:50] Camera: False
+[2016-06-10 10:33:50] Microphone: friendly
+[2016-06-10 10:33:50] Posterior belief in NBC: 3%
+[2016-06-10 10:33:50] Posterior belief in none: 96%
+[2016-06-10 10:33:50] Posterior belief in armed: 0%
+[2016-06-10 10:33:51] Value of recommend protected: 0.50
+[2016-06-10 10:33:51] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:51] Recommend protection: no
+[2016-06-10 10:33:51] Message: I have finished surveying the Furniture Store. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:33:51] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:51] Received command: None
+[2016-06-10 10:33:51] ER(robot-moveto-CityOffice) = -0.74
+[2016-06-10 10:33:51] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-DoctorsOffice) = -0.60
+[2016-06-10 10:33:51] ER(robot-moveto-Courthouse) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-BlueMosque) = -0.85
+[2016-06-10 10:33:51] ER(robot-moveto-FurnitureStore) = 0.00
+[2016-06-10 10:33:51] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-FarmSupply) = 0.53
+[2016-06-10 10:33:51] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:51] Location: FarmSupply
+[2016-06-10 10:33:51] NBC sensor: True
+[2016-06-10 10:33:51] Camera: False
+[2016-06-10 10:33:51] Microphone: nobody
+[2016-06-10 10:33:51] Posterior belief in NBC: 85%
+[2016-06-10 10:33:51] Posterior belief in none: 14%
+[2016-06-10 10:33:51] Posterior belief in armed: 0%
+[2016-06-10 10:33:51] Value of recommend protected: 0.50
+[2016-06-10 10:33:51] Value of recommend unprotected: 0.14
+[2016-06-10 10:33:51] Recommend protection: yes
+[2016-06-10 10:33:51] Message: I have finished surveying the Farm Supply Store. I think the place is dangerous. I am 86.0% confident about this assessment.
+[2016-06-10 10:33:51] Protective: None Warehouse NBC True Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:51] Received command: None
+[2016-06-10 10:33:51] ER(robot-moveto-CityOffice) = -0.76
+[2016-06-10 10:33:51] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-DoctorsOffice) = -0.80
+[2016-06-10 10:33:51] ER(robot-moveto-Courthouse) = -0.50
+[2016-06-10 10:33:51] ER(robot-moveto-BlueMosque) = -0.64
+[2016-06-10 10:33:51] ER(robot-moveto-FurnitureStore) = -0.47
+[2016-06-10 10:33:51] ER(robot-moveto-BackAlley) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-FarmSupply) = 0.00
+[2016-06-10 10:33:51] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:51] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:51] Location: BackAlley
+[2016-06-10 10:33:51] NBC sensor: False
+[2016-06-10 10:33:51] Camera: False
+[2016-06-10 10:33:51] Microphone: nobody
+[2016-06-10 10:33:51] Posterior belief in NBC: 3%
+[2016-06-10 10:33:51] Posterior belief in none: 96%
+[2016-06-10 10:33:51] Posterior belief in armed: 0%
+[2016-06-10 10:33:52] Value of recommend protected: 0.50
+[2016-06-10 10:33:52] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:52] Recommend protection: no
+[2016-06-10 10:33:52] Message: I have finished surveying the Back Alley. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:52] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:52] Received command: None
+[2016-06-10 10:33:52] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-DoctorsOffice) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-Courthouse) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-FurnitureStore) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-BackAlley) = 0.00
+[2016-06-10 10:33:52] ER(robot-moveto-OutdoorLanding) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-FarmSupply) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:52] Location: OutdoorLanding
+[2016-06-10 10:33:52] NBC sensor: False
+[2016-06-10 10:33:52] Camera: False
+[2016-06-10 10:33:52] Microphone: nobody
+[2016-06-10 10:33:52] Posterior belief in NBC: 3%
+[2016-06-10 10:33:52] Posterior belief in none: 96%
+[2016-06-10 10:33:52] Posterior belief in armed: 0%
+[2016-06-10 10:33:52] Value of recommend protected: 0.50
+[2016-06-10 10:33:52] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:52] Recommend protection: no
+[2016-06-10 10:33:52] Message: I have finished surveying the Outdoor Landing. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:52] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:52] Received command: None
+[2016-06-10 10:33:52] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-DoctorsOffice) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-Courthouse) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-FurnitureStore) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-BackAlley) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-OutdoorLanding) = 0.00
+[2016-06-10 10:33:52] ER(robot-moveto-UnemploymentOffice) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-FarmSupply) = -0.50
+[2016-06-10 10:33:52] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:52] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:52] Location: UnemploymentOffice
+[2016-06-10 10:33:52] NBC sensor: False
+[2016-06-10 10:33:52] Camera: False
+[2016-06-10 10:33:52] Microphone: friendly
+[2016-06-10 10:33:52] Posterior belief in NBC: 3%
+[2016-06-10 10:33:52] Posterior belief in none: 96%
+[2016-06-10 10:33:52] Posterior belief in armed: 0%
+[2016-06-10 10:33:53] Value of recommend protected: 0.50
+[2016-06-10 10:33:53] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:53] Recommend protection: no
+[2016-06-10 10:33:53] Message: I have finished surveying the Unemployment Office. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:33:53] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:53] Received command: None
+[2016-06-10 10:33:53] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-DoctorsOffice) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-Courthouse) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-FurnitureStore) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-BackAlley) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-OutdoorLanding) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-UnemploymentOffice) = 0.00
+[2016-06-10 10:33:53] ER(robot-moveto-ClericsHouse) = 0.50
+[2016-06-10 10:33:53] ER(robot-moveto-FarmSupply) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:53] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:53] Location: ClericsHouse
+[2016-06-10 10:33:53] NBC sensor: False
+[2016-06-10 10:33:53] Camera: False
+[2016-06-10 10:33:53] Microphone: nobody
+[2016-06-10 10:33:53] Posterior belief in NBC: 3%
+[2016-06-10 10:33:53] Posterior belief in none: 96%
+[2016-06-10 10:33:53] Posterior belief in armed: 0%
+[2016-06-10 10:33:53] Value of recommend protected: 0.50
+[2016-06-10 10:33:53] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:53] Recommend protection: no
+[2016-06-10 10:33:53] Message: I have finished surveying the Cleric's House. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:53] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()
+[2016-06-10 10:33:53] Received command: None
+[2016-06-10 10:33:53] ER(robot-moveto-CityOffice) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-OpiumDen) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-AnimalFeedStore) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-BlackMarket) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-DoctorsOffice) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-Courthouse) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-BlueMosque) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-FurnitureStore) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-BackAlley) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-OutdoorLanding) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-UnemploymentOffice) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-ClericsHouse) = 0.00
+[2016-06-10 10:33:53] ER(robot-moveto-FarmSupply) = -0.50
+[2016-06-10 10:33:53] ER(robot-moveto-FaithMosque) = 0.50
+[2016-06-10 10:33:53] ER(robot-moveto-Warehouse) = -0.50
+[2016-06-10 10:33:53] Location: FaithMosque
+[2016-06-10 10:33:53] NBC sensor: False
+[2016-06-10 10:33:53] Camera: False
+[2016-06-10 10:33:53] Microphone: nobody
+[2016-06-10 10:33:53] Posterior belief in NBC: 3%
+[2016-06-10 10:33:53] Posterior belief in none: 96%
+[2016-06-10 10:33:53] Posterior belief in armed: 0%
+[2016-06-10 10:33:54] Value of recommend protected: 0.50
+[2016-06-10 10:33:54] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:54] Recommend protection: no
+[2016-06-10 10:33:54] Message: I have finished surveying the Faith Mosque. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:33:54] Protective: None Warehouse none False Empty_Storage_Room (An empty storage room) ()

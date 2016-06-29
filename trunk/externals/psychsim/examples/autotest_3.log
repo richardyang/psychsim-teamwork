@@ -1,0 +1,404 @@
+[2016-06-10 10:34:10] Created: user autotest, level 3, ability badSensor, explanation confidence
+[2016-06-10 10:34:10] NBC sensor: False
+[2016-06-10 10:34:10] Camera: False
+[2016-06-10 10:34:10] Microphone: friendly
+[2016-06-10 10:34:10] Posterior belief in NBC: 3%
+[2016-06-10 10:34:10] Posterior belief in none: 96%
+[2016-06-10 10:34:10] Posterior belief in armed: 0%
+[2016-06-10 10:34:10] Value of recommend protected: 0.50
+[2016-06-10 10:34:10] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:10] Recommend protection: no
+[2016-06-10 10:34:10] Message: I have finished surveying the Antique Shop. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:10] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:10] Received command: None
+[2016-06-10 10:34:10] ER(robot-moveto-FortuneTellersRooms) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-ContractorsOffice) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-UnrentedStore) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-Sympathizer) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-HardwareStore) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-MiddleSchool) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-AntiqueShop) = 0.00
+[2016-06-10 10:34:10] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:10] Location: FortuneTellersRooms
+[2016-06-10 10:34:10] NBC sensor: False
+[2016-06-10 10:34:10] Camera: False
+[2016-06-10 10:34:10] Microphone: friendly
+[2016-06-10 10:34:10] Posterior belief in NBC: 3%
+[2016-06-10 10:34:10] Posterior belief in none: 96%
+[2016-06-10 10:34:10] Posterior belief in armed: 0%
+[2016-06-10 10:34:10] Value of recommend protected: 0.50
+[2016-06-10 10:34:10] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:10] Recommend protection: no
+[2016-06-10 10:34:10] Message: I have finished surveying the Fortune Teller's Rooms. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:10] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:10] Received command: None
+[2016-06-10 10:34:10] ER(robot-moveto-FortuneTellersRooms) = 0.00
+[2016-06-10 10:34:10] ER(robot-moveto-ContractorsOffice) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-UnrentedStore) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-Sympathizer) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-HardwareStore) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-MiddleSchool) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:10] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:10] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:10] Location: ContractorsOffice
+[2016-06-10 10:34:10] NBC sensor: False
+[2016-06-10 10:34:10] Camera: False
+[2016-06-10 10:34:10] Microphone: friendly
+[2016-06-10 10:34:10] Posterior belief in NBC: 3%
+[2016-06-10 10:34:10] Posterior belief in none: 96%
+[2016-06-10 10:34:10] Posterior belief in armed: 0%
+[2016-06-10 10:34:11] Value of recommend protected: 0.50
+[2016-06-10 10:34:11] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:11] Recommend protection: no
+[2016-06-10 10:34:11] Message: I have finished surveying the Contractor's Office. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:11] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:11] Received command: None
+[2016-06-10 10:34:11] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:11] ER(robot-moveto-ContractorsOffice) = 0.00
+[2016-06-10 10:34:11] ER(robot-moveto-UnrentedStore) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-Sympathizer) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-HardwareStore) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-MiddleSchool) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:11] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:11] Location: UnrentedStore
+[2016-06-10 10:34:11] NBC sensor: False
+[2016-06-10 10:34:11] Camera: False
+[2016-06-10 10:34:11] Microphone: nobody
+[2016-06-10 10:34:11] Posterior belief in NBC: 3%
+[2016-06-10 10:34:11] Posterior belief in none: 96%
+[2016-06-10 10:34:11] Posterior belief in armed: 0%
+[2016-06-10 10:34:11] Value of recommend protected: 0.50
+[2016-06-10 10:34:11] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:11] Recommend protection: no
+[2016-06-10 10:34:11] Message: I have finished surveying the Unrented Store. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:11] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:11] Received command: None
+[2016-06-10 10:34:11] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:11] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:11] ER(robot-moveto-UnrentedStore) = 0.00
+[2016-06-10 10:34:11] ER(robot-moveto-Sympathizer) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-HardwareStore) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-MiddleSchool) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:11] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:11] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:11] Location: Sympathizer
+[2016-06-10 10:34:11] NBC sensor: False
+[2016-06-10 10:34:11] Camera: False
+[2016-06-10 10:34:11] Microphone: nobody
+[2016-06-10 10:34:11] Posterior belief in NBC: 3%
+[2016-06-10 10:34:11] Posterior belief in none: 96%
+[2016-06-10 10:34:11] Posterior belief in armed: 0%
+[2016-06-10 10:34:12] Value of recommend protected: 0.50
+[2016-06-10 10:34:12] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:12] Recommend protection: no
+[2016-06-10 10:34:12] Message: I have finished surveying the Sympathizer's House. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:12] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:12] Received command: None
+[2016-06-10 10:34:12] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-Sympathizer) = 0.00
+[2016-06-10 10:34:12] ER(robot-moveto-HardwareStore) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-MiddleSchool) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:12] Location: HardwareStore
+[2016-06-10 10:34:12] NBC sensor: False
+[2016-06-10 10:34:12] Camera: False
+[2016-06-10 10:34:12] Microphone: suspicious
+[2016-06-10 10:34:12] Posterior belief in NBC: 2%
+[2016-06-10 10:34:12] Posterior belief in none: 63%
+[2016-06-10 10:34:12] Posterior belief in armed: 34%
+[2016-06-10 10:34:12] Value of recommend protected: 0.50
+[2016-06-10 10:34:12] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:12] Recommend protection: no
+[2016-06-10 10:34:12] Message: I have finished surveying the Hardware Store. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:34:12] Protective: None AntiqueShop armed True Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:12] Received command: None
+[2016-06-10 10:34:12] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-HardwareStore) = 0.00
+[2016-06-10 10:34:12] ER(robot-moveto-MiddleSchool) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:12] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:12] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:12] Location: MiddleSchool
+[2016-06-10 10:34:12] NBC sensor: False
+[2016-06-10 10:34:12] Camera: False
+[2016-06-10 10:34:12] Microphone: nobody
+[2016-06-10 10:34:12] Posterior belief in NBC: 3%
+[2016-06-10 10:34:12] Posterior belief in none: 96%
+[2016-06-10 10:34:12] Posterior belief in armed: 0%
+[2016-06-10 10:34:13] Value of recommend protected: 0.50
+[2016-06-10 10:34:13] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:13] Recommend protection: no
+[2016-06-10 10:34:13] Message: I have finished surveying the Middle School. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:13] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:13] Received command: None
+[2016-06-10 10:34:13] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-MiddleSchool) = 0.00
+[2016-06-10 10:34:13] ER(robot-moveto-CentralMosque) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:13] Location: CentralMosque
+[2016-06-10 10:34:13] NBC sensor: False
+[2016-06-10 10:34:13] Camera: False
+[2016-06-10 10:34:13] Microphone: friendly
+[2016-06-10 10:34:13] Posterior belief in NBC: 3%
+[2016-06-10 10:34:13] Posterior belief in none: 96%
+[2016-06-10 10:34:13] Posterior belief in armed: 0%
+[2016-06-10 10:34:13] Value of recommend protected: 0.50
+[2016-06-10 10:34:13] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:13] Recommend protection: no
+[2016-06-10 10:34:13] Message: I have finished surveying the Central Mosque. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:13] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:13] Received command: None
+[2016-06-10 10:34:13] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-CentralMosque) = 0.00
+[2016-06-10 10:34:13] ER(robot-moveto-CouncilChambers) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:13] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:13] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:13] Location: CouncilChambers
+[2016-06-10 10:34:13] NBC sensor: False
+[2016-06-10 10:34:13] Camera: False
+[2016-06-10 10:34:13] Microphone: friendly
+[2016-06-10 10:34:13] Posterior belief in NBC: 3%
+[2016-06-10 10:34:13] Posterior belief in none: 96%
+[2016-06-10 10:34:13] Posterior belief in armed: 0%
+[2016-06-10 10:34:14] Value of recommend protected: 0.50
+[2016-06-10 10:34:14] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:14] Recommend protection: no
+[2016-06-10 10:34:14] Message: I have finished surveying the Council Chambers. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:14] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:14] Received command: None
+[2016-06-10 10:34:14] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-CentralMosque) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-CouncilChambers) = 0.00
+[2016-06-10 10:34:14] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-HighSchool) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:14] Location: HighSchool
+[2016-06-10 10:34:14] NBC sensor: False
+[2016-06-10 10:34:14] Camera: False
+[2016-06-10 10:34:14] Microphone: nobody
+[2016-06-10 10:34:14] Posterior belief in NBC: 3%
+[2016-06-10 10:34:14] Posterior belief in none: 96%
+[2016-06-10 10:34:14] Posterior belief in armed: 0%
+[2016-06-10 10:34:14] Value of recommend protected: 0.50
+[2016-06-10 10:34:14] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:14] Recommend protection: no
+[2016-06-10 10:34:14] Message: I have finished surveying the High School. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:14] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:14] Received command: None
+[2016-06-10 10:34:14] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-CentralMosque) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-CouncilChambers) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:14] ER(robot-moveto-HighSchool) = 0.00
+[2016-06-10 10:34:14] ER(robot-moveto-ConstructionSite) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:14] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:14] Location: ConstructionSite
+[2016-06-10 10:34:14] NBC sensor: True
+[2016-06-10 10:34:14] Camera: False
+[2016-06-10 10:34:14] Microphone: nobody
+[2016-06-10 10:34:14] Posterior belief in NBC: 85%
+[2016-06-10 10:34:14] Posterior belief in none: 14%
+[2016-06-10 10:34:14] Posterior belief in armed: 0%
+[2016-06-10 10:34:15] Value of recommend protected: 0.50
+[2016-06-10 10:34:15] Value of recommend unprotected: 0.14
+[2016-06-10 10:34:15] Recommend protection: yes
+[2016-06-10 10:34:15] Message: I have finished surveying the Construction Site. I think the place is dangerous. I am 86.0% confident about this assessment.
+[2016-06-10 10:34:15] Protective: None AntiqueShop NBC True Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:15] Received command: None
+[2016-06-10 10:34:15] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-CentralMosque) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-CouncilChambers) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-HighSchool) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-ConstructionSite) = 0.00
+[2016-06-10 10:34:15] ER(robot-moveto-InformantsHouse) = 0.50
+[2016-06-10 10:34:15] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:15] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:15] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:15] Location: InformantsHouse
+[2016-06-10 10:34:15] NBC sensor: False
+[2016-06-10 10:34:15] Camera: False
+[2016-06-10 10:34:15] Microphone: friendly
+[2016-06-10 10:34:15] Posterior belief in NBC: 3%
+[2016-06-10 10:34:15] Posterior belief in none: 96%
+[2016-06-10 10:34:15] Posterior belief in armed: 0%
+[2016-06-10 10:34:15] Value of recommend protected: 0.50
+[2016-06-10 10:34:15] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:15] Recommend protection: no
+[2016-06-10 10:34:15] Message: I have finished surveying the Informant's House. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:15] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:15] Received command: None
+[2016-06-10 10:34:15] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-CentralMosque) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-CouncilChambers) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-HighSchool) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-ConstructionSite) = -0.50
+[2016-06-10 10:34:15] ER(robot-moveto-InformantsHouse) = 0.00
+[2016-06-10 10:34:15] ER(robot-moveto-LocalNewspaper) = 0.50
+[2016-06-10 10:34:15] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:15] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:15] Location: LocalNewspaper
+[2016-06-10 10:34:15] NBC sensor: False
+[2016-06-10 10:34:15] Camera: False
+[2016-06-10 10:34:15] Microphone: suspicious
+[2016-06-10 10:34:15] Posterior belief in NBC: 2%
+[2016-06-10 10:34:15] Posterior belief in none: 63%
+[2016-06-10 10:34:15] Posterior belief in armed: 34%
+[2016-06-10 10:34:16] Value of recommend protected: 0.50
+[2016-06-10 10:34:16] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:16] Recommend protection: no
+[2016-06-10 10:34:16] Message: I have finished surveying the Local Newspaper. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:34:16] Protective: None AntiqueShop armed True Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:16] Received command: None
+[2016-06-10 10:34:16] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-CentralMosque) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-CouncilChambers) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-HighSchool) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-ConstructionSite) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-InformantsHouse) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-LocalNewspaper) = 0.00
+[2016-06-10 10:34:16] ER(robot-moveto-Synagogue) = 0.50
+[2016-06-10 10:34:16] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:16] Location: Synagogue
+[2016-06-10 10:34:16] NBC sensor: False
+[2016-06-10 10:34:16] Camera: False
+[2016-06-10 10:34:16] Microphone: suspicious
+[2016-06-10 10:34:16] Posterior belief in NBC: 2%
+[2016-06-10 10:34:16] Posterior belief in none: 63%
+[2016-06-10 10:34:16] Posterior belief in armed: 34%
+[2016-06-10 10:34:16] Value of recommend protected: 0.50
+[2016-06-10 10:34:16] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:16] Recommend protection: no
+[2016-06-10 10:34:16] Message: I have finished surveying the Synagogue. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:34:16] Protective: None AntiqueShop armed True Furniture_Store (Store owner gossiping with delivery man) ()
+[2016-06-10 10:34:16] Received command: None
+[2016-06-10 10:34:16] ER(robot-moveto-FortuneTellersRooms) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-ContractorsOffice) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-UnrentedStore) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-Sympathizer) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-HardwareStore) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-MiddleSchool) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-CentralMosque) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-CouncilChambers) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-AntiqueShop) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-HighSchool) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-ConstructionSite) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-InformantsHouse) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-LocalNewspaper) = -0.50
+[2016-06-10 10:34:16] ER(robot-moveto-Synagogue) = 0.00
+[2016-06-10 10:34:16] ER(robot-moveto-LawyersOffice) = 0.50
+[2016-06-10 10:34:16] Location: LawyersOffice
+[2016-06-10 10:34:16] NBC sensor: False
+[2016-06-10 10:34:16] Camera: False
+[2016-06-10 10:34:16] Microphone: nobody
+[2016-06-10 10:34:16] Posterior belief in NBC: 3%
+[2016-06-10 10:34:16] Posterior belief in none: 96%
+[2016-06-10 10:34:16] Posterior belief in armed: 0%
+[2016-06-10 10:34:17] Value of recommend protected: 0.50
+[2016-06-10 10:34:17] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:17] Recommend protection: no
+[2016-06-10 10:34:17] Message: I have finished surveying the Lawyer's Office. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:17] Protective: None AntiqueShop none False Furniture_Store (Store owner gossiping with delivery man) ()

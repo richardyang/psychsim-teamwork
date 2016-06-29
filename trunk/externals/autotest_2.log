@@ -1,0 +1,404 @@
+[2016-06-03 14:07:21] Created: user autotest, level 2, ability badSensor, explanation none
+[2016-06-03 14:07:21] NBC sensor: False
+[2016-06-03 14:07:21] Camera: False
+[2016-06-03 14:07:21] Microphone: friendly
+[2016-06-03 14:07:21] Posterior belief in NBC: 3%
+[2016-06-03 14:07:21] Posterior belief in none: 96%
+[2016-06-03 14:07:21] Posterior belief in armed: 0%
+[2016-06-03 14:07:21] Value of recommend protected: 0.50
+[2016-06-03 14:07:21] Value of recommend unprotected: 0.97
+[2016-06-03 14:07:21] Recommend protection: no
+[2016-06-03 14:07:21] Message: I have finished surveying the Apartment Building. I think the place is safe.
+[2016-06-03 14:07:21] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:21] Received command: None
+[2016-06-03 14:07:21] ER(robot-moveto-GeneralStore) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-MotorVehicleRegistration) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-ConferenceCenter) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-GreatMosque) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-TenementBuilding) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-CoffeeShop) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-ApartmentBuilding) = 0.00
+[2016-06-03 14:07:21] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:21] Location: GeneralStore
+[2016-06-03 14:07:21] NBC sensor: False
+[2016-06-03 14:07:21] Camera: False
+[2016-06-03 14:07:21] Microphone: nobody
+[2016-06-03 14:07:21] Posterior belief in NBC: 3%
+[2016-06-03 14:07:21] Posterior belief in none: 96%
+[2016-06-03 14:07:21] Posterior belief in armed: 0%
+[2016-06-03 14:07:21] Value of recommend protected: 0.50
+[2016-06-03 14:07:21] Value of recommend unprotected: 0.96
+[2016-06-03 14:07:21] Recommend protection: no
+[2016-06-03 14:07:21] Message: I have finished surveying the General Store. I think the place is safe.
+[2016-06-03 14:07:21] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:21] Received command: None
+[2016-06-03 14:07:21] ER(robot-moveto-GeneralStore) = 0.00
+[2016-06-03 14:07:21] ER(robot-moveto-MotorVehicleRegistration) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-ConferenceCenter) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-GreatMosque) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-TenementBuilding) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-CoffeeShop) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:21] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:21] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:21] Location: MotorVehicleRegistration
+[2016-06-03 14:07:21] NBC sensor: False
+[2016-06-03 14:07:21] Camera: False
+[2016-06-03 14:07:21] Microphone: friendly
+[2016-06-03 14:07:21] Posterior belief in NBC: 3%
+[2016-06-03 14:07:21] Posterior belief in none: 96%
+[2016-06-03 14:07:21] Posterior belief in armed: 0%
+[2016-06-03 14:07:22] Value of recommend protected: 0.50
+[2016-06-03 14:07:22] Value of recommend unprotected: 0.97
+[2016-06-03 14:07:22] Recommend protection: no
+[2016-06-03 14:07:22] Message: I have finished surveying the Motor Vehicle Registration. I think the place is safe.
+[2016-06-03 14:07:22] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:22] Received command: None
+[2016-06-03 14:07:22] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:22] ER(robot-moveto-MotorVehicleRegistration) = 0.00
+[2016-06-03 14:07:22] ER(robot-moveto-ConferenceCenter) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-GreatMosque) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-TenementBuilding) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-CoffeeShop) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:22] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:22] Location: ConferenceCenter
+[2016-06-03 14:07:22] NBC sensor: False
+[2016-06-03 14:07:22] Camera: False
+[2016-06-03 14:07:22] Microphone: nobody
+[2016-06-03 14:07:22] Posterior belief in NBC: 3%
+[2016-06-03 14:07:22] Posterior belief in none: 96%
+[2016-06-03 14:07:22] Posterior belief in armed: 0%
+[2016-06-03 14:07:22] Value of recommend protected: 0.50
+[2016-06-03 14:07:22] Value of recommend unprotected: 0.96
+[2016-06-03 14:07:22] Recommend protection: no
+[2016-06-03 14:07:22] Message: I have finished surveying the Conference Center. I think the place is safe.
+[2016-06-03 14:07:22] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:22] Received command: None
+[2016-06-03 14:07:22] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:22] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:22] ER(robot-moveto-ConferenceCenter) = 0.00
+[2016-06-03 14:07:22] ER(robot-moveto-GreatMosque) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-TenementBuilding) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-CoffeeShop) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:22] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:22] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:22] Location: GreatMosque
+[2016-06-03 14:07:22] NBC sensor: False
+[2016-06-03 14:07:22] Camera: False
+[2016-06-03 14:07:22] Microphone: friendly
+[2016-06-03 14:07:22] Posterior belief in NBC: 3%
+[2016-06-03 14:07:22] Posterior belief in none: 96%
+[2016-06-03 14:07:22] Posterior belief in armed: 0%
+[2016-06-03 14:07:23] Value of recommend protected: 0.50
+[2016-06-03 14:07:23] Value of recommend unprotected: 0.97
+[2016-06-03 14:07:23] Recommend protection: no
+[2016-06-03 14:07:23] Message: I have finished surveying the Great Mosque. I think the place is safe.
+[2016-06-03 14:07:23] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:23] Received command: None
+[2016-06-03 14:07:23] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-GreatMosque) = 0.00
+[2016-06-03 14:07:23] ER(robot-moveto-TenementBuilding) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-CoffeeShop) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:23] Location: TenementBuilding
+[2016-06-03 14:07:23] NBC sensor: False
+[2016-06-03 14:07:23] Camera: False
+[2016-06-03 14:07:23] Microphone: suspicious
+[2016-06-03 14:07:23] Posterior belief in NBC: 2%
+[2016-06-03 14:07:23] Posterior belief in none: 63%
+[2016-06-03 14:07:23] Posterior belief in armed: 34%
+[2016-06-03 14:07:23] Value of recommend protected: 0.50
+[2016-06-03 14:07:23] Value of recommend unprotected: 0.63
+[2016-06-03 14:07:23] Recommend protection: no
+[2016-06-03 14:07:23] Message: I have finished surveying the Tenement Building. I think the place is safe.
+[2016-06-03 14:07:23] Protective: None ApartmentBuilding armed True Chat-Room (Tenants milling about in the hallway) (It seems that my assessment of the Apartment Building was incorrect. I will update my algorithms when we return to base after the mission.)
+[2016-06-03 14:07:23] Received command: None
+[2016-06-03 14:07:23] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-TenementBuilding) = 0.00
+[2016-06-03 14:07:23] ER(robot-moveto-CoffeeShop) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:23] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:23] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:23] Location: CoffeeShop
+[2016-06-03 14:07:23] NBC sensor: False
+[2016-06-03 14:07:23] Camera: False
+[2016-06-03 14:07:23] Microphone: suspicious
+[2016-06-03 14:07:23] Posterior belief in NBC: 2%
+[2016-06-03 14:07:23] Posterior belief in none: 63%
+[2016-06-03 14:07:23] Posterior belief in armed: 34%
+[2016-06-03 14:07:23] Value of recommend protected: 0.50
+[2016-06-03 14:07:24] Value of recommend unprotected: 0.63
+[2016-06-03 14:07:24] Recommend protection: no
+[2016-06-03 14:07:24] Message: I have finished surveying the Coffee Shop. I think the place is safe.
+[2016-06-03 14:07:24] Protective: None ApartmentBuilding armed True Chat-Room (Tenants milling about in the hallway) (It seems that my assessment of the Apartment Building was incorrect. I will update my algorithms when we return to base after the mission.)
+[2016-06-03 14:07:24] Received command: None
+[2016-06-03 14:07:24] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-CoffeeShop) = 0.00
+[2016-06-03 14:07:24] ER(robot-moveto-MissionaryCenter) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:24] Location: MissionaryCenter
+[2016-06-03 14:07:24] NBC sensor: False
+[2016-06-03 14:07:24] Camera: False
+[2016-06-03 14:07:24] Microphone: nobody
+[2016-06-03 14:07:24] Posterior belief in NBC: 3%
+[2016-06-03 14:07:24] Posterior belief in none: 96%
+[2016-06-03 14:07:24] Posterior belief in armed: 0%
+[2016-06-03 14:07:24] Value of recommend protected: 0.50
+[2016-06-03 14:07:24] Value of recommend unprotected: 0.96
+[2016-06-03 14:07:24] Recommend protection: no
+[2016-06-03 14:07:24] Message: I have finished surveying the Missionary Center. I think the place is safe.
+[2016-06-03 14:07:24] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:24] Received command: None
+[2016-06-03 14:07:24] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-MissionaryCenter) = 0.00
+[2016-06-03 14:07:24] ER(robot-moveto-WaterPlant) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:24] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:24] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:24] Location: WaterPlant
+[2016-06-03 14:07:24] NBC sensor: False
+[2016-06-03 14:07:24] Camera: False
+[2016-06-03 14:07:24] Microphone: suspicious
+[2016-06-03 14:07:24] Posterior belief in NBC: 2%
+[2016-06-03 14:07:24] Posterior belief in none: 63%
+[2016-06-03 14:07:24] Posterior belief in armed: 34%
+[2016-06-03 14:07:24] Value of recommend protected: 0.50
+[2016-06-03 14:07:24] Value of recommend unprotected: 0.63
+[2016-06-03 14:07:24] Recommend protection: no
+[2016-06-03 14:07:24] Message: I have finished surveying the Water Plant. I think the place is safe.
+[2016-06-03 14:07:24] Protective: None ApartmentBuilding armed True Chat-Room (Tenants milling about in the hallway) (It seems that my assessment of the Apartment Building was incorrect. I will update my algorithms when we return to base after the mission.)
+[2016-06-03 14:07:25] Received command: None
+[2016-06-03 14:07:25] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-MissionaryCenter) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-WaterPlant) = 0.00
+[2016-06-03 14:07:25] ER(robot-moveto-IndustrialSupplyStore) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:25] Location: IndustrialSupplyStore
+[2016-06-03 14:07:25] NBC sensor: False
+[2016-06-03 14:07:25] Camera: False
+[2016-06-03 14:07:25] Microphone: nobody
+[2016-06-03 14:07:25] Posterior belief in NBC: 3%
+[2016-06-03 14:07:25] Posterior belief in none: 96%
+[2016-06-03 14:07:25] Posterior belief in armed: 0%
+[2016-06-03 14:07:25] Value of recommend protected: 0.50
+[2016-06-03 14:07:25] Value of recommend unprotected: 0.96
+[2016-06-03 14:07:25] Recommend protection: no
+[2016-06-03 14:07:25] Message: I have finished surveying the Industrial Supply Store. I think the place is safe.
+[2016-06-03 14:07:25] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:25] Received command: None
+[2016-06-03 14:07:25] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-MissionaryCenter) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-WaterPlant) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-IndustrialSupplyStore) = 0.00
+[2016-06-03 14:07:25] ER(robot-moveto-FridayMosque) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:25] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:25] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:25] Location: FridayMosque
+[2016-06-03 14:07:25] NBC sensor: False
+[2016-06-03 14:07:25] Camera: False
+[2016-06-03 14:07:25] Microphone: friendly
+[2016-06-03 14:07:25] Posterior belief in NBC: 3%
+[2016-06-03 14:07:25] Posterior belief in none: 96%
+[2016-06-03 14:07:25] Posterior belief in armed: 0%
+[2016-06-03 14:07:25] Value of recommend protected: 0.50
+[2016-06-03 14:07:25] Value of recommend unprotected: 0.97
+[2016-06-03 14:07:25] Recommend protection: no
+[2016-06-03 14:07:25] Message: I have finished surveying the Friday Mosque. I think the place is safe.
+[2016-06-03 14:07:25] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:26] Received command: None
+[2016-06-03 14:07:26] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-MissionaryCenter) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-WaterPlant) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-IndustrialSupplyStore) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-FridayMosque) = 0.00
+[2016-06-03 14:07:26] ER(robot-moveto-GamblingParlour) = 0.50
+[2016-06-03 14:07:26] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:26] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:26] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:26] Location: GamblingParlour
+[2016-06-03 14:07:26] NBC sensor: True
+[2016-06-03 14:07:26] Camera: False
+[2016-06-03 14:07:26] Microphone: friendly
+[2016-06-03 14:07:26] Posterior belief in NBC: 85%
+[2016-06-03 14:07:26] Posterior belief in none: 14%
+[2016-06-03 14:07:26] Posterior belief in armed: 0%
+[2016-06-03 14:07:26] Value of recommend protected: 0.50
+[2016-06-03 14:07:26] Value of recommend unprotected: 0.14
+[2016-06-03 14:07:26] Recommend protection: yes
+[2016-06-03 14:07:26] Message: I have finished surveying the Gambling Parlour. I think the place is dangerous.
+[2016-06-03 14:07:26] Protective: None ApartmentBuilding NBC True Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:26] Received command: None
+[2016-06-03 14:07:26] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-MissionaryCenter) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-WaterPlant) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-IndustrialSupplyStore) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-FridayMosque) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-GamblingParlour) = 0.00
+[2016-06-03 14:07:26] ER(robot-moveto-NGOOffice) = 0.50
+[2016-06-03 14:07:26] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:26] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:26] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:26] Location: NGOOffice
+[2016-06-03 14:07:26] NBC sensor: False
+[2016-06-03 14:07:26] Camera: False
+[2016-06-03 14:07:26] Microphone: friendly
+[2016-06-03 14:07:26] Posterior belief in NBC: 3%
+[2016-06-03 14:07:26] Posterior belief in none: 96%
+[2016-06-03 14:07:26] Posterior belief in armed: 0%
+[2016-06-03 14:07:26] Value of recommend protected: 0.50
+[2016-06-03 14:07:26] Value of recommend unprotected: 0.97
+[2016-06-03 14:07:26] Recommend protection: no
+[2016-06-03 14:07:26] Message: I have finished surveying the NGO Office. I think the place is safe.
+[2016-06-03 14:07:26] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:27] Received command: None
+[2016-06-03 14:07:27] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-MissionaryCenter) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-WaterPlant) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-IndustrialSupplyStore) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-FridayMosque) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-GamblingParlour) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-NGOOffice) = 0.00
+[2016-06-03 14:07:27] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-GrandHotel) = 0.50
+[2016-06-03 14:07:27] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:27] Location: GrandHotel
+[2016-06-03 14:07:27] NBC sensor: False
+[2016-06-03 14:07:27] Camera: False
+[2016-06-03 14:07:27] Microphone: nobody
+[2016-06-03 14:07:27] Posterior belief in NBC: 3%
+[2016-06-03 14:07:27] Posterior belief in none: 96%
+[2016-06-03 14:07:27] Posterior belief in armed: 0%
+[2016-06-03 14:07:27] Value of recommend protected: 0.50
+[2016-06-03 14:07:27] Value of recommend unprotected: 0.96
+[2016-06-03 14:07:27] Recommend protection: no
+[2016-06-03 14:07:27] Message: I have finished surveying the Grand Hotel. I think the place is safe.
+[2016-06-03 14:07:27] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()
+[2016-06-03 14:07:27] Received command: None
+[2016-06-03 14:07:27] ER(robot-moveto-GeneralStore) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-MotorVehicleRegistration) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-ConferenceCenter) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-GreatMosque) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-TenementBuilding) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-CoffeeShop) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-MissionaryCenter) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-WaterPlant) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-IndustrialSupplyStore) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-FridayMosque) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-GamblingParlour) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-NGOOffice) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-ApartmentBuilding) = -0.50
+[2016-06-03 14:07:27] ER(robot-moveto-GrandHotel) = 0.00
+[2016-06-03 14:07:27] ER(robot-moveto-Granary) = 0.50
+[2016-06-03 14:07:27] Location: Granary
+[2016-06-03 14:07:27] NBC sensor: False
+[2016-06-03 14:07:27] Camera: False
+[2016-06-03 14:07:27] Microphone: friendly
+[2016-06-03 14:07:27] Posterior belief in NBC: 3%
+[2016-06-03 14:07:27] Posterior belief in none: 96%
+[2016-06-03 14:07:27] Posterior belief in armed: 0%
+[2016-06-03 14:07:27] Value of recommend protected: 0.50
+[2016-06-03 14:07:27] Value of recommend unprotected: 0.97
+[2016-06-03 14:07:27] Recommend protection: no
+[2016-06-03 14:07:27] Message: I have finished surveying the Granary. I think the place is safe.
+[2016-06-03 14:07:27] Protective: None ApartmentBuilding none False Chat-Room (Tenants milling about in the hallway) ()

@@ -1,0 +1,320 @@
+[2016-06-10 10:34:25] Created: user autotest, level 5, ability badSensor, explanation confidence
+[2016-06-10 10:34:25] NBC sensor: True
+[2016-06-10 10:34:25] Camera: False
+[2016-06-10 10:34:25] Microphone: nobody
+[2016-06-10 10:34:25] Posterior belief in NBC: 85%
+[2016-06-10 10:34:25] Posterior belief in none: 14%
+[2016-06-10 10:34:25] Posterior belief in armed: 0%
+[2016-06-10 10:34:25] Value of recommend protected: 0.50
+[2016-06-10 10:34:25] Value of recommend unprotected: 0.14
+[2016-06-10 10:34:25] Recommend protection: yes
+[2016-06-10 10:34:25] Message: I have finished surveying the Plumber's Office. I think the place is dangerous. I am 86.0% confident about this assessment.
+[2016-06-10 10:34:25] Protective: None PlumbersOffice NBC True Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:26] Received command: None
+[2016-06-10 10:34:26] ER(robot-moveto-SceniceOverlook) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-ShoppingCenter) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-Library) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-ImamsHouse) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-JudgesHouse) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-MusicStore) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-PlumbersOffice) = 0.00
+[2016-06-10 10:34:26] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:26] Location: SceniceOverlook
+[2016-06-10 10:34:26] NBC sensor: False
+[2016-06-10 10:34:26] Camera: False
+[2016-06-10 10:34:26] Microphone: nobody
+[2016-06-10 10:34:26] Posterior belief in NBC: 3%
+[2016-06-10 10:34:26] Posterior belief in none: 96%
+[2016-06-10 10:34:26] Posterior belief in armed: 0%
+[2016-06-10 10:34:26] Value of recommend protected: 0.50
+[2016-06-10 10:34:26] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:26] Recommend protection: no
+[2016-06-10 10:34:26] Message: I have finished surveying the Scenice Overlook. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:26] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:26] Received command: None
+[2016-06-10 10:34:26] ER(robot-moveto-SceniceOverlook) = 0.00
+[2016-06-10 10:34:26] ER(robot-moveto-ShoppingCenter) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-Library) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-ImamsHouse) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-JudgesHouse) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-MusicStore) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:26] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:26] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:26] Location: ShoppingCenter
+[2016-06-10 10:34:26] NBC sensor: False
+[2016-06-10 10:34:26] Camera: False
+[2016-06-10 10:34:26] Microphone: suspicious
+[2016-06-10 10:34:26] Posterior belief in NBC: 2%
+[2016-06-10 10:34:26] Posterior belief in none: 63%
+[2016-06-10 10:34:26] Posterior belief in armed: 34%
+[2016-06-10 10:34:27] Value of recommend protected: 0.50
+[2016-06-10 10:34:27] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:27] Recommend protection: no
+[2016-06-10 10:34:27] Message: I have finished surveying the Shopping Center. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:34:27] Protective: None PlumbersOffice armed True Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) (It seems that my assessment of the Plumber's Office was incorrect. I will update my algorithms when we return to base after the mission.)
+[2016-06-10 10:34:27] Received command: None
+[2016-06-10 10:34:27] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:27] ER(robot-moveto-ShoppingCenter) = 0.00
+[2016-06-10 10:34:27] ER(robot-moveto-Library) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-ImamsHouse) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-JudgesHouse) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-MusicStore) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:27] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:27] Location: Library
+[2016-06-10 10:34:27] NBC sensor: False
+[2016-06-10 10:34:27] Camera: False
+[2016-06-10 10:34:27] Microphone: friendly
+[2016-06-10 10:34:27] Posterior belief in NBC: 3%
+[2016-06-10 10:34:27] Posterior belief in none: 96%
+[2016-06-10 10:34:27] Posterior belief in armed: 0%
+[2016-06-10 10:34:27] Value of recommend protected: 0.50
+[2016-06-10 10:34:27] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:27] Recommend protection: no
+[2016-06-10 10:34:27] Message: I have finished surveying the Library. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:27] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:27] Received command: None
+[2016-06-10 10:34:27] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:27] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:27] ER(robot-moveto-Library) = 0.00
+[2016-06-10 10:34:27] ER(robot-moveto-ImamsHouse) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-JudgesHouse) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-MusicStore) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:27] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:27] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:28] Location: ImamsHouse
+[2016-06-10 10:34:28] NBC sensor: False
+[2016-06-10 10:34:28] Camera: False
+[2016-06-10 10:34:28] Microphone: friendly
+[2016-06-10 10:34:28] Posterior belief in NBC: 3%
+[2016-06-10 10:34:28] Posterior belief in none: 96%
+[2016-06-10 10:34:28] Posterior belief in armed: 0%
+[2016-06-10 10:34:28] Value of recommend protected: 0.50
+[2016-06-10 10:34:28] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:28] Recommend protection: no
+[2016-06-10 10:34:28] Message: I have finished surveying the Imam's House. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:28] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:28] Received command: None
+[2016-06-10 10:34:28] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:28] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:28] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:28] ER(robot-moveto-ImamsHouse) = 0.00
+[2016-06-10 10:34:28] ER(robot-moveto-JudgesHouse) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-MusicStore) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:28] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:28] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:28] Location: JudgesHouse
+[2016-06-10 10:34:28] NBC sensor: False
+[2016-06-10 10:34:28] Camera: False
+[2016-06-10 10:34:28] Microphone: friendly
+[2016-06-10 10:34:28] Posterior belief in NBC: 3%
+[2016-06-10 10:34:28] Posterior belief in none: 96%
+[2016-06-10 10:34:28] Posterior belief in armed: 0%
+[2016-06-10 10:34:28] Value of recommend protected: 0.50
+[2016-06-10 10:34:28] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:28] Recommend protection: no
+[2016-06-10 10:34:28] Message: I have finished surveying the Judge's House. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:28] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:29] Received command: None
+[2016-06-10 10:34:29] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-ImamsHouse) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-JudgesHouse) = 0.00
+[2016-06-10 10:34:29] ER(robot-moveto-MusicStore) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:29] Location: MusicStore
+[2016-06-10 10:34:29] NBC sensor: False
+[2016-06-10 10:34:29] Camera: False
+[2016-06-10 10:34:29] Microphone: nobody
+[2016-06-10 10:34:29] Posterior belief in NBC: 3%
+[2016-06-10 10:34:29] Posterior belief in none: 96%
+[2016-06-10 10:34:29] Posterior belief in armed: 0%
+[2016-06-10 10:34:29] Value of recommend protected: 0.50
+[2016-06-10 10:34:29] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:29] Recommend protection: no
+[2016-06-10 10:34:29] Message: I have finished surveying the Music Store. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:29] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:29] Received command: None
+[2016-06-10 10:34:29] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-ImamsHouse) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-JudgesHouse) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-MusicStore) = 0.00
+[2016-06-10 10:34:29] ER(robot-moveto-CourthouseLobby) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:29] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:29] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:29] Location: CourthouseLobby
+[2016-06-10 10:34:29] NBC sensor: False
+[2016-06-10 10:34:29] Camera: False
+[2016-06-10 10:34:29] Microphone: nobody
+[2016-06-10 10:34:29] Posterior belief in NBC: 3%
+[2016-06-10 10:34:29] Posterior belief in none: 96%
+[2016-06-10 10:34:29] Posterior belief in armed: 0%
+[2016-06-10 10:34:29] Value of recommend protected: 0.50
+[2016-06-10 10:34:29] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:29] Recommend protection: no
+[2016-06-10 10:34:29] Message: I have finished surveying the Courthouse Lobby. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:29] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:30] Received command: None
+[2016-06-10 10:34:30] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-ImamsHouse) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-JudgesHouse) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-MusicStore) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-CourthouseLobby) = 0.00
+[2016-06-10 10:34:30] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-YouthCenter) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:30] Location: YouthCenter
+[2016-06-10 10:34:30] NBC sensor: False
+[2016-06-10 10:34:30] Camera: False
+[2016-06-10 10:34:30] Microphone: suspicious
+[2016-06-10 10:34:30] Posterior belief in NBC: 2%
+[2016-06-10 10:34:30] Posterior belief in none: 63%
+[2016-06-10 10:34:30] Posterior belief in armed: 34%
+[2016-06-10 10:34:30] Value of recommend protected: 0.50
+[2016-06-10 10:34:30] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:30] Recommend protection: no
+[2016-06-10 10:34:30] Message: I have finished surveying the Youth Center. I think the place is safe. I am 63.0% confident about this assessment.
+[2016-06-10 10:34:30] Protective: None PlumbersOffice armed True Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) (It seems that my assessment of the Plumber's Office was incorrect. I will update my algorithms when we return to base after the mission.)
+[2016-06-10 10:34:30] Received command: None
+[2016-06-10 10:34:30] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-ImamsHouse) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-JudgesHouse) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-MusicStore) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-CourthouseLobby) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:30] ER(robot-moveto-YouthCenter) = 0.00
+[2016-06-10 10:34:30] ER(robot-moveto-TempAgency) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:30] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:30] Location: TempAgency
+[2016-06-10 10:34:30] NBC sensor: False
+[2016-06-10 10:34:30] Camera: False
+[2016-06-10 10:34:30] Microphone: nobody
+[2016-06-10 10:34:30] Posterior belief in NBC: 3%
+[2016-06-10 10:34:30] Posterior belief in none: 96%
+[2016-06-10 10:34:30] Posterior belief in armed: 0%
+[2016-06-10 10:34:30] Value of recommend protected: 0.50
+[2016-06-10 10:34:30] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:30] Recommend protection: no
+[2016-06-10 10:34:30] Message: I have finished surveying the Temp Agency. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:30] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:31] Received command: None
+[2016-06-10 10:34:31] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-ImamsHouse) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-JudgesHouse) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-MusicStore) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-CourthouseLobby) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-YouthCenter) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-TempAgency) = 0.00
+[2016-06-10 10:34:31] ER(robot-moveto-ConvenienceStore) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:31] Location: ConvenienceStore
+[2016-06-10 10:34:31] NBC sensor: False
+[2016-06-10 10:34:31] Camera: False
+[2016-06-10 10:34:31] Microphone: nobody
+[2016-06-10 10:34:31] Posterior belief in NBC: 3%
+[2016-06-10 10:34:31] Posterior belief in none: 96%
+[2016-06-10 10:34:31] Posterior belief in armed: 0%
+[2016-06-10 10:34:31] Value of recommend protected: 0.50
+[2016-06-10 10:34:31] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:31] Recommend protection: no
+[2016-06-10 10:34:31] Message: I have finished surveying the Convenience Store. I think the place is safe. I am 96.0% confident about this assessment.
+[2016-06-10 10:34:31] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()
+[2016-06-10 10:34:31] Received command: None
+[2016-06-10 10:34:31] ER(robot-moveto-SceniceOverlook) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-ShoppingCenter) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-Library) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-ImamsHouse) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-JudgesHouse) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-MusicStore) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-CourthouseLobby) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-PlumbersOffice) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-YouthCenter) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-TempAgency) = -0.50
+[2016-06-10 10:34:31] ER(robot-moveto-ConvenienceStore) = 0.00
+[2016-06-10 10:34:31] ER(robot-moveto-GreenMosque) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-OilCompanyOffice) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-HookahLounge) = 0.50
+[2016-06-10 10:34:31] ER(robot-moveto-Bank) = 0.50
+[2016-06-10 10:34:31] Location: GreenMosque
+[2016-06-10 10:34:31] NBC sensor: False
+[2016-06-10 10:34:31] Camera: False
+[2016-06-10 10:34:31] Microphone: friendly
+[2016-06-10 10:34:31] Posterior belief in NBC: 3%
+[2016-06-10 10:34:31] Posterior belief in none: 96%
+[2016-06-10 10:34:31] Posterior belief in armed: 0%
+[2016-06-10 10:34:31] Value of recommend protected: 0.50
+[2016-06-10 10:34:31] Value of recommend unprotected: 0.97
+[2016-06-10 10:34:31] Recommend protection: no
+[2016-06-10 10:34:31] Message: I have finished surveying the Green Mosque. I think the place is safe. I am 97.0% confident about this assessment.
+[2016-06-10 10:34:31] Protective: None PlumbersOffice none False Farm_Supply_Store_danger (Chemical/biological agents being stored for use by insurgency) ()

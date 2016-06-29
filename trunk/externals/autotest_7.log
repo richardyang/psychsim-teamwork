@@ -1,0 +1,404 @@
+[2016-06-03 14:08:01] Created: user autotest, level 7, ability badSensor, explanation none
+[2016-06-03 14:08:01] NBC sensor: False
+[2016-06-03 14:08:01] Camera: False
+[2016-06-03 14:08:01] Microphone: nobody
+[2016-06-03 14:08:01] Posterior belief in NBC: 3%
+[2016-06-03 14:08:01] Posterior belief in none: 96%
+[2016-06-03 14:08:01] Posterior belief in armed: 0%
+[2016-06-03 14:08:01] Value of recommend protected: 0.50
+[2016-06-03 14:08:01] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:01] Recommend protection: no
+[2016-06-03 14:08:01] Message: I have finished surveying the Rooftop Deck. I think the place is safe.
+[2016-06-03 14:08:01] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:01] Received command: None
+[2016-06-03 14:08:01] ER(robot-moveto-RooftopDeck) = 0.00
+[2016-06-03 14:08:01] ER(robot-moveto-CarpentryFirm) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-IslamicSchool) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-QuranStudyGroup) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-BowlingAlley) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-DaycareCenter) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-TransportationControlRoom) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:01] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:01] Location: CarpentryFirm
+[2016-06-03 14:08:01] NBC sensor: False
+[2016-06-03 14:08:01] Camera: False
+[2016-06-03 14:08:01] Microphone: suspicious
+[2016-06-03 14:08:01] Posterior belief in NBC: 2%
+[2016-06-03 14:08:01] Posterior belief in none: 63%
+[2016-06-03 14:08:01] Posterior belief in armed: 34%
+[2016-06-03 14:08:02] Value of recommend protected: 0.50
+[2016-06-03 14:08:02] Value of recommend unprotected: 0.63
+[2016-06-03 14:08:02] Recommend protection: no
+[2016-06-03 14:08:02] Message: I have finished surveying the Carpentry Firm. I think the place is safe.
+[2016-06-03 14:08:02] Protective: None RooftopDeck armed True Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:02] Received command: None
+[2016-06-03 14:08:02] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:02] ER(robot-moveto-CarpentryFirm) = 0.00
+[2016-06-03 14:08:02] ER(robot-moveto-IslamicSchool) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-QuranStudyGroup) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-BowlingAlley) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-DaycareCenter) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-TransportationControlRoom) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:02] Location: IslamicSchool
+[2016-06-03 14:08:02] NBC sensor: False
+[2016-06-03 14:08:02] Camera: False
+[2016-06-03 14:08:02] Microphone: nobody
+[2016-06-03 14:08:02] Posterior belief in NBC: 3%
+[2016-06-03 14:08:02] Posterior belief in none: 96%
+[2016-06-03 14:08:02] Posterior belief in armed: 0%
+[2016-06-03 14:08:02] Value of recommend protected: 0.50
+[2016-06-03 14:08:02] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:02] Recommend protection: no
+[2016-06-03 14:08:02] Message: I have finished surveying the Islamic School. I think the place is safe.
+[2016-06-03 14:08:02] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:02] Received command: None
+[2016-06-03 14:08:02] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:02] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:02] ER(robot-moveto-IslamicSchool) = 0.00
+[2016-06-03 14:08:02] ER(robot-moveto-QuranStudyGroup) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-BowlingAlley) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-DaycareCenter) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-TransportationControlRoom) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:02] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:02] Location: QuranStudyGroup
+[2016-06-03 14:08:02] NBC sensor: False
+[2016-06-03 14:08:02] Camera: False
+[2016-06-03 14:08:02] Microphone: friendly
+[2016-06-03 14:08:02] Posterior belief in NBC: 3%
+[2016-06-03 14:08:02] Posterior belief in none: 96%
+[2016-06-03 14:08:02] Posterior belief in armed: 0%
+[2016-06-03 14:08:02] Value of recommend protected: 0.50
+[2016-06-03 14:08:02] Value of recommend unprotected: 0.97
+[2016-06-03 14:08:02] Recommend protection: no
+[2016-06-03 14:08:02] Message: I have finished surveying the Quran Study Group. I think the place is safe.
+[2016-06-03 14:08:02] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:03] Received command: None
+[2016-06-03 14:08:03] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-QuranStudyGroup) = 0.00
+[2016-06-03 14:08:03] ER(robot-moveto-BowlingAlley) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-DaycareCenter) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-TransportationControlRoom) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:03] Location: BowlingAlley
+[2016-06-03 14:08:03] NBC sensor: False
+[2016-06-03 14:08:03] Camera: False
+[2016-06-03 14:08:03] Microphone: nobody
+[2016-06-03 14:08:03] Posterior belief in NBC: 3%
+[2016-06-03 14:08:03] Posterior belief in none: 96%
+[2016-06-03 14:08:03] Posterior belief in armed: 0%
+[2016-06-03 14:08:03] Value of recommend protected: 0.50
+[2016-06-03 14:08:03] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:03] Recommend protection: no
+[2016-06-03 14:08:03] Message: I have finished surveying the Bowling Alley. I think the place is safe.
+[2016-06-03 14:08:03] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:03] Received command: None
+[2016-06-03 14:08:03] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:03] ER(robot-moveto-BowlingAlley) = 0.00
+[2016-06-03 14:08:03] ER(robot-moveto-DaycareCenter) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-TransportationControlRoom) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:03] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:03] Location: DaycareCenter
+[2016-06-03 14:08:03] NBC sensor: False
+[2016-06-03 14:08:03] Camera: False
+[2016-06-03 14:08:03] Microphone: nobody
+[2016-06-03 14:08:03] Posterior belief in NBC: 3%
+[2016-06-03 14:08:03] Posterior belief in none: 96%
+[2016-06-03 14:08:03] Posterior belief in armed: 0%
+[2016-06-03 14:08:03] Value of recommend protected: 0.50
+[2016-06-03 14:08:03] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:03] Recommend protection: no
+[2016-06-03 14:08:03] Message: I have finished surveying the Daycare Center. I think the place is safe.
+[2016-06-03 14:08:03] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:04] Received command: None
+[2016-06-03 14:08:04] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-DaycareCenter) = 0.00
+[2016-06-03 14:08:04] ER(robot-moveto-TransportationControlRoom) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:04] Location: TransportationControlRoom
+[2016-06-03 14:08:04] NBC sensor: False
+[2016-06-03 14:08:04] Camera: False
+[2016-06-03 14:08:04] Microphone: suspicious
+[2016-06-03 14:08:04] Posterior belief in NBC: 2%
+[2016-06-03 14:08:04] Posterior belief in none: 63%
+[2016-06-03 14:08:04] Posterior belief in armed: 34%
+[2016-06-03 14:08:04] Value of recommend protected: 0.50
+[2016-06-03 14:08:04] Value of recommend unprotected: 0.63
+[2016-06-03 14:08:04] Recommend protection: no
+[2016-06-03 14:08:04] Message: I have finished surveying the Transportation Control Room. I think the place is safe.
+[2016-06-03 14:08:04] Protective: None RooftopDeck armed True Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:04] Received command: None
+[2016-06-03 14:08:04] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:04] ER(robot-moveto-TransportationControlRoom) = 0.00
+[2016-06-03 14:08:04] ER(robot-moveto-PoliceStation) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:04] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:04] Location: PoliceStation
+[2016-06-03 14:08:04] NBC sensor: False
+[2016-06-03 14:08:04] Camera: False
+[2016-06-03 14:08:04] Microphone: nobody
+[2016-06-03 14:08:04] Posterior belief in NBC: 3%
+[2016-06-03 14:08:04] Posterior belief in none: 96%
+[2016-06-03 14:08:04] Posterior belief in armed: 0%
+[2016-06-03 14:08:04] Value of recommend protected: 0.50
+[2016-06-03 14:08:04] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:04] Recommend protection: no
+[2016-06-03 14:08:04] Message: I have finished surveying the Police Station. I think the place is safe.
+[2016-06-03 14:08:04] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:05] Received command: None
+[2016-06-03 14:08:05] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-PoliceStation) = 0.00
+[2016-06-03 14:08:05] ER(robot-moveto-CommunityCenter) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:05] Location: CommunityCenter
+[2016-06-03 14:08:05] NBC sensor: False
+[2016-06-03 14:08:05] Camera: False
+[2016-06-03 14:08:05] Microphone: nobody
+[2016-06-03 14:08:05] Posterior belief in NBC: 3%
+[2016-06-03 14:08:05] Posterior belief in none: 96%
+[2016-06-03 14:08:05] Posterior belief in armed: 0%
+[2016-06-03 14:08:05] Value of recommend protected: 0.50
+[2016-06-03 14:08:05] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:05] Recommend protection: no
+[2016-06-03 14:08:05] Message: I have finished surveying the Community Center. I think the place is safe.
+[2016-06-03 14:08:05] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:05] Received command: None
+[2016-06-03 14:08:05] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-PoliceStation) = -0.50
+[2016-06-03 14:08:05] ER(robot-moveto-CommunityCenter) = 0.00
+[2016-06-03 14:08:05] ER(robot-moveto-CharityDropoff) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:05] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:05] Location: CharityDropoff
+[2016-06-03 14:08:05] NBC sensor: False
+[2016-06-03 14:08:05] Camera: False
+[2016-06-03 14:08:05] Microphone: nobody
+[2016-06-03 14:08:05] Posterior belief in NBC: 3%
+[2016-06-03 14:08:05] Posterior belief in none: 96%
+[2016-06-03 14:08:05] Posterior belief in armed: 0%
+[2016-06-03 14:08:05] Value of recommend protected: 0.50
+[2016-06-03 14:08:05] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:05] Recommend protection: no
+[2016-06-03 14:08:05] Message: I have finished surveying the Charity Dropoff. I think the place is safe.
+[2016-06-03 14:08:05] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:06] Received command: None
+[2016-06-03 14:08:06] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-PoliceStation) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-CommunityCenter) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-CharityDropoff) = 0.00
+[2016-06-03 14:08:06] ER(robot-moveto-MarketCityMosque) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:06] Location: MarketCityMosque
+[2016-06-03 14:08:06] NBC sensor: False
+[2016-06-03 14:08:06] Camera: False
+[2016-06-03 14:08:06] Microphone: nobody
+[2016-06-03 14:08:06] Posterior belief in NBC: 3%
+[2016-06-03 14:08:06] Posterior belief in none: 96%
+[2016-06-03 14:08:06] Posterior belief in armed: 0%
+[2016-06-03 14:08:06] Value of recommend protected: 0.50
+[2016-06-03 14:08:06] Value of recommend unprotected: 0.96
+[2016-06-03 14:08:06] Recommend protection: no
+[2016-06-03 14:08:06] Message: I have finished surveying the Market City Mosque. I think the place is safe.
+[2016-06-03 14:08:06] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:06] Received command: None
+[2016-06-03 14:08:06] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-PoliceStation) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-CommunityCenter) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-CharityDropoff) = -0.50
+[2016-06-03 14:08:06] ER(robot-moveto-MarketCityMosque) = 0.00
+[2016-06-03 14:08:06] ER(robot-moveto-FarmSupply) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:06] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:06] Location: FarmSupply
+[2016-06-03 14:08:06] NBC sensor: True
+[2016-06-03 14:08:06] Camera: False
+[2016-06-03 14:08:06] Microphone: nobody
+[2016-06-03 14:08:06] Posterior belief in NBC: 85%
+[2016-06-03 14:08:06] Posterior belief in none: 14%
+[2016-06-03 14:08:06] Posterior belief in armed: 0%
+[2016-06-03 14:08:06] Value of recommend protected: 0.50
+[2016-06-03 14:08:06] Value of recommend unprotected: 0.14
+[2016-06-03 14:08:06] Recommend protection: yes
+[2016-06-03 14:08:06] Message: I have finished surveying the Power Plant. I think the place is dangerous.
+[2016-06-03 14:08:06] Protective: None RooftopDeck NBC True Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:07] Received command: None
+[2016-06-03 14:08:07] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-PoliceStation) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-CommunityCenter) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-CharityDropoff) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-MarketCityMosque) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-FarmSupply) = 0.00
+[2016-06-03 14:08:07] ER(robot-moveto-Hostel) = 0.50
+[2016-06-03 14:08:07] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:07] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:07] Location: Hostel
+[2016-06-03 14:08:07] NBC sensor: False
+[2016-06-03 14:08:07] Camera: False
+[2016-06-03 14:08:07] Microphone: suspicious
+[2016-06-03 14:08:07] Posterior belief in NBC: 2%
+[2016-06-03 14:08:07] Posterior belief in none: 63%
+[2016-06-03 14:08:07] Posterior belief in armed: 34%
+[2016-06-03 14:08:07] Value of recommend protected: 0.50
+[2016-06-03 14:08:07] Value of recommend unprotected: 0.63
+[2016-06-03 14:08:07] Recommend protection: no
+[2016-06-03 14:08:07] Message: I have finished surveying the Hostel. I think the place is safe.
+[2016-06-03 14:08:07] Protective: None RooftopDeck armed True Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:07] Received command: None
+[2016-06-03 14:08:07] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-PoliceStation) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-CommunityCenter) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-CharityDropoff) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-MarketCityMosque) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-FarmSupply) = -0.50
+[2016-06-03 14:08:07] ER(robot-moveto-Hostel) = 0.00
+[2016-06-03 14:08:07] ER(robot-moveto-PhotographyStudio) = 0.50
+[2016-06-03 14:08:07] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:07] Location: PhotographyStudio
+[2016-06-03 14:08:07] NBC sensor: False
+[2016-06-03 14:08:07] Camera: False
+[2016-06-03 14:08:07] Microphone: friendly
+[2016-06-03 14:08:07] Posterior belief in NBC: 3%
+[2016-06-03 14:08:07] Posterior belief in none: 96%
+[2016-06-03 14:08:07] Posterior belief in armed: 0%
+[2016-06-03 14:08:07] Value of recommend protected: 0.50
+[2016-06-03 14:08:07] Value of recommend unprotected: 0.97
+[2016-06-03 14:08:07] Recommend protection: no
+[2016-06-03 14:08:07] Message: I have finished surveying the Photography Studio. I think the place is safe.
+[2016-06-03 14:08:07] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()
+[2016-06-03 14:08:08] Received command: None
+[2016-06-03 14:08:08] ER(robot-moveto-RooftopDeck) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-CarpentryFirm) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-IslamicSchool) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-QuranStudyGroup) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-BowlingAlley) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-DaycareCenter) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-TransportationControlRoom) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-PoliceStation) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-CommunityCenter) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-CharityDropoff) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-MarketCityMosque) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-FarmSupply) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-Hostel) = -0.50
+[2016-06-03 14:08:08] ER(robot-moveto-PhotographyStudio) = 0.00
+[2016-06-03 14:08:08] ER(robot-moveto-DepartmentStore) = 0.50
+[2016-06-03 14:08:08] Location: DepartmentStore
+[2016-06-03 14:08:08] NBC sensor: False
+[2016-06-03 14:08:08] Camera: False
+[2016-06-03 14:08:08] Microphone: friendly
+[2016-06-03 14:08:08] Posterior belief in NBC: 3%
+[2016-06-03 14:08:08] Posterior belief in none: 96%
+[2016-06-03 14:08:08] Posterior belief in armed: 0%
+[2016-06-03 14:08:08] Value of recommend protected: 0.50
+[2016-06-03 14:08:08] Value of recommend unprotected: 0.97
+[2016-06-03 14:08:08] Recommend protection: no
+[2016-06-03 14:08:08] Message: I have finished surveying the Department Store. I think the place is safe.
+[2016-06-03 14:08:08] Protective: None RooftopDeck none False Potential_Sniper_Spot (Unoccupied rooftop deck with nothing of interest) ()

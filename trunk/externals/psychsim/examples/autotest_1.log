@@ -1,0 +1,404 @@
+[2016-06-10 10:33:54] Created: user autotest, level 1, ability badSensor, explanation none
+[2016-06-10 10:33:54] NBC sensor: False
+[2016-06-10 10:33:54] Camera: False
+[2016-06-10 10:33:54] Microphone: friendly
+[2016-06-10 10:33:54] Posterior belief in NBC: 3%
+[2016-06-10 10:33:54] Posterior belief in none: 96%
+[2016-06-10 10:33:54] Posterior belief in armed: 0%
+[2016-06-10 10:33:54] Value of recommend protected: 0.50
+[2016-06-10 10:33:54] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:54] Recommend protection: no
+[2016-06-10 10:33:54] Message: I have finished surveying the Accounting Office. I think the place is safe.
+[2016-06-10 10:33:54] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:55] Received command: None
+[2016-06-10 10:33:55] ER(robot-moveto-AccountingOffice) = 0.00
+[2016-06-10 10:33:55] ER(robot-moveto-SafeHouse) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-Mosque) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-HookahCafe) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-UnknownResidence) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-BookDepository) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-YellowMosque) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-AutoPartsStore) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:55] Location: SafeHouse
+[2016-06-10 10:33:55] NBC sensor: False
+[2016-06-10 10:33:55] Camera: False
+[2016-06-10 10:33:55] Microphone: friendly
+[2016-06-10 10:33:55] Posterior belief in NBC: 3%
+[2016-06-10 10:33:55] Posterior belief in none: 96%
+[2016-06-10 10:33:55] Posterior belief in armed: 0%
+[2016-06-10 10:33:55] Value of recommend protected: 0.50
+[2016-06-10 10:33:55] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:55] Recommend protection: no
+[2016-06-10 10:33:55] Message: I have finished surveying the Suspected Safe House. I think the place is safe.
+[2016-06-10 10:33:55] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:55] Received command: None
+[2016-06-10 10:33:55] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:55] ER(robot-moveto-SafeHouse) = 0.00
+[2016-06-10 10:33:55] ER(robot-moveto-Mosque) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-HookahCafe) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-UnknownResidence) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-BookDepository) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-YellowMosque) = -0.20
+[2016-06-10 10:33:55] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-AutoPartsStore) = 0.12
+[2016-06-10 10:33:55] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:55] Location: Mosque
+[2016-06-10 10:33:55] NBC sensor: False
+[2016-06-10 10:33:55] Camera: False
+[2016-06-10 10:33:55] Microphone: friendly
+[2016-06-10 10:33:55] Posterior belief in NBC: 3%
+[2016-06-10 10:33:55] Posterior belief in none: 96%
+[2016-06-10 10:33:55] Posterior belief in armed: 0%
+[2016-06-10 10:33:55] Value of recommend protected: 0.50
+[2016-06-10 10:33:55] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:55] Recommend protection: no
+[2016-06-10 10:33:55] Message: I have finished surveying the Mosque. I think the place is safe.
+[2016-06-10 10:33:55] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:55] Received command: None
+[2016-06-10 10:33:55] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:55] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:55] ER(robot-moveto-Mosque) = 0.00
+[2016-06-10 10:33:55] ER(robot-moveto-HookahCafe) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-UnknownResidence) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-BookDepository) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-YellowMosque) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-AutoPartsStore) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:55] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:55] Location: HookahCafe
+[2016-06-10 10:33:55] NBC sensor: True
+[2016-06-10 10:33:55] Camera: False
+[2016-06-10 10:33:55] Microphone: friendly
+[2016-06-10 10:33:55] Posterior belief in NBC: 85%
+[2016-06-10 10:33:55] Posterior belief in none: 14%
+[2016-06-10 10:33:55] Posterior belief in armed: 0%
+[2016-06-10 10:33:56] Value of recommend protected: 0.50
+[2016-06-10 10:33:56] Value of recommend unprotected: 0.14
+[2016-06-10 10:33:56] Recommend protection: yes
+[2016-06-10 10:33:56] Message: I have finished surveying the Hookah Cafe. I think the place is dangerous.
+[2016-06-10 10:33:56] Protective: None AccountingOffice NBC True Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:56] Received command: None
+[2016-06-10 10:33:56] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-HookahCafe) = 0.00
+[2016-06-10 10:33:56] ER(robot-moveto-UnknownResidence) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-BookDepository) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-YellowMosque) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-AutoPartsStore) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:56] Location: UnknownResidence
+[2016-06-10 10:33:56] NBC sensor: False
+[2016-06-10 10:33:56] Camera: False
+[2016-06-10 10:33:56] Microphone: friendly
+[2016-06-10 10:33:56] Posterior belief in NBC: 3%
+[2016-06-10 10:33:56] Posterior belief in none: 96%
+[2016-06-10 10:33:56] Posterior belief in armed: 0%
+[2016-06-10 10:33:56] Value of recommend protected: 0.50
+[2016-06-10 10:33:56] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:56] Recommend protection: no
+[2016-06-10 10:33:56] Message: I have finished surveying the Unknown Residence. I think the place is safe.
+[2016-06-10 10:33:56] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:56] Received command: None
+[2016-06-10 10:33:56] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:56] ER(robot-moveto-UnknownResidence) = 0.00
+[2016-06-10 10:33:56] ER(robot-moveto-BookDepository) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-YellowMosque) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-AutoPartsStore) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:56] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:56] Location: BookDepository
+[2016-06-10 10:33:56] NBC sensor: False
+[2016-06-10 10:33:56] Camera: False
+[2016-06-10 10:33:56] Microphone: suspicious
+[2016-06-10 10:33:56] Posterior belief in NBC: 2%
+[2016-06-10 10:33:56] Posterior belief in none: 63%
+[2016-06-10 10:33:56] Posterior belief in armed: 34%
+[2016-06-10 10:33:57] Value of recommend protected: 0.50
+[2016-06-10 10:33:57] Value of recommend unprotected: 0.63
+[2016-06-10 10:33:57] Recommend protection: no
+[2016-06-10 10:33:57] Message: I have finished surveying the Book Depository. I think the place is safe.
+[2016-06-10 10:33:57] Protective: None AccountingOffice armed True Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:57] Received command: None
+[2016-06-10 10:33:57] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-BookDepository) = 0.00
+[2016-06-10 10:33:57] ER(robot-moveto-YellowMosque) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-AutoPartsStore) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:57] Location: YellowMosque
+[2016-06-10 10:33:57] NBC sensor: False
+[2016-06-10 10:33:57] Camera: False
+[2016-06-10 10:33:57] Microphone: nobody
+[2016-06-10 10:33:57] Posterior belief in NBC: 3%
+[2016-06-10 10:33:57] Posterior belief in none: 96%
+[2016-06-10 10:33:57] Posterior belief in armed: 0%
+[2016-06-10 10:33:57] Value of recommend protected: 0.50
+[2016-06-10 10:33:57] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:57] Recommend protection: no
+[2016-06-10 10:33:57] Message: I have finished surveying the Yellow Mosque. I think the place is safe.
+[2016-06-10 10:33:57] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:57] Received command: None
+[2016-06-10 10:33:57] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-SafeHouse) = -1.20
+[2016-06-10 10:33:57] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:33:57] ER(robot-moveto-YellowMosque) = 0.00
+[2016-06-10 10:33:57] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-AutoPartsStore) = 0.68
+[2016-06-10 10:33:57] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:57] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:57] Location: AutoPartsStore
+[2016-06-10 10:33:57] NBC sensor: False
+[2016-06-10 10:33:57] Camera: False
+[2016-06-10 10:33:57] Microphone: friendly
+[2016-06-10 10:33:57] Posterior belief in NBC: 3%
+[2016-06-10 10:33:57] Posterior belief in none: 96%
+[2016-06-10 10:33:57] Posterior belief in armed: 0%
+[2016-06-10 10:33:58] Value of recommend protected: 0.50
+[2016-06-10 10:33:58] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:58] Recommend protection: no
+[2016-06-10 10:33:58] Message: I have finished surveying the Auto Parts Store. I think the place is safe.
+[2016-06-10 10:33:58] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:58] Received command: None
+[2016-06-10 10:33:58] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-SafeHouse) = -0.88
+[2016-06-10 10:33:58] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-YellowMosque) = -0.32
+[2016-06-10 10:33:58] ER(robot-moveto-AbandonedRestaurant) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-AutoPartsStore) = 0.00
+[2016-06-10 10:33:58] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:58] Location: AbandonedRestaurant
+[2016-06-10 10:33:58] NBC sensor: False
+[2016-06-10 10:33:58] Camera: False
+[2016-06-10 10:33:58] Microphone: nobody
+[2016-06-10 10:33:58] Posterior belief in NBC: 3%
+[2016-06-10 10:33:58] Posterior belief in none: 96%
+[2016-06-10 10:33:58] Posterior belief in armed: 0%
+[2016-06-10 10:33:58] Value of recommend protected: 0.50
+[2016-06-10 10:33:58] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:58] Recommend protection: no
+[2016-06-10 10:33:58] Message: I have finished surveying the Abandoned Restaurant. I think the place is safe.
+[2016-06-10 10:33:58] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:58] Received command: None
+[2016-06-10 10:33:58] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-YellowMosque) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-AbandonedRestaurant) = 0.00
+[2016-06-10 10:33:58] ER(robot-moveto-ElementarySchool) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-AutoPartsStore) = -0.50
+[2016-06-10 10:33:58] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:58] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:58] Location: ElementarySchool
+[2016-06-10 10:33:58] NBC sensor: False
+[2016-06-10 10:33:58] Camera: False
+[2016-06-10 10:33:58] Microphone: nobody
+[2016-06-10 10:33:58] Posterior belief in NBC: 3%
+[2016-06-10 10:33:58] Posterior belief in none: 96%
+[2016-06-10 10:33:58] Posterior belief in armed: 0%
+[2016-06-10 10:33:59] Value of recommend protected: 0.50
+[2016-06-10 10:33:59] Value of recommend unprotected: 0.96
+[2016-06-10 10:33:59] Recommend protection: no
+[2016-06-10 10:33:59] Message: I have finished surveying the Elementary School. I think the place is safe.
+[2016-06-10 10:33:59] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:59] Received command: None
+[2016-06-10 10:33:59] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-YellowMosque) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-AbandonedRestaurant) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-ElementarySchool) = 0.00
+[2016-06-10 10:33:59] ER(robot-moveto-FuelStore) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-AutoPartsStore) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:59] Location: FuelStore
+[2016-06-10 10:33:59] NBC sensor: False
+[2016-06-10 10:33:59] Camera: False
+[2016-06-10 10:33:59] Microphone: friendly
+[2016-06-10 10:33:59] Posterior belief in NBC: 3%
+[2016-06-10 10:33:59] Posterior belief in none: 96%
+[2016-06-10 10:33:59] Posterior belief in armed: 0%
+[2016-06-10 10:33:59] Value of recommend protected: 0.50
+[2016-06-10 10:33:59] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:59] Recommend protection: no
+[2016-06-10 10:33:59] Message: I have finished surveying the Fuel Store. I think the place is safe.
+[2016-06-10 10:33:59] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:33:59] Received command: None
+[2016-06-10 10:33:59] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-YellowMosque) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-AbandonedRestaurant) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-ElementarySchool) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-FuelStore) = 0.00
+[2016-06-10 10:33:59] ER(robot-moveto-AutoPartsStore) = -0.50
+[2016-06-10 10:33:59] ER(robot-moveto-RegistrationOffice) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:33:59] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:33:59] Location: RegistrationOffice
+[2016-06-10 10:33:59] NBC sensor: False
+[2016-06-10 10:33:59] Camera: False
+[2016-06-10 10:33:59] Microphone: friendly
+[2016-06-10 10:33:59] Posterior belief in NBC: 3%
+[2016-06-10 10:33:59] Posterior belief in none: 96%
+[2016-06-10 10:33:59] Posterior belief in armed: 0%
+[2016-06-10 10:33:59] Value of recommend protected: 0.50
+[2016-06-10 10:33:59] Value of recommend unprotected: 0.97
+[2016-06-10 10:33:59] Recommend protection: no
+[2016-06-10 10:33:59] Message: I have finished surveying the Registration Office. I think the place is safe.
+[2016-06-10 10:33:59] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:34:00] Received command: None
+[2016-06-10 10:34:00] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-YellowMosque) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-AbandonedRestaurant) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-ElementarySchool) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-FuelStore) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-AutoPartsStore) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-RegistrationOffice) = 0.00
+[2016-06-10 10:34:00] ER(robot-moveto-MullahsHouse) = 0.50
+[2016-06-10 10:34:00] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:34:00] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:34:00] Location: MullahsHouse
+[2016-06-10 10:34:00] NBC sensor: False
+[2016-06-10 10:34:00] Camera: False
+[2016-06-10 10:34:00] Microphone: nobody
+[2016-06-10 10:34:00] Posterior belief in NBC: 3%
+[2016-06-10 10:34:00] Posterior belief in none: 96%
+[2016-06-10 10:34:00] Posterior belief in armed: 0%
+[2016-06-10 10:34:00] Value of recommend protected: 0.50
+[2016-06-10 10:34:00] Value of recommend unprotected: 0.96
+[2016-06-10 10:34:00] Recommend protection: no
+[2016-06-10 10:34:00] Message: I have finished surveying the Mullah's House. I think the place is safe.
+[2016-06-10 10:34:00] Protective: None AccountingOffice none False Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:34:00] Received command: None
+[2016-06-10 10:34:00] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-YellowMosque) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-AbandonedRestaurant) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-ElementarySchool) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-FuelStore) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-AutoPartsStore) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-RegistrationOffice) = -0.50
+[2016-06-10 10:34:00] ER(robot-moveto-MullahsHouse) = 0.00
+[2016-06-10 10:34:00] ER(robot-moveto-FoodBank) = 0.50
+[2016-06-10 10:34:00] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:34:00] Location: FoodBank
+[2016-06-10 10:34:00] NBC sensor: False
+[2016-06-10 10:34:00] Camera: False
+[2016-06-10 10:34:00] Microphone: suspicious
+[2016-06-10 10:34:00] Posterior belief in NBC: 2%
+[2016-06-10 10:34:00] Posterior belief in none: 63%
+[2016-06-10 10:34:00] Posterior belief in armed: 34%
+[2016-06-10 10:34:00] Value of recommend protected: 0.50
+[2016-06-10 10:34:00] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:00] Recommend protection: no
+[2016-06-10 10:34:00] Message: I have finished surveying the Food Bank. I think the place is safe.
+[2016-06-10 10:34:00] Protective: None AccountingOffice armed True Furniture_Store (Accountants discussing finances) ()
+[2016-06-10 10:34:01] Received command: None
+[2016-06-10 10:34:01] ER(robot-moveto-AccountingOffice) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-SafeHouse) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-Mosque) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-HookahCafe) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-UnknownResidence) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-BookDepository) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-YellowMosque) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-AbandonedRestaurant) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-ElementarySchool) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-FuelStore) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-AutoPartsStore) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-RegistrationOffice) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-MullahsHouse) = -0.50
+[2016-06-10 10:34:01] ER(robot-moveto-FoodBank) = 0.00
+[2016-06-10 10:34:01] ER(robot-moveto-RadicalHouse) = 0.50
+[2016-06-10 10:34:01] Location: RadicalHouse
+[2016-06-10 10:34:01] NBC sensor: False
+[2016-06-10 10:34:01] Camera: False
+[2016-06-10 10:34:01] Microphone: suspicious
+[2016-06-10 10:34:01] Posterior belief in NBC: 2%
+[2016-06-10 10:34:01] Posterior belief in none: 63%
+[2016-06-10 10:34:01] Posterior belief in armed: 34%
+[2016-06-10 10:34:01] Value of recommend protected: 0.50
+[2016-06-10 10:34:01] Value of recommend unprotected: 0.63
+[2016-06-10 10:34:01] Recommend protection: no
+[2016-06-10 10:34:01] Message: I have finished surveying the Radical Cleric's House. I think the place is safe.
+[2016-06-10 10:34:01] Protective: None AccountingOffice armed True Furniture_Store (Accountants discussing finances) ()

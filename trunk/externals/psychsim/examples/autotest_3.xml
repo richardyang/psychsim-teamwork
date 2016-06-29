@@ -1,0 +1,6857 @@
+<?xml version="1.0" ?>
+<world>
+	<agent name="LocalNewspaper">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="ConstructionSite">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="Synagogue">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="CouncilChambers">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="LawyersOffice">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="Sympathizer">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="InformantsHouse">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="FortuneTellersRooms">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="MiddleSchool">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="CentralMosque">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="UnrentedStore">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="human">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="AntiqueShop">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="HighSchool">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="robot">
+		<actions>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+		</actions>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="7">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="15">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="13">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="6">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="11">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="16">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="10">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="5">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="12">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="8">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="19">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="14">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="9">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<bool key="None" value="False"/>
+			</tree>
+		</legal>
+		<legal>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="robot's command" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="17">
+						<entry key="robot's command" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<bool key="None" value="False"/>
+					</tree>
+					<tree key="True">
+						<bool key="None" value="True"/>
+					</tree>
+				</tree>
+				<tree key="True">
+					<bool key="None" value="True"/>
+				</tree>
+			</tree>
+		</legal>
+		<omega>microphone</omega>
+		<omega>camera</omega>
+		<omega>NBCsensor</omega>
+		<O omega="microphone">
+			<tree>
+				<none key="None"/>
+			</tree>
+		</O>
+		<O omega="camera">
+			<tree>
+				<none key="None"/>
+			</tree>
+		</O>
+		<O omega="NBCsensor">
+			<tree>
+				<none key="None"/>
+			</tree>
+		</O>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="MiddleSchool's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="InformantsHouse's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="UnrentedStore's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="HighSchool's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="CentralMosque's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="human's alive" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="LawyersOffice's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="AntiqueShop's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="CouncilChambers's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="HardwareStore's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="ContractorsOffice's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="LocalNewspaper's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="Synagogue's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="ConstructionSite's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="FortuneTellersRooms's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="1.0">
+				<tree>
+					<vector key="None">
+						<entry key="Sympathizer's visited" value="1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<R weight="2.0">
+				<tree>
+					<vector key="None">
+						<entry key="time" value="-1.0"/>
+					</vector>
+				</tree>
+			</R>
+			<rationality>1.0</rationality>
+			<horizon>1</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="ContractorsOffice">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<agent name="HardwareStore">
+		<actions/>
+		<model index="0" name="True" parent="None" selection="consistent">
+			<level>2</level>
+			<discount>1.0</discount>
+			<rationality>1.0</rationality>
+			<horizon>2</horizon>
+			<V/>
+			<beliefs>True</beliefs>
+			<projector>expectation</projector>
+		</model>
+	</agent>
+	<state label="">
+		<distribution>
+			<entry probability="1.0">
+				<vector>
+					<entry key="" value="1.0"/>
+					<entry key="LawyersOffice's visited" value="1.0"/>
+					<entry key="robot's acknowledgment" value="26"/>
+					<entry key="Sympathizer's danger" value="0"/>
+					<entry key="robot's _turn" value="0"/>
+					<entry key="robot's ability" value="28"/>
+					<entry key="Synagogue's danger" value="2"/>
+					<entry key="FortuneTellersRooms's visited" value="1.0"/>
+					<entry key="robot's explanation" value="23"/>
+					<entry key="CouncilChambers's danger" value="0"/>
+					<entry key="ConstructionSite's danger" value="1"/>
+					<entry key="ContractorsOffice's danger" value="0"/>
+					<entry key="InformantsHouse's recommendation" value="4"/>
+					<entry key="InformantsHouse's visited" value="1.0"/>
+					<entry key="ContractorsOffice's visited" value="1.0"/>
+					<entry key="CouncilChambers's visited" value="1.0"/>
+					<entry key="LocalNewspaper's recommendation" value="4"/>
+					<entry key="Synagogue's recommendation" value="4"/>
+					<entry key="HardwareStore's recommendation" value="4"/>
+					<entry key="AntiqueShop's recommendation" value="4"/>
+					<entry key="ConstructionSite's recommendation" value="3"/>
+					<entry key="LocalNewspaper's visited" value="1.0"/>
+					<entry key="CentralMosque's recommendation" value="4"/>
+					<entry key="robot's embodiment" value="25"/>
+					<entry key="FortuneTellersRooms's recommendation" value="4"/>
+					<entry key="MiddleSchool's recommendation" value="4"/>
+					<entry key="robot's sensorModel" value="30"/>
+					<entry key="complete" value="1.0"/>
+					<entry key="InformantsHouse's danger" value="0"/>
+					<entry key="FortuneTellersRooms's danger" value="0"/>
+					<entry key="CentralMosque's visited" value="1.0"/>
+					<entry key="UnrentedStore's danger" value="0"/>
+					<entry key="LawyersOffice's recommendation" value="4"/>
+					<entry key="MiddleSchool's visited" value="1.0"/>
+					<entry key="HighSchool's visited" value="1.0"/>
+					<entry key="HighSchool's danger" value="0"/>
+					<entry key="robot's command" value="0"/>
+					<entry key="UnrentedStore's recommendation" value="4"/>
+					<entry key="human's alive" value="1.0"/>
+					<entry key="LocalNewspaper's danger" value="2"/>
+					<entry key="Synagogue's visited" value="1.0"/>
+					<entry key="Sympathizer's visited" value="1.0"/>
+					<entry key="robot's waypoint" value="17"/>
+					<entry key="ConstructionSite's visited" value="1.0"/>
+					<entry key="UnrentedStore's visited" value="1.0"/>
+					<entry key="level" value="3"/>
+					<entry key="HighSchool's recommendation" value="4"/>
+					<entry key="MiddleSchool's danger" value="0"/>
+					<entry key="ContractorsOffice's recommendation" value="4"/>
+					<entry key="LawyersOffice's danger" value="0"/>
+					<entry key="AntiqueShop's visited" value="1.0"/>
+					<entry key="time" value="0.0"/>
+					<entry key="HardwareStore's danger" value="2"/>
+					<entry key="human's deaths" value="4"/>
+					<entry key="AntiqueShop's danger" value="0"/>
+					<entry key="CouncilChambers's recommendation" value="4"/>
+					<entry key="HardwareStore's visited" value="1.0"/>
+					<entry key="CentralMosque's danger" value="0"/>
+					<entry key="Sympathizer's recommendation" value="4"/>
+				</vector>
+			</entry>
+		</distribution>
+		<feature domain="bool" name="LawyersOffice's visited"/>
+		<feature domain="list" name="robot's acknowledgment">
+			<element>no</element>
+			<element>yes</element>
+		</feature>
+		<feature domain="list" name="Sympathizer's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="int" hi="0" lo="-1" name="robot's _turn"/>
+		<feature domain="list" name="robot's ability">
+			<element>badSensor</element>
+			<element>badModel</element>
+			<element>good</element>
+		</feature>
+		<feature domain="list" name="Synagogue's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="bool" name="FortuneTellersRooms's visited"/>
+		<feature domain="list" name="robot's explanation">
+			<element>none</element>
+			<element>ability</element>
+			<element>abilitybenevolence</element>
+			<element>abilityconfidence</element>
+			<element>confidence</element>
+		</feature>
+		<feature domain="list" name="CouncilChambers's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="ConstructionSite's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="ContractorsOffice's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="InformantsHouse's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="bool" name="InformantsHouse's visited"/>
+		<feature domain="bool" name="ContractorsOffice's visited"/>
+		<feature domain="bool" name="CouncilChambers's visited"/>
+		<feature domain="list" name="LocalNewspaper's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="Synagogue's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="HardwareStore's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="AntiqueShop's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="bool" name="camera"/>
+		<feature domain="list" name="ConstructionSite's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="bool" name="LocalNewspaper's visited"/>
+		<feature domain="list" name="CentralMosque's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="robot's embodiment">
+			<element>robot</element>
+			<element>dog</element>
+		</feature>
+		<feature domain="list" name="FortuneTellersRooms's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="MiddleSchool's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="robot's sensorModel">
+			<element>good</element>
+			<element>bad</element>
+		</feature>
+		<feature domain="bool" name="complete"/>
+		<feature domain="list" name="InformantsHouse's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="FortuneTellersRooms's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="bool" name="CentralMosque's visited"/>
+		<feature domain="list" name="UnrentedStore's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="LawyersOffice's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="bool" name="MiddleSchool's visited"/>
+		<feature domain="bool" name="HighSchool's visited"/>
+		<feature domain="list" name="microphone">
+			<element>nobody</element>
+			<element>friendly</element>
+			<element>suspicious</element>
+		</feature>
+		<feature domain="list" name="HighSchool's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="robot's command">
+			<element>none</element>
+			<element>AntiqueShop</element>
+			<element>UnrentedStore</element>
+			<element>CentralMosque</element>
+			<element>Sympathizer</element>
+			<element>HighSchool</element>
+			<element>HardwareStore</element>
+			<element>LocalNewspaper</element>
+			<element>ContractorsOffice</element>
+			<element>Synagogue</element>
+			<element>MiddleSchool</element>
+			<element>ConstructionSite</element>
+			<element>FortuneTellersRooms</element>
+			<element>LawyersOffice</element>
+			<element>CouncilChambers</element>
+			<element>InformantsHouse</element>
+		</feature>
+		<feature domain="list" name="UnrentedStore's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="bool" name="human's alive"/>
+		<feature domain="list" name="LocalNewspaper's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="bool" name="Synagogue's visited"/>
+		<feature domain="bool" name="Sympathizer's visited"/>
+		<feature domain="list" name="robot's waypoint">
+			<element>AntiqueShop</element>
+			<element>UnrentedStore</element>
+			<element>CentralMosque</element>
+			<element>Sympathizer</element>
+			<element>HighSchool</element>
+			<element>HardwareStore</element>
+			<element>LocalNewspaper</element>
+			<element>ContractorsOffice</element>
+			<element>Synagogue</element>
+			<element>MiddleSchool</element>
+			<element>ConstructionSite</element>
+			<element>FortuneTellersRooms</element>
+			<element>LawyersOffice</element>
+			<element>CouncilChambers</element>
+			<element>InformantsHouse</element>
+		</feature>
+		<feature domain="bool" name="ConstructionSite's visited"/>
+		<feature domain="bool" name="UnrentedStore's visited"/>
+		<feature domain="int" hi="7" lo="0" name="level">
+			<description>Static variable indicating what mission level</description>
+		</feature>
+		<feature domain="list" name="HighSchool's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="MiddleSchool's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="bool" name="NBCsensor"/>
+		<feature domain="list" name="ContractorsOffice's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="list" name="LawyersOffice's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="bool" name="AntiqueShop's visited"/>
+		<feature domain="float" hi="1.0" lo="0.0" name="time"/>
+		<feature domain="list" name="HardwareStore's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="int" hi="1" lo="0" name="human's deaths"/>
+		<feature domain="list" name="AntiqueShop's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="CouncilChambers's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<feature domain="bool" name="HardwareStore's visited"/>
+		<feature domain="list" name="CentralMosque's danger">
+			<element>none</element>
+			<element>NBC</element>
+			<element>armed</element>
+		</feature>
+		<feature domain="list" name="Sympathizer's recommendation">
+			<element>none</element>
+			<element>protected</element>
+			<element>unprotected</element>
+		</feature>
+		<local entity="LocalNewspaper">visited</local>
+		<local entity="LocalNewspaper">recommendation</local>
+		<local entity="LocalNewspaper">danger</local>
+		<local entity="ConstructionSite">visited</local>
+		<local entity="ConstructionSite">recommendation</local>
+		<local entity="ConstructionSite">danger</local>
+		<local entity="Synagogue">visited</local>
+		<local entity="Synagogue">recommendation</local>
+		<local entity="Synagogue">danger</local>
+		<local entity="CouncilChambers">visited</local>
+		<local entity="CouncilChambers">recommendation</local>
+		<local entity="CouncilChambers">danger</local>
+		<local>time</local>
+		<local>complete</local>
+		<local>level</local>
+		<local entity="LawyersOffice">visited</local>
+		<local entity="LawyersOffice">recommendation</local>
+		<local entity="LawyersOffice">danger</local>
+		<local entity="Sympathizer">visited</local>
+		<local entity="Sympathizer">recommendation</local>
+		<local entity="Sympathizer">danger</local>
+		<local entity="InformantsHouse">visited</local>
+		<local entity="InformantsHouse">recommendation</local>
+		<local entity="InformantsHouse">danger</local>
+		<local entity="FortuneTellersRooms">visited</local>
+		<local entity="FortuneTellersRooms">recommendation</local>
+		<local entity="FortuneTellersRooms">danger</local>
+		<local entity="MiddleSchool">visited</local>
+		<local entity="MiddleSchool">recommendation</local>
+		<local entity="MiddleSchool">danger</local>
+		<local entity="CentralMosque">visited</local>
+		<local entity="CentralMosque">recommendation</local>
+		<local entity="CentralMosque">danger</local>
+		<local entity="UnrentedStore">visited</local>
+		<local entity="UnrentedStore">recommendation</local>
+		<local entity="UnrentedStore">danger</local>
+		<local entity="human">alive</local>
+		<local entity="human">deaths</local>
+		<local entity="AntiqueShop">visited</local>
+		<local entity="AntiqueShop">recommendation</local>
+		<local entity="AntiqueShop">danger</local>
+		<local entity="HighSchool">visited</local>
+		<local entity="HighSchool">recommendation</local>
+		<local entity="HighSchool">danger</local>
+		<local entity="robot">embodiment</local>
+		<local entity="robot">ability</local>
+		<local entity="robot">explanation</local>
+		<local entity="robot">sensorModel</local>
+		<local entity="robot">command</local>
+		<local entity="robot">waypoint</local>
+		<local entity="robot">acknowledgment</local>
+		<local entity="ContractorsOffice">visited</local>
+		<local entity="ContractorsOffice">recommendation</local>
+		<local entity="ContractorsOffice">danger</local>
+		<local entity="HardwareStore">visited</local>
+		<local entity="HardwareStore">recommendation</local>
+		<local entity="HardwareStore">danger</local>
+	</state>
+	<dynamics>
+		<table key="LawyersOffice's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="LawyersOffice's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="Sympathizer's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="Sympathizer's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="InformantsHouse's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="InformantsHouse's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="human's alive">
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="Synagogue's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="CouncilChambers's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="InformantsHouse's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="Sympathizer's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="ContractorsOffice's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="HighSchool's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="AntiqueShop's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="MiddleSchool's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="UnrentedStore's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="LawyersOffice's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="ConstructionSite's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="LocalNewspaper's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="FortuneTellersRooms's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="CentralMosque's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="0">
+					<entry key="HardwareStore's danger" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="0.0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="human's alive">
+							<entry key="" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+		</table>
+		<table key="ConstructionSite's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="ConstructionSite's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="UnrentedStore's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="UnrentedStore's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="CouncilChambers's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="CouncilChambers's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="CentralMosque's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="CentralMosque's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="robot's waypoint">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="12"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="16"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="6"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="8"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="10"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="14"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="7"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="9"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="5"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="15"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="19"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="11"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="18"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="13"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="robot's waypoint">
+						<entry key="" value="17"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="robot's _turn">
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend unprotected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="1" threshold="0.5">
+					<entry key="robot's _turn" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="0"/>
+						</vector>
+					</matrix>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="robot's _turn">
+							<entry key="" value="-1"/>
+							<entry key="robot's _turn" value="1.0"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+		</table>
+		<table key="MiddleSchool's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="MiddleSchool's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="FortuneTellersRooms's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="FortuneTellersRooms's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="HighSchool's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="HighSchool's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="ContractorsOffice's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="ContractorsOffice's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="time">
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CentralMosque</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="11">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="10">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="9">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="8">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="14">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="13">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="15">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="14">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="13">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="11">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="10">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="9">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="8">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="7">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="11">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">FortuneTellersRooms</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="11">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="10">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="9">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="8">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="7">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="6">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">ContractorsOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="17">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="16">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="15">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="14">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="13">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">UnrentedStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="11">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="10">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="9">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">InformantsHouse</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="18">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="17">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="16">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="15">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="14">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="13">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">MiddleSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="13">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">ConstructionSite</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HighSchool</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="17">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="16">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="15">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="14">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="13">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="12">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="11">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="10">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">CouncilChambers</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">recommend protected</entry>
+					<entry key="object">Sympathizer</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="time">
+						<entry key="" value="0.25"/>
+					</vector>
+				</matrix>
+			</tree>
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LawyersOffice</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<vector comparison="0" threshold="19">
+					<entry key="robot's waypoint" value="1.0"/>
+				</vector>
+				<tree key="False">
+					<vector comparison="0" threshold="18">
+						<entry key="robot's waypoint" value="1.0"/>
+					</vector>
+					<tree key="False">
+						<vector comparison="0" threshold="16">
+							<entry key="robot's waypoint" value="1.0"/>
+						</vector>
+						<tree key="False">
+							<vector comparison="0" threshold="15">
+								<entry key="robot's waypoint" value="1.0"/>
+							</vector>
+							<tree key="False">
+								<vector comparison="0" threshold="14">
+									<entry key="robot's waypoint" value="1.0"/>
+								</vector>
+								<tree key="False">
+									<vector comparison="0" threshold="13">
+										<entry key="robot's waypoint" value="1.0"/>
+									</vector>
+									<tree key="False">
+										<vector comparison="0" threshold="12">
+											<entry key="robot's waypoint" value="1.0"/>
+										</vector>
+										<tree key="False">
+											<vector comparison="0" threshold="11">
+												<entry key="robot's waypoint" value="1.0"/>
+											</vector>
+											<tree key="False">
+												<vector comparison="0" threshold="10">
+													<entry key="robot's waypoint" value="1.0"/>
+												</vector>
+												<tree key="False">
+													<vector comparison="0" threshold="9">
+														<entry key="robot's waypoint" value="1.0"/>
+													</vector>
+													<tree key="False">
+														<vector comparison="0" threshold="8">
+															<entry key="robot's waypoint" value="1.0"/>
+														</vector>
+														<tree key="False">
+															<vector comparison="0" threshold="7">
+																<entry key="robot's waypoint" value="1.0"/>
+															</vector>
+															<tree key="False">
+																<vector comparison="0" threshold="6">
+																	<entry key="robot's waypoint" value="1.0"/>
+																</vector>
+																<tree key="False">
+																	<vector comparison="0" threshold="5">
+																		<entry key="robot's waypoint" value="1.0"/>
+																	</vector>
+																	<tree key="False">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.0"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																	<tree key="True">
+																		<matrix key="None">
+																			<vector key="time">
+																				<entry key="" value="0.25"/>
+																			</vector>
+																		</matrix>
+																	</tree>
+																</tree>
+																<tree key="True">
+																	<matrix key="None">
+																		<vector key="time">
+																			<entry key="" value="0.25"/>
+																		</vector>
+																	</matrix>
+																</tree>
+															</tree>
+															<tree key="True">
+																<matrix key="None">
+																	<vector key="time">
+																		<entry key="" value="0.25"/>
+																	</vector>
+																</matrix>
+															</tree>
+														</tree>
+														<tree key="True">
+															<matrix key="None">
+																<vector key="time">
+																	<entry key="" value="0.25"/>
+																</vector>
+															</matrix>
+														</tree>
+													</tree>
+													<tree key="True">
+														<matrix key="None">
+															<vector key="time">
+																<entry key="" value="0.25"/>
+															</vector>
+														</matrix>
+													</tree>
+												</tree>
+												<tree key="True">
+													<matrix key="None">
+														<vector key="time">
+															<entry key="" value="0.25"/>
+														</vector>
+													</matrix>
+												</tree>
+											</tree>
+											<tree key="True">
+												<matrix key="None">
+													<vector key="time">
+														<entry key="" value="0.25"/>
+													</vector>
+												</matrix>
+											</tree>
+										</tree>
+										<tree key="True">
+											<matrix key="None">
+												<vector key="time">
+													<entry key="" value="0.25"/>
+												</vector>
+											</matrix>
+										</tree>
+									</tree>
+									<tree key="True">
+										<matrix key="None">
+											<vector key="time">
+												<entry key="" value="0.25"/>
+											</vector>
+										</matrix>
+									</tree>
+								</tree>
+								<tree key="True">
+									<matrix key="None">
+										<vector key="time">
+											<entry key="" value="0.25"/>
+										</vector>
+									</matrix>
+								</tree>
+							</tree>
+							<tree key="True">
+								<matrix key="None">
+									<vector key="time">
+										<entry key="" value="0.25"/>
+									</vector>
+								</matrix>
+							</tree>
+						</tree>
+						<tree key="True">
+							<matrix key="None">
+								<vector key="time">
+									<entry key="" value="0.25"/>
+								</vector>
+							</matrix>
+						</tree>
+					</tree>
+					<tree key="True">
+						<matrix key="None">
+							<vector key="time">
+								<entry key="" value="0.25"/>
+							</vector>
+						</matrix>
+					</tree>
+				</tree>
+				<tree key="True">
+					<matrix key="None">
+						<vector key="time">
+							<entry key="" value="0.25"/>
+						</vector>
+					</matrix>
+				</tree>
+			</tree>
+		</table>
+		<table key="LocalNewspaper's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">LocalNewspaper</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="LocalNewspaper's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="HardwareStore's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">HardwareStore</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="HardwareStore's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="AntiqueShop's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">AntiqueShop</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="AntiqueShop's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+		<table key="Synagogue's visited">
+			<option>
+				<action>
+					<entry key="verb">moveto</entry>
+					<entry key="object">Synagogue</entry>
+					<entry key="subject">robot</entry>
+				</action>
+			</option>
+			<tree>
+				<matrix key="None">
+					<vector key="Synagogue's visited">
+						<entry key="" value="1.0"/>
+					</vector>
+				</matrix>
+			</tree>
+		</table>
+	</dynamics>
+	<dependency/>
+	<termination>
+		<tree>
+			<vector comparison="1" threshold="0.5">
+				<entry key="complete" value="1.0"/>
+			</vector>
+			<tree key="False">
+				<bool key="None" value="False"/>
+			</tree>
+			<tree key="True">
+				<bool key="None" value="True"/>
+			</tree>
+		</tree>
+	</termination>
+	<symbol>none</symbol>
+	<symbol>NBC</symbol>
+	<symbol>armed</symbol>
+	<symbol>protected</symbol>
+	<symbol>unprotected</symbol>
+	<symbol>AntiqueShop</symbol>
+	<symbol>UnrentedStore</symbol>
+	<symbol>CentralMosque</symbol>
+	<symbol>Sympathizer</symbol>
+	<symbol>HighSchool</symbol>
+	<symbol>HardwareStore</symbol>
+	<symbol>LocalNewspaper</symbol>
+	<symbol>ContractorsOffice</symbol>
+	<symbol>Synagogue</symbol>
+	<symbol>MiddleSchool</symbol>
+	<symbol>ConstructionSite</symbol>
+	<symbol>FortuneTellersRooms</symbol>
+	<symbol>LawyersOffice</symbol>
+	<symbol>CouncilChambers</symbol>
+	<symbol>InformantsHouse</symbol>
+	<symbol>ability</symbol>
+	<symbol>abilitybenevolence</symbol>
+	<symbol>abilityconfidence</symbol>
+	<symbol>confidence</symbol>
+	<symbol>robot</symbol>
+	<symbol>dog</symbol>
+	<symbol>no</symbol>
+	<symbol>yes</symbol>
+	<symbol>badSensor</symbol>
+	<symbol>badModel</symbol>
+	<symbol>good</symbol>
+	<symbol>bad</symbol>
+	<symbol>nobody</symbol>
+	<symbol>friendly</symbol>
+	<symbol>suspicious</symbol>
+</world>
