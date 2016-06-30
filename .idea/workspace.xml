@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5e2ba2b-8b34-4046-bf88-129808d2f254" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/core.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Actions/action_attack_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Actions/action_attack_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Actions/action_move_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Actions/action_move_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_01_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_01_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_02_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_02_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_03_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_03_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_04_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_04_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_05_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_05_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_06_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_06_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_07_100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Explosion/explosion_07_400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Grass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/HQ/hq_blue_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/HQ/hq_blue_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/HQ/hq_red_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/HQ/hq_red_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_blue_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Helicopters/helo_red_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/License.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_blue_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Soldiers/soldier_red_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_blue_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank2_red_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_blue_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_01_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_01_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_02_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_02_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_03_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_03_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_04_256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/Resources/Tanks/tank_red_04_64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/basic_explore_team/explore_team.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/docs/Team_Scenarios.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/core/pyglet_demo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_1.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_2.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_3.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_4.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_5.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_6.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_7.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/autotest_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/format" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/02/020b3bae2730e44373f96db36492a11d01ffde67.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/04/04d6a9cbf9ff371d26a7959542f37b110618397f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/05/05f7b1592a9e3a54298da10e948d85cf0e480106.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/07/071012d3700179580b65a65174f29d7ee50c5132.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/08/08013bfc631e71f148f2e0af099914d481bd4577.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/08/087cdb32a20311918ddcc7ad105aa530c3133b0e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/09/095de72a75ef0ad7588b54a5a72e1fdb50af1c4c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/09/099e1d4946b24334809894b4dacf5ebb27489ce4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/0c/0ca874eca06a692ebd796946055b69e433d34fdb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/0d/0dfe0f11c446c09aa61bbada1169dd21d1cfb301.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/0e/0e1221fc261abe194428b064ab78d08e4813ac38.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/0f/0fc09fa5b4de590920ab11332a76c6ee6eb582ae.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/12/120fe0332d558f208a61b0a85d4d7516155973da.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/12/128cf8fb2ac7de139983b60b2c35d0ba966a3b1d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/12/12c3c10e2c10e97d0452ebc9ee21876efa8be6b9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/13/13c6f9ac2848d89976c66009bdcfa7c42c8a42db.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/14/140dda18c63a629cc22b099804e0db6156c6dfe7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/14/149ce2950baeae39025cf2c05617081809497e1a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/15/15655ccab4d8770f5b0a6fdfa8b23561d8444720.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/16/1644b7f29b41b5be3374f45e337e88385959c216.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/18/187bb5db6470d1c79aaa149b3dae8d2cb8e51d1b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/1a/1ab99974cc90561cb21029c61ca13ac8cc4be2a8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/1b/1b9fecfe55ed47cde3af2a9eb3f499c55ecd54da.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/1d/1d4d287eeff706eea54c1b3c426f9650b73a6ad5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/1d/1d80ffb5afe6ccaeb8db73575370bd03cb5e8cfd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/21/218910de52ac32aa47c9a253e5f23c4f6d975295.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/22/22650083d32ac6905009d7447783abe160f32394.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/24/2493d241e8438b58021f41b5e8773ffac26fa857.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/26/269938bdd3fc3092066cece9238ea475292aa480.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/29/292b3d607aa23a6a0f7211fa7a81c977306dfe49.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/2a/2a4fc51d4bf2081bd808b9ce856e1417f6204247.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/2a/2ad94e7f33e00de175f7c7826f43e3883b12289e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/2b/2bb2195fdc8665fd91c7c2e774f9717c60097578.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/2d/2d0ffa9b2b800ba24061424afdd1f62c89bdcdb7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/2f/2f077297f8b7da54d41f3b77b5013c17d350ad0d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/31/31d413f7e5ecb9bb51bde7b202c529fe455cebfa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/33/334ef518a6f68063b6247a6867429b19f43598e5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/34/34722d5953d1c454989df0b4e639a87a6a62a938.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/35/359062e651e03c1db019f3ba8b8b5bebd59ffad2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/36/36d74be0230062625a9f7110851597dcf405c2ee.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/37/377dfc14829c6424a5244b8cdd93b1f4ecbdd2ad.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/38/38e843c62bb05d811ad4a1fec4048f8975e5920a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/3b/3b2ad0403eff966f5200948816d3b08056c11824.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/3e/3e200db6186c807bec6b4e0ec51ee71a9723feb5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/40/403734d2561ecd0b9c6f71cc1183267d70f3fcd1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/43/434cad4df13a264df5402b570724ab12c16dc694.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/44/44a111c8ad9dc4e92ba7c57297d5bb46c566fb7a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/44/44c00d8787071cff988558888033d0ce35f90de5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/45/458c8470e309869c81bcb64636486bc16f791dfd.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/47/47b08116fc7be3865b86f93615cf6510ed57798d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/48/489f17ca0985faf919b717905f86bf100278dde2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/48/48e073e509797dcfad187f00f6a26d4b82ae229b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/49/492d758ebdc12d7c0044c90596e6ae3fee3222c1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/4b/4b9d29abc932cd3c1ef1246b0601b27e31aa4b1d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/4c/4c94dc4df871b1885ce34ab4046da723e28a6587.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/4d/4d0add0b8b62f2c458d7deaea3ffa2cf8466ae30.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/50/503b7e938326f77ee0dd3e5a06ffb3a2e6967cc8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/51/5125a8bc6a87eea8c1fe96dddab4478b0b0c5258.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/51/51cbe061262fc7725fd57accbb46bb3702137ca2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/52/520fe3e1ebcb91bda789aaa86c3dc6e71d1ecc8b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/53/5378098a522ea4c37a8947e173c51752409cc246.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/53/53e4a0b3d981dd70c8d05496a216fd01e1347e3c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/54/541fde3968a86810e91664727687f572623caf10.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/56/5625bd5b577b0384697895ccdc6ccbe9649f295e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/57/579cbba785a17d9a807ef1b5c568c451c3f49293.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/59/595947049a22f0c29b225e8945fe106a74dce239.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5a/5a358deaa7535dbe5f70f387422fedb58925731f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5a/5a3b1e206cb12e9910d3572c7bbeccb37340d84d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5b/5b0855fb380503870b66a6646fd003c1fe66306b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5b/5be6936ed75f2f514a977a78474544e909663da8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5c/5c612899fa071e892681ee143fef6f42802d4dcb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5d/5da81a872471fdbf578a08b95ad89f8ed5a60cff.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/5f/5f3d1db6ce48aebcea6604e3f94d96e8687a14c3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/60/605a5b8c13555519a64ebf4cf1cf2917d0256119.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/60/6064a67a0b0c5a8a73b29c913e3790e5f272d2fe.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/61/612c55e2a5f1207f71a59bf6a9e09ba04514c046.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/67/6757c3991aa6e148deaa835b0fabedea7d27f370.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/68/6822eba6435fd5d429030d1703654fcb873448cb.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/68/68f17ed206dff57a64d26d02ad754db2dfa04992.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/6a/6a6b6f52c46f1deff2ba0897adc124eef903fbb9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/6d/6d6d115c3d999239c3cd858a2018fe550da2cb36.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/71/71d0160f1293663fa946c77ceaae18c0a4b9906f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/74/7469960e48be05d69a785e8de156fdc5efe2fc7c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/75/753e2f30fba900e979e3999acefcbe12f69845c2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/76/7637b986c126959d1760043a00ed63f6d3ba9f84.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/78/78da66719a472a00cf443901d7c74363511a2d8d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/7a/7a6c9547eba21d632a8e6774e1a2656937259d68.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/7a/7ab4c53a546dbd305faf60bda65d385a0240ae54.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/7d/7da90640cc343ff0ff8b55575f6826239977abda.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/81/816a7af2c01d2a420071d1a2419f846a3ea8d5a9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/82/82e548febb2103a12d570305873f0b6660e569a6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/83/83c6d02238242b64cee3aa03aa41ee1c9d28e50a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/85/854c4216c96dc6d01b3ea0f8a3fb889218cdf509.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/87/8711b90df67700dc0c17aa4db27edd1c6a0ecee2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/87/87e43233c971342a4181ccf39f35d397f0e5f099.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/8a/8a3f8ea796ebd59f0bbec085d4c543fa40a9557d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/8a/8afe354955bb1373cf961893e744ac11de2f2c7e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/8b/8b99fc38b5e704ace3a20c34b65bbaac70b6e4d1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/90/908bc49ab541e2ae360df9720107cd4e06f869ef.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/91/9142969d87b7588ad495c829e5c448cc0e35fdcf.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/91/91596fdf74478a104475c295dd7f9cc58bc39dc9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/92/923792ae6c5955ee20293e2e6d3448aee069bc96.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/94/949c6b1d977f810bc4f67d625ee292cba0a87bb4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/95/9519ac0b485232fcb7658dff52ee2c16d91e530f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/95/95befc345497d6ec04117661812e768ce8d764d6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/98/988e5d774d596c5ac86a57e95a76bd6fb13ac40e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/98/98ecbd643a451fddfbace562abc0252a259324ce.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/9b/9b01aaa3d8c20d7dbaa3746dc3ce54920ce60005.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/a0/a021c6f10144afa92aebe3131aa2f15273516f7f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/a0/a05161ef218eb0d80009d0c13715dd1f2b309f88.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/a1/a1c60baa423dcb6aff1ab16d5a6530e1426d2e27.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/a1/a1d0a81a62091ff219379a9a36d765a505c644e9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/a3/a3a8747661380ff479ca7739b76f862bd6268d67.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/a9/a9d8f04ae22241bcb0aa6d50f7ddf58d70d926f0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ab/abaa309b2fd81c9aeb3e5e4cfbd4819d80707497.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ac/acf56df1ca893f39f7742556749b2a0ec38223d2.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/af/afa88b89acf74e89364493eb4b022b7750f01439.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/af/afaeeb89201cfe873a149018ac6e803eb854c1e4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/af/afdb33e2fa7a77f584abd363f7ea0aee96a2955a.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/b2/b276375c0e473c3d966048851f7f73c9a8185bc7.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/b4/b41b434d470e747149f4beac66c6977556447088.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/b7/b71c636f7f6a511a67b215c6b0282d3ef6693c4b.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/b7/b767c912f4136400e36fb057cf2d373977428c7f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/b7/b7c956be984c0b8f96fbc5b44e57acab0d828f29.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/bc/bc2e19a549519b98134d68859a1f96e3b2907dd9.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/bc/bcc1196f30b7180116d58baef4b1b980a51cbdbe.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/bc/bcc3dc3feb7d383e4983b04d3c0c7ae2e352d675.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/be/be678f52fddac81dca6a20ba8a898d57959568c3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/bf/bf4bcb92fe3d435d2b79324cb8bce41e2ee90ce8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c0/c09c3db94703f63df9dd206700b9b318821f3d78.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c0/c0e1f8480cafa4841c856357546e0fea83ac374c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c1/c1f07d1eba7b4be4fbfe18825c3752821d54953e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c3/c36e1e9458d96e6468eb7c39409ad94deaff1014.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c5/c56bfde7bc003fb6fcaeeeed3006bd08a743fe85.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c5/c5dbe66611ffdea7c5c917a5c81cfc0be8cedfb5.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c7/c73cf260c15df75c695d41a933d393758141bcf3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c7/c7f72f96ef765bdceface64476e9754ccf8dfd5e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c8/c843aa7e1e3b10e184be260e04c9b1f0762e72f8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/c9/c9104c74443169fbda2fd8b458c6da8d3fd7a780.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/cc/cc55da1ede06bdb021e97990e7f2d3d967c9b0ae.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/cd/cd5db535ea179dc5ee93a4ffa1e92eec3f7675fa.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ce/ce7cb25f66ee1edb82b6b2cfae4ec9a01a5704d3.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/d2/d27ad87c1a7206232690ff89138e35d14c570e4c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/d6/d61d588d5cf8d7a8b3e42c2c1f9b5da342cd620e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/d7/d75be2296d80d993e006628aea6e122f9e80bcfe.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/d7/d7f91603e0812bf203ecdcfe16b5dec3a0287ada.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/d9/d9b81e7427b985fd0d1f88249ba8c541d2c7f464.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/da/da39a3ee5e6b4b0d3255bfef95601890afd80709.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/dc/dcefbf3fea4f490698a88c69bd6dfab46d9f8410.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/dd/dd2d29dcc7341e528adab3ff7da680d4193bbb65.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/de/dee53850007aa65529f7fef43327052331089556.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/df/dfcb2d9540b47c2c4cdbd1aeb1184a9c12a0cca8.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e1/e19339b0aaffef6994eac1edbc17bffe01233804.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e5/e512b63f30a4801882acf1830cdc521936e4dce6.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e6/e617cffff799f17a6779fd1be729cc029da9514c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e7/e7be9a0231a43d7b55d5d62247797c926ece590c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e8/e82316b03d4af952989e05fff2daa155dd9dca79.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e8/e86b58a921783c0ad5b4b3a9e14ab251ecf26673.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/e9/e99cf58ccba71ef837f09c3a4461943a74dff590.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/eb/eba43794cff83c0369e3e24f553ac72a602d8e3d.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ec/ec764457fe3fa7d0ae764e47b59f335a3679ef45.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ec/ecda8ae471f6b6263171a91e911f290dcf594ef1.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ee/eec2fbf654c2e71dbea34e6bfdb85b977e253e3e.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ef/ef734ad650df53855a008b76bfd2c539a31e6f14.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ef/ef7edb8e41cc8b8dbc5782cb48aacb366511acca.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f0/f05fe8fe160f5bc7fd0355b40d9bacff28c41cc0.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f1/f1ed37401a514c119385a8dc5da7e2dfbf470645.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f6/f63f8559ee970ca81ad1f30be9738c4353cf77d4.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f6/f688b0cd2eee2a7c2b21b5e4dea0f1032f85c522.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f6/f6ed0f3421fa550e9f4cc6b551fb2ac347537b44.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f6/f6f972cda942965d59292c08f75f98f10b88f35f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f9/f90a42fa7c14627eff7186c312242eb581ad231c.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/f9/f947e9e35d004f813ed560298e1d32a752015504.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/fb/fbdc64644d794c16409773fcc5f74b8aacabe9ba.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/pristine/ff/ffea8aade65ffdd1574d668ed668d918649d203f.svn-base" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/.svn/wc.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/action.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/agent.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/LaTeX/manual.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/LaTeX/manual.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsItem.CacheMode-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsItem.GraphicsItemChange-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsItem.GraphicsItemFlag-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsItem.GraphicsItemFlags-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsItem.PanelModality-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsScene.ItemIndexMethod-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsScene.SceneLayer-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QGraphicsScene.SceneLayers-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QMainWindow.DockOption-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QMainWindow.DockOptions-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QPaintDevice.PaintDeviceMetric-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QWidget.RenderFlag-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/PyQt4.QtGui.QWidget.RenderFlags-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/api-objects.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/class-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/crarr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/epydoc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/epydoc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/frames.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/help.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/identifier-index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/module-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.action-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.action-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.action.Action-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.action.ActionSet-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.agent-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.agent-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.agent.Agent-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.agent.ValueFunction-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.cfg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.Fire-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.Fire-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.anthrax-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.anthrax-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.freedonia-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.freedonia-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.teamofrivals-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.teamofrivals-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.teamofrivals.ResourceAgent-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.examples.teamofrivals.ResourceWorld-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.probability-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.probability-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.probability.Distribution-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.KeyedBranch-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.KeyedMatrix-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.KeyedPlane-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.KeyedTree-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.KeyedVector-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.MatrixDistribution-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.TreeDistribution-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.pwl.VectorDistribution-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.reward-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.reward-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.shell-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.shell-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.tools-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.tools-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.tools.gdelt-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.tools.gdelt-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.PsychSimUI-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.mainwindow-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.mainwindow-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.mainwindow.Ui_MainWindow-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.worldview-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.worldview-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.worldview.ActionNode-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.worldview.UtilityNode-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.worldview.VariableNode-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.ui.worldview.WorldView-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.world-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.world-pysrc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/psychsim.world.World-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/redirect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-everything.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.action-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.agent-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.examples-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.examples.Fire-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.examples.anthrax-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.examples.freedonia-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.examples.teamofrivals-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.probability-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.pwl-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.reward-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.shell-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.tools-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.tools.gdelt-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.ui-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.ui.mainwindow-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.ui.worldview-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc-psychsim.world-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_10.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_11.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_12.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_13.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_14.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_15.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_17.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_18.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_6.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_7.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_8.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_psychsim_9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_10.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_11.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_12.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_13.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_4.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_6.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_7.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_8.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/doc/uml_class_diagram_for_pyqt4_qt_9.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Fire.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Freedonia/freedonia.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Freedonia/index.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/GT/justcentipede.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/GT/ultimatum.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Negotiation/Full_Ntest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Negotiation/Negotiation_full.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Negotiation/Negotiation_legal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Negotiation/Negotiation_loops.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/Negotiation/Negotiation_rounds.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/anthrax.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/asia.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_0.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_1.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_2.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_3.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_4.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_5.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_6.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_7.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/autotest_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/freedonia.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/risk.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/robot.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/robotWaypoints.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/robot_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/teamofrivals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/tmpjtczub" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/examples/tmpxsn_za" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/graph.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/probability.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/pwl.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/reward.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/shell.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/test/testPWL.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/test/tomjerry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/tools/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/tools/gdelt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/tools/graph.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/diagram.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/mainwindow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/mainwindow.ui" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/psychsim.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/psychsim.qrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/psychsim_rc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/ui/worldview.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trunk/externals/psychsim/world.py" afterPath="" />
+    </list>
+    <ignored path="Tutoring-for-Team-Training.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$explore_team_visual.coverage" NAME="explore_team_visual Coverage Results" MODIFIED="1467317188980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/basic_explore_team_visual" />
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$pyglet_demo.coverage" NAME="pyglet_demo Coverage Results" MODIFIED="1467246184751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Tutoring-for-Team-Training" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="explore_team_visual.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="240" column="44" selection-start-line="240" selection-start-column="44" selection-end-line="240" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/core/pyglet_demo.py" />
+        <option value="$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic_explore_team_visual" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/basic_explore_team_visual" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ryang\Desktop\GitHub\Tutoring-for-Team-Training\core\basic_explore_team_visual" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.explore_team_visual">
+    <configuration default="false" name="pyglet_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/pyglet_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="explore_team_visual" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/basic_explore_team_visual" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="Tutoring-for-Team-Training" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Tutoring-for-Team-Training" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.pyglet_demo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.explore_team_visual" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.explore_team_visual" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pyglet_demo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ryang\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5e2ba2b-8b34-4046-bf88-129808d2f254" name="Default" comment="" />
+      <created>1467226766641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1467226766641</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3179765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/pyglet_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/pyglet_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/clock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="798" column="4" selection-start-line="798" selection-start-column="4" selection-end-line="798" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1294">
+          <caret line="445" column="28" selection-start-line="445" selection-start-column="28" selection-end-line="445" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/basic_explore_team_visual/explore_team_visual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="240" column="44" selection-start-line="240" selection-start-column="44" selection-end-line="240" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
