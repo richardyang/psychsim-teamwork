@@ -242,7 +242,7 @@ def set_enemy_actions(world, actor, index):
 
 
 # Begin pyglet visualization code #
-pyglet.resource.path = ['../Resources']
+pyglet.resource.path = ['../resources']
 pyglet.resource.reindex()
 
 window = pyglet.window.Window(resizable=True)
