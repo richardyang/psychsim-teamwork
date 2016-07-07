@@ -8,19 +8,19 @@ from psychsim.world import *
 from psychsim.agent import *
 import pyglet
 
-MAP_SIZE_X = 10  # X value of map dimension
-MAP_SIZE_Y = 10  # Y value of map dimension
+MAP_SIZE_X = 5  # X value of map dimension
+MAP_SIZE_Y = 5  # Y value of map dimension
 SCREEN_WIDTH = (MAP_SIZE_X) * 32
 SCREEN_HEIGHT = (MAP_SIZE_Y) * 32
 
 # Friendly agents
 F_ACTORS = 1  # Number of agents in the team
-F_START_LOC = ["1,0"]  # Starting locations for each agent
-F_GOAL_LOC = ["2,2"]  # Objectives the agents need to visit to win
+F_START_LOC = ["1,2"]  # Starting locations for each agent
+F_GOAL_LOC = ["3,4"]  # Objectives the agents need to visit to win
 
 # Enemy agents
 E_ACTORS = 1  # Number of agents in the team
-E_START_LOC = ["2,1"]
+E_START_LOC = ["3,3"]
 E_PATROL_RANGE = 5
 
 
@@ -86,8 +86,8 @@ def create_friendly_agents(world):
         world.setState(actor.name, 'goal_y', f_get_goal_y(index))
 
         # Positive reward for going towards goal
-        actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')), 1.)
-        actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')), 1.)
+        actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')), 0.5)
+        actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')), 0.5)
 
         # Negative reward for going towards enemy
         for i in range(0, E_ACTORS):
@@ -95,35 +95,34 @@ def create_friendly_agents(world):
             actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(enemy, 'x')), -0.5)
             actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(enemy, 'y')), -0.5)
 
-        # Visited flag for the goal locations
-        world.setFeature(world.defineState(actor, F_GOAL_LOC[index], bool), False)
-        actor.setReward(maximizeFeature(stateKey(actor, F_GOAL_LOC[index])), 1.)
-
-        tree = {'if': equalRow(stateKey(actor.name, 'x'), str(f_get_goal_x(index))),
-                True: {'if': equalRow(stateKey(actor.name, 'y'), str(f_get_goal_y(index))), True: True, False: False},
+        # Terminate if agent reaches goal
+        tree = {'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
+                True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_x')), True: True,
+                       False: False},
                 False: False}
         world.addTermination(makeTree(tree))
 
         set_friendly_actions(world, actor)
 
-def create_distract_agents(world):
 
+def create_distract_agents(world):
     actor = Agent('Distractor')
     world.addAgent(actor)
     actor.setHorizon(2)
 
     # Set agent's starting location
     world.defineState(actor.name, 'x', int)
-    world.setState(actor.name, 'x', 0)
+    world.setState(actor.name, 'x', 1)
 
     world.defineState(actor.name, 'y', int)
-    world.setState(actor.name, 'y', 1)
+    world.setState(actor.name, 'y', 3)
 
     # Positive reward for luring enemy away from Agents
     actor.setReward(minimizeDifference(stateKey('Actor0', 'x'), stateKey('Enemy0', 'x')), 1.)
     actor.setReward(minimizeDifference(stateKey('Actor0', 'y'), stateKey('Enemy0', 'y')), 1.)
 
     set_friendly_actions(world, actor)
+
 
 def set_friendly_actions(world, actor):
     # Nop
@@ -181,7 +180,6 @@ def set_friendly_actions(world, actor):
 
 
 def create_enemy_agents(world):
-
     for index in range(0, E_ACTORS):
         actor = Agent('Enemy' + str(index))
         world.addAgent(actor)
@@ -194,14 +192,20 @@ def create_enemy_agents(world):
         world.defineState(actor.name, 'y', int)
         world.setState(actor.name, 'y', e_get_start_y(index))
 
-        for i in range(0, F_ACTORS):
-            enemy = 'Actor' + str(index)
-            actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(enemy, 'x')), 0.5)
-            actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(enemy, 'y')), 0.5)
+        enemy = 'Actor' + str(index)
+        actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(enemy, 'x')), 0.5)
+        actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(enemy, 'y')), 0.5)
 
-        actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey('Distractor', 'x')), 1.)
-        actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey('Distractor', 'y')), 1.)
+        actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey('Distractor', 'x')), 0.5)
+        actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey('Distractor', 'y')), 0.5)
         set_enemy_actions(world, actor)
+
+        # Terminate if enemy captures agent
+        tree = {'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey('Actor' + str(index), 'x')),
+                True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey('Actor' + str(index), 'y')),
+                       True: True, False: False},
+                False: False}
+        world.addTermination(makeTree(tree))
 
 
 def set_enemy_actions(world, actor):
@@ -259,8 +263,6 @@ def set_enemy_actions(world, actor):
     actor.setLegal(action, tree)
 
 
-
-
 # Begin pyglet visualization code #
 pyglet.resource.path = ['../resources']
 pyglet.resource.reindex()
@@ -314,7 +316,8 @@ for index in range(0, E_ACTORS):
     )
 
 distractor_image = pyglet.resource.image("heli.png")
-distractor_sprite = pyglet.sprite.Sprite(img=distractor_image, x=0, y=32)
+distractor_sprite = pyglet.sprite.Sprite(img=distractor_image, x=1 * 32, y=3 * 32)
+
 
 @window.event
 def on_draw():
@@ -336,7 +339,7 @@ def update(dt):
         enemies[index].x = int(world.getState('Enemy' + str(index), 'x').domain()[0]) * 32
         enemies[index].y = int(world.getState('Enemy' + str(index), 'y').domain()[0]) * 32
 
-    distractor_sprite.x = int(world.getState('Distractor','x').domain()[0]) * 32
+    distractor_sprite.x = int(world.getState('Distractor', 'x').domain()[0]) * 32
     distractor_sprite.y = int(world.getState('Distractor', 'y').domain()[0]) * 32
 
 
@@ -350,11 +353,11 @@ if __name__ == '__main__':
     create_distract_agents(world)
 
     # Parallel action
-    world.setOrder([set(world.agents.keys())])
+    # world.setOrder([set(world.agents.keys())])
     # Sequential action
-    # world.setOrder(world.agents.keys())
+    world.setOrder(world.agents.keys())
 
-    pyglet.clock.schedule_interval(update, 10)
+    pyglet.clock.schedule_interval(update, 5)
     pyglet.app.run()
 
     # while not world.terminated():
