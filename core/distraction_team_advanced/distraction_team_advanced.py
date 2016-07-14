@@ -1,6 +1,11 @@
-from __future__ import print_function
-# Team of agents that attempts to explore an area without being detected by enemies
+# Team of agents that attempts to capture a flag without being caught by enemies
+# Agents:
+# Explorer - minimize distance between self and goal location
+# Distractor - maximize distance between explorer and enemy (new)
+# Enemy - minimize distance between self and explorer and distractor
+# Base - deploy distractor when explorer in danger (new)
 
+from __future__ import print_function
 from psychsim.reward import *
 from psychsim.pwl import *
 from psychsim.action import *
@@ -68,11 +73,37 @@ def find_distance(start_x, start_y, goal_x, goal_y):
     return abs(goal_x - start_x) + abs(goal_y - start_y)
 
 
+def create_base(world):
+    base = Agent('Base')
+    world.addAgent(base)
+    base.setHorizon(5)
+
+    world.defineState(base.name, 'x', int)
+    world.setState(base.name, 'x', 0)
+
+    world.defineState(base.name, 'y', int)
+    world.setState(base.name, 'y', 0)
+
+    # Deploy distractor
+    action = base.addAction({'verb': 'Deploy'})
+    tree = makeTree(setToConstantMatrix(stateKey('Distractor', 'deployed'), True))
+    world.setDynamics(stateKey('Distractor', 'deployed'), action, tree)
+
+    # Nop
+    action = base.addAction({'verb': 'Wait'})
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 0.))
+    world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 0.))
+    world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+
+    base.setReward(minimizeDifference(stateKey('Distractor', 'x'), stateKey('Enemy0', 'x')), 0.5)
+    base.setReward(minimizeDifference(stateKey('Distractor', 'y'), stateKey('Enemy0', 'y')), 0.5)
+
 def create_friendly_agents(world):
     for index in range(0, F_ACTORS):
         actor = Agent('Actor' + str(index))
         world.addAgent(actor)
-        actor.setHorizon(2)
+        actor.setHorizon(5)
 
         # Set agent's starting location
         world.defineState(actor.name, 'x', int)
@@ -97,31 +128,12 @@ def create_friendly_agents(world):
 
         # Terminate if agent reaches goal
         tree = {'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
-                True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_x')), True: True,
+                True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')), True: True,
                        False: False},
                 False: False}
         world.addTermination(makeTree(tree))
 
         set_friendly_actions(world, actor)
-
-
-def create_distract_agents(world):
-    actor = Agent('Distractor')
-    world.addAgent(actor)
-    actor.setHorizon(2)
-
-    # Set agent's starting location
-    world.defineState(actor.name, 'x', int)
-    world.setState(actor.name, 'x', 1)
-
-    world.defineState(actor.name, 'y', int)
-    world.setState(actor.name, 'y', 3)
-
-    # Positive reward for luring enemy away from Agents
-    actor.setReward(minimizeDifference(stateKey('Actor0', 'x'), stateKey('Enemy0', 'x')), 1.)
-    actor.setReward(minimizeDifference(stateKey('Actor0', 'y'), stateKey('Enemy0', 'y')), 1.)
-
-    set_friendly_actions(world, actor)
 
 
 def set_friendly_actions(world, actor):
@@ -179,11 +191,91 @@ def set_friendly_actions(world, actor):
     actor.setLegal(action, tree)
 
 
+def create_distract_agents(world):
+    actor = Agent('Distractor')
+    world.addAgent(actor)
+    actor.setHorizon(5)
+
+    world.defineState(actor.name, 'deployed', bool)
+    world.setState(actor.name, 'deployed', False)
+
+    # Set agent's starting location
+    world.defineState(actor.name, 'x', int)
+    world.setState(actor.name, 'x', 0)
+
+    world.defineState(actor.name, 'y', int)
+    world.setState(actor.name, 'y', 0)
+
+    # Positive reward for luring enemy away from Agents
+    actor.setReward(minimizeDifference(stateKey('Actor0', 'x'), stateKey('Enemy0', 'x')), 1.)
+    actor.setReward(minimizeDifference(stateKey('Actor0', 'y'), stateKey('Enemy0', 'y')), 1.)
+
+    set_distract_actions(world, actor)
+
+def set_distract_actions(world, actor):
+    # Nop
+    action = actor.addAction({'verb': 'Wait'})
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 0.))
+    world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 0.))
+    world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+
+    # Increment X position
+    action = actor.addAction({'verb': 'MoveRight'})
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 1.))
+    world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+
+    # Rightmost boundary check
+    tree = makeTree({'if': equalRow(stateKey(actor.name, 'deployed'), True),
+                     True: {'if': equalRow(stateKey(actor.name, 'x'), str(MAP_SIZE_X)),
+                     True: False, False: True}, False: False})
+    actor.setLegal(action, tree)
+
+    ##############################
+
+    # Decrement X position
+    action = actor.addAction({'verb': 'MoveLeft'})
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), -1.))
+    world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+
+    # Leftmost boundary check, min X = 0
+    tree = makeTree({'if': equalRow(stateKey(actor.name, 'deployed'), True),
+                     True: {'if': equalRow(stateKey(actor.name, 'x'), 0),
+                            True: False, False: True}, False: False})
+    actor.setLegal(action, tree)
+
+    ##############################
+
+    # Increment Y position
+    action = actor.addAction({'verb': 'MoveUp'})
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 1.))
+    world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+
+    # Downmost boundary check, max Y
+    tree = makeTree({'if': equalRow(stateKey(actor.name, 'deployed'), True),
+                     True: {'if': equalRow(stateKey(actor.name, 'y'), str(MAP_SIZE_Y)),
+                            True: False, False: True}, False: False})
+    actor.setLegal(action, tree)
+
+    ##############################
+
+    # Decrement Y position
+    action = actor.addAction({'verb': 'MoveDown'})
+    tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), -1.))
+    world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+
+    # Upmost boundary check, min Y = 0
+    tree = makeTree({'if': equalRow(stateKey(actor.name, 'deployed'), True),
+                     True: {'if': equalRow(stateKey(actor.name, 'Y'), 0),
+                            True: False, False: True}, False: False})
+    actor.setLegal(action, tree)
+
+
 def create_enemy_agents(world):
     for index in range(0, E_ACTORS):
         actor = Agent('Enemy' + str(index))
         world.addAgent(actor)
-        actor.setHorizon(2)
+        actor.setHorizon(5)
 
         # Set agent's starting location
         world.defineState(actor.name, 'x', int)
@@ -316,7 +408,7 @@ for index in range(0, E_ACTORS):
     )
 
 distractor_image = pyglet.resource.image("heli.png")
-distractor_sprite = pyglet.sprite.Sprite(img=distractor_image, x=1 * 32, y=3 * 32)
+distractor_sprite = pyglet.sprite.Sprite(img=distractor_image, x=0 * 32, y=0 * 32)
 
 
 @window.event
@@ -331,6 +423,7 @@ def on_draw():
 
 def update(dt):
     result = world.step()
+    world.explain(result,2)
     for index in range(0, F_ACTORS):
         agents[index].x = int(world.getState('Actor' + str(index), 'x').domain()[0]) * 32
         agents[index].y = int(world.getState('Actor' + str(index), 'y').domain()[0]) * 32
@@ -348,9 +441,11 @@ def update(dt):
 
 if __name__ == '__main__':
     world = World()
+
     create_friendly_agents(world)
     create_enemy_agents(world)
     create_distract_agents(world)
+    create_base(world)
 
     # Parallel action
     # world.setOrder([set(world.agents.keys())])
