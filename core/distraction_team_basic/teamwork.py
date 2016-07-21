@@ -99,11 +99,12 @@ def create_friendly_agents(world):
             actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(enemy, 'y')), -0.5)
 
         # Terminate if agent reaches goal
-        tree = {'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
-                True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_x')), True: True,
-                       False: False},
-                False: False}
-        world.addTermination(makeTree(tree))
+        tree = makeTree({'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
+                         True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_x')),
+                                True: True,
+                                False: False},
+                         False: False})
+        world.addTermination(tree)
 
         set_friendly_actions(world, actor)
 

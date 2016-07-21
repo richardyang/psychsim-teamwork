@@ -1,9 +1,9 @@
 # Team of agents that attempts to capture a flag without being caught by enemies
 # Agents:
 # Explorer - minimize distance between self and goal location
-# Distractor - maximize distance between explorer and enemy (new)
+# Distractor - maximize distance between explorer and enemy
 # Enemy - minimize distance between self and explorer and distractor
-# Base - deploy distractor when explorer in danger (new)
+# Base - deploy distractor when explorer in danger
 
 from __future__ import print_function
 
