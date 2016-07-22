@@ -519,7 +519,7 @@ def update(dt):
         enemies[index].x = int(world.getState('Enemy' + str(index), 'x').domain()[0]) * 32
         enemies[index].y = int(world.getState('Enemy' + str(index), 'y').domain()[0]) * 32
 
-    for index in range(0, E_ACTORS):
+    for index in range(0, D_ACTORS):
         distractors[index].x = int(world.getState('Distractor' + str(index), 'x').domain()[0]) * 32
         distractors[index].y = int(world.getState('Distractor' + str(index), 'y').domain()[0]) * 32
 
