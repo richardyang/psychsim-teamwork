@@ -15,18 +15,18 @@ import pyglet
 from pyglet.window import key
 
 MAP_SIZE_X = 8  # X value of map dimension
-MAP_SIZE_Y = 8  # Y value of map dimension
+MAP_SIZE_Y = 5  # Y value of map dimension
 SCREEN_WIDTH = (MAP_SIZE_X) * 32
 SCREEN_HEIGHT = (MAP_SIZE_Y) * 32
 
 # Friendly agents
 F_ACTORS = 1  # Number of agents in the team
-F_START_LOC = ["2,2"]  # Starting locations for each agent
-F_GOAL_LOC = ["5,5"]  # Objectives the agents need to visit to win
+F_START_LOC = ["1,2"]  # Starting locations for each agent
+F_GOAL_LOC = ["5,4"]  # Objectives the agents need to visit to win
 
 # Enemy agents
 E_ACTORS = 1  # Number of agents in the team
-E_START_LOC = ["4,4"]
+E_START_LOC = ["4,3"]
 E_PATROL_RANGE = 5
 
 # Distractor agents
@@ -35,10 +35,10 @@ D_START_LOC = ["0,0"]  # Base location, also the start location of distractor
 
 # Reward weights - variables
 BASE = [0.5, 0.2]  # Minimize distractor and enemy distance, minimize distractor cost
-DISTRACTOR = [-1.0]  # Minimize agent and enemy distance
-ENEMY = [0.5, 0.5,
+DISTRACTOR = [-1.0, 1.0]  # Minimize agent and enemy distance
+ENEMY = [0.5, 0.6,
          -1.0]  # Minimize agent and enemy distance, minimize enemy and distractor distance, minimize agent and goal distance
-AGENT = [0.5, -0.5]  # Minimize agent and goal distance, maximize agent and enemy distance
+AGENT = [1.0, -0.5]  # Minimize agent and goal distance, maximize agent and enemy distance
 
 
 def f_get_current_x(world, actor):
@@ -197,7 +197,7 @@ def set_friendly_actions(world, actor):
     world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
 
     # Downmost boundary check, max Y
-    tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), MAP_SIZE_Y),
+    tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), MAP_SIZE_Y-1),
                      True: False, False: True})
     actor.setLegal(action, tree)
 
@@ -240,6 +240,14 @@ def create_distract_agents(world):
                         DISTRACTOR[0])
         actor.setReward(minimizeDifference(stateKey('Actor' + str(index), 'y'), stateKey('Enemy' + str(index), 'y')),
                         DISTRACTOR[0])
+
+        # Positive reward for moving closer to enemy
+        actor.setReward(
+            minimizeDifference(stateKey('Distractor' + str(index), 'x'), stateKey('Enemy' + str(index), 'x')),
+            DISTRACTOR[1])
+        actor.setReward(
+            minimizeDifference(stateKey('Distractor' + str(index), 'y'), stateKey('Enemy' + str(index), 'y')),
+            DISTRACTOR[1])
 
         set_distract_actions(world, actor)
 
@@ -483,6 +491,7 @@ for index in range(0, D_ACTORS):
         batch=allies_batch)
     )
 
+
 @window.event
 def on_draw():
     window.clear()
@@ -492,7 +501,10 @@ def on_draw():
     enemies_batch.draw()
     allies_batch.draw()
 
+
 paused = False
+
+
 @window.event
 def on_key_press(symbol, modifiers):
     global paused
@@ -502,6 +514,7 @@ def on_key_press(symbol, modifiers):
     if symbol == key.U:
         paused = False
         print('Resumed')
+
 
 def update(dt):
     global paused
@@ -538,7 +551,7 @@ if __name__ == '__main__':
     # Sequential action
     world.setOrder(world.agents.keys())
 
-    pyglet.clock.schedule_interval(update, 5)
+    pyglet.clock.schedule_interval(update, 1)
     pyglet.app.run()
 
     # while not world.terminated():
