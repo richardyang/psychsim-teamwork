@@ -4,14 +4,17 @@
 # Distractor - maximize distance between explorer and enemy
 # Enemy - minimize distance between self and explorer and distractor
 
+import pyglet
+import time
+
 from __future__ import print_function
 from psychsim.reward import *
 from psychsim.pwl import *
 from psychsim.action import *
 from psychsim.world import *
 from psychsim.agent import *
-import pyglet
-import time
+from loader import *
+
 
 MAP_SIZE_X = 5  # X value of map dimension
 MAP_SIZE_Y = 5  # Y value of map dimension

@@ -5,16 +5,16 @@
 # Enemy - minimize distance between self and explorer and distractor
 # Base - deploy distractor when explorer in danger
 
-from __future__ import print_function
+import pyglet
 
+from __future__ import print_function
 from psychsim.reward import *
 from psychsim.pwl import *
 from psychsim.action import *
 from psychsim.world import *
 from psychsim.agent import *
-
-import pyglet
 from pyglet.window import key
+from loader import *
 
 MAP_SIZE_X = 10  # X value of map dimension
 MAP_SIZE_Y = 10  # Y value of map dimension
