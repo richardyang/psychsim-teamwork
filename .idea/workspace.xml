@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2ba2b-8b34-4046-bf88-129808d2f254" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/teamwork/scenario_loader.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/docs/Tutoring for Team Training July 25 2016 (edit2).pptx" afterPath="$PROJECT_DIR$/core/docs/Tutoring for Team Training July 25 2016 (edit2).pptx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/distraction_team_advanced/enemy_guard.py" afterPath="$PROJECT_DIR$/core/distraction_team_advanced/enemy_guard.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/teamwork/teamwork.py" afterPath="$PROJECT_DIR$/core/teamwork/teamwork.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/teamwork/loader.py" afterPath="$PROJECT_DIR$/core/teamwork/loader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/teamwork/test.py" afterPath="$PROJECT_DIR$/core/teamwork/test.py" />
     </list>
     <ignored path="Tutoring-for-Team-Training.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,17 +20,49 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$teamwork__1_.coverage" NAME="teamwork (1) Coverage Results" MODIFIED="1468963066668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_basic" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$teamwork.coverage" NAME="teamwork Coverage Results" MODIFIED="1467926121786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team" />
-    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$distraction_team_advanced_costbased.coverage" NAME="distraction_team_advanced_costbased Coverage Results" MODIFIED="1469213818952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
-    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$loader.coverage" NAME="loader Coverage Results" MODIFIED="1469504416308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$distraction_team_advanced_costbased.coverage" NAME="distraction_team_advanced_costbased Coverage Results" MODIFIED="1469552714462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$loader.coverage" NAME="loader Coverage Results" MODIFIED="1469585417039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$distraction_team_advanced.coverage" NAME="distraction_team_advanced Coverage Results" MODIFIED="1468452008760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$enemy_guard.coverage" NAME="enemy_guard Coverage Results" MODIFIED="1468427947461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
-    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$test.coverage" NAME="test Coverage Results" MODIFIED="1469502558402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$test.coverage" NAME="test Coverage Results" MODIFIED="1469567749161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$explore_team_visual.coverage" NAME="explore_team_visual Coverage Results" MODIFIED="1467317188980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/basic_explore_team_visual" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$distraction_team_advanced_costbased__1_.coverage" NAME="distraction_team_advanced_costbased (1) Coverage Results" MODIFIED="1469063263585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../T3/trunk/core/distraction_team_advanced" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$pyglet_demo.coverage" NAME="pyglet_demo Coverage Results" MODIFIED="1467246184751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="loader.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="408">
+                    <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+                    <folding>
+                      <element signature="e#0#13#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="Tkinter.py" pinned="false" current-in-tab="false">
+              <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="367">
+                    <caret line="2077" column="8" selection-start-line="2077" selection-start-column="8" selection-end-line="2077" selection-end-column="8" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -42,19 +73,31 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="289">
+              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loader.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+      <file leaf-file-name="distraction_team_advanced_costbased.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/distraction_team_advanced/distraction_team_advanced_costbased.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teamwork.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
+              <folding>
+                <element signature="e#334#347#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +189,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,6 +317,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -619,7 +662,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -658,7 +701,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/core/teamwork/loader.py</url>
-          <line>65</line>
+          <line>126</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -667,11 +710,31 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8568">
           <caret line="513" column="36" selection-start-line="513" selection-start-column="36" selection-end-line="513" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#334#347#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,9 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#346#383#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,12 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="201" selection-end-column="97" />
-          <folding>
-            <element signature="e#283#296#0" expanded="true" />
-            <element signature="e#3658#4224#0" expanded="false" />
-            <element signature="e#4271#6389#0" expanded="false" />
-            <element signature="e#7722#9977#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -710,7 +764,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8568">
           <caret line="513" column="36" selection-start-line="513" selection-start-column="36" selection-end-line="513" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#334#347#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -718,9 +774,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#346#383#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -728,12 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="201" selection-end-column="97" />
-          <folding>
-            <element signature="e#283#296#0" expanded="true" />
-            <element signature="e#3658#4224#0" expanded="false" />
-            <element signature="e#4271#6389#0" expanded="false" />
-            <element signature="e#7722#9977#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,14 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/teamwork/scenario_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/scenario_loader.py" />
     <entry file="file://$PROJECT_DIR$/core/distraction_team_basic/teamwork.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -770,9 +811,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#346#383#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -780,12 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2227">
           <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="201" selection-end-column="97" />
-          <folding>
-            <element signature="e#283#296#0" expanded="true" />
-            <element signature="e#3658#4224#0" expanded="false" />
-            <element signature="e#4271#6389#0" expanded="false" />
-            <element signature="e#7722#9977#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1294">
           <caret line="445" column="28" selection-start-line="445" selection-start-column="28" selection-end-line="445" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,68 +938,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/distraction_team_advanced/distraction_team_advanced_costbased.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#346#383#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../T3/trunk/core/distraction_team_advanced/distraction_team_advanced_costbased.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/teamwork/scenario_loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/scenario_loader.py" />
     <entry file="file://$PROJECT_DIR$/core/distraction_team_advanced/enemy_guard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#283#296#0" expanded="true" />
-            <element signature="e#3658#4224#0" expanded="false" />
-            <element signature="e#4271#6389#0" expanded="false" />
-            <element signature="e#7722#9977#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="289">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="2077" column="8" selection-start-line="2077" selection-start-column="8" selection-end-line="2077" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="528">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
           <folding>
             <element signature="e#334#347#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+    <entry file="file://$PROJECT_DIR$/core/distraction_team_advanced/distraction_team_advanced_costbased.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,19 +1,30 @@
-from Tkinter import *
+import Tkinter  # tkinter with small t for python 3
+#import ttk  # nicer widgets
 
-def show_entry_fields():
-   print("First Name: %s\nLast Name: %s" % (e1.get(), e2.get()))
+root = Tkinter.Tk()
 
-master = Tk()
-Label(master, text="First Name").grid(row=0)
-Label(master, text="Last Name").grid(row=1)
+mainFrame = Tkinter.Frame(root)
+mainFrame.grid()
+button = Tkinter.Button(mainFrame, text="dummy")
+button.grid()
 
-e1 = Entry(master)
-e2 = Entry(master)
 
-e1.grid(row=0, column=1)
-e2.grid(row=1, column=1)
+entryFrame = Tkinter.Frame(mainFrame, width=20, height=20)
+entryFrame.grid(row=0, column=1)
 
-Button(master, text='Quit', command=master.quit).grid(row=3, column=0, sticky=W, pady=4)
-Button(master, text='Show', command=show_entry_fields).grid(row=3, column=1, sticky=W, pady=4)
+# allow the column inside the entryFrame to grow
+entryFrame.columnconfigure(0, weight=10)
 
-mainloop( )
+# By default the frame will shrink to whatever is inside of it and
+# ignore width & height. We change that:
+entryFrame.grid_propagate(False)
+# as far as I know you can not set this for x / y separately so you
+# have to choose a proper height for the frame or do something more sophisticated
+
+# input entry
+inValue = Tkinter.StringVar()
+inValueEntry = Tkinter.Entry(entryFrame, textvariable=inValue)
+inValueEntry.grid(sticky="we")
+
+
+root.mainloop()
