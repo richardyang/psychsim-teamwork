@@ -1,30 +1,30 @@
-import Tkinter  # tkinter with small t for python 3
-#import ttk  # nicer widgets
+import tkinter as tk
 
-root = Tkinter.Tk()
+class Demo1:
+    def __init__(self, master):
+        self.master = master
+        self.frame = tk.Frame(self.master)
+        self.button1 = tk.Button(self.frame, text = 'New Window', width = 25, command = self.new_window)
+        self.button1.pack()
+        self.frame.pack()
+    def new_window(self):
+        self.newWindow = tk.Toplevel(self.master)
+        self.app = Demo2(self.newWindow)
 
-mainFrame = Tkinter.Frame(root)
-mainFrame.grid()
-button = Tkinter.Button(mainFrame, text="dummy")
-button.grid()
+class Demo2:
+    def __init__(self, master):
+        self.master = master
+        self.frame = tk.Frame(self.master)
+        self.quitButton = tk.Button(self.frame, text = 'Quit', width = 25, command = self.close_windows)
+        self.quitButton.pack()
+        self.frame.pack()
+    def close_windows(self):
+        self.master.destroy()
 
+def main():
+    root = tk.Tk()
+    app = Demo1(root)
+    root.mainloop()
 
-entryFrame = Tkinter.Frame(mainFrame, width=20, height=20)
-entryFrame.grid(row=0, column=1)
-
-# allow the column inside the entryFrame to grow
-entryFrame.columnconfigure(0, weight=10)
-
-# By default the frame will shrink to whatever is inside of it and
-# ignore width & height. We change that:
-entryFrame.grid_propagate(False)
-# as far as I know you can not set this for x / y separately so you
-# have to choose a proper height for the frame or do something more sophisticated
-
-# input entry
-inValue = Tkinter.StringVar()
-inValueEntry = Tkinter.Entry(entryFrame, textvariable=inValue)
-inValueEntry.grid(sticky="we")
-
-
-root.mainloop()
+if __name__ == '__main__':
+    main()
