@@ -1,5 +1,7 @@
 from Tkinter import *
 from teamwork import *
+from time import sleep
+
 
 # stored = []
 # MAP_SIZE_X = 0
@@ -100,14 +102,22 @@ class BaseLoader:
             )
             self.run.run_visuals()
 
-        def stop():
-            self.run.paused()
-
+        # def stop():
+        #     while True:
+        #         root.update()
+        #         sleep(0.1)
+        #
+        # self.updateGUIThread = Thread(target=self.updateGUI)
+        #
+        # def updateGUI(self):
+        #     while self.updateNeeded
+        #
+        #         sleep(0.1)
 
         Button(master, text='Configure', command=configure).grid(row=100, column=0, sticky=E + W, pady=4)
         Button(master, text='Default', command=load_default).grid(row=100, column=1, sticky=E + W, pady=4)
         Button(master, text='Save', command=run_configuration).grid(row=101, column=0, sticky=E + W, pady=4)
-        Button(master, text='Stop', command=stop).grid(row=101, column=1, sticky=E + W, pady=4)
+        # Button(master, text='Stop', command=stop).grid(row=101, column=1, sticky=E + W, pady=4)
 
 
 class AdvancedLoader:
@@ -202,6 +212,6 @@ class AdvancedLoader:
 if __name__ == '__main__':
     root = Tk()
     app = BaseLoader(root)
-    Process(target=root.mainloop()).start()
+    root.mainloop()
     # root.mainloop()
     # Thread(target=root.mainloop()).start()

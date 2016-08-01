@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5e2ba2b-8b34-4046-bf88-129808d2f254" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/teamwork/teamwork1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/teamwork/loader.py" afterPath="$PROJECT_DIR$/core/teamwork/loader.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/teamwork/teamwork.py" afterPath="$PROJECT_DIR$/core/teamwork/teamwork.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/teamwork/test.py" afterPath="$PROJECT_DIR$/core/teamwork/test.py" />
     </list>
     <ignored path="Tutoring-for-Team-Training.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,9 +19,9 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$teamwork__1_.coverage" NAME="teamwork (1) Coverage Results" MODIFIED="1468963066668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_basic" />
-    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$teamwork.coverage" NAME="teamwork Coverage Results" MODIFIED="1469832183035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$teamwork.coverage" NAME="teamwork Coverage Results" MODIFIED="1470026457372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$distraction_team_advanced_costbased.coverage" NAME="distraction_team_advanced_costbased Coverage Results" MODIFIED="1469552714462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
-    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$loader.coverage" NAME="loader Coverage Results" MODIFIED="1469832906950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
+    <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$loader.coverage" NAME="loader Coverage Results" MODIFIED="1470026602265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$distraction_team_advanced.coverage" NAME="distraction_team_advanced Coverage Results" MODIFIED="1468452008760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$enemy_guard.coverage" NAME="enemy_guard Coverage Results" MODIFIED="1468427947461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/distraction_team_advanced" />
     <SUITE FILE_PATH="coverage/Tutoring-for-Team-Training$test.coverage" NAME="test Coverage Results" MODIFIED="1469567749161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/teamwork" />
@@ -38,20 +36,70 @@
     <window id="3">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="loader.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="795">
-                    <caret line="194" column="27" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="27" />
-                    <folding>
-                      <element signature="e#0#21#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                <file leaf-file-name="teamwork.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="489">
+                        <caret line="459" column="47" selection-start-line="459" selection-start-column="47" selection-end-line="459" selection-end-column="47" />
+                        <folding>
+                          <element signature="e#346#383#0" expanded="true" />
+                          <element signature="e#3647#4872#0" expanded="false" />
+                          <element signature="e#10608#12307#0" expanded="false" />
+                          <element signature="e#12360#16080#0" expanded="false" />
+                          <element signature="e#17918#20407#0" expanded="false" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file leaf-file-name="world.py" pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/../../T3/trunk/externals/psychsim/world.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="435">
+                        <caret line="385" column="42" selection-start-line="385" selection-start-column="42" selection-end-line="385" selection-end-column="42" />
+                        <folding />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="teamwork.py" pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="619">
+                        <caret line="447" column="9" selection-start-line="447" selection-start-column="9" selection-end-line="447" selection-end-column="9" />
+                        <folding>
+                          <element signature="e#346#383#0" expanded="true" />
+                          <marker date="1470026599797" expanded="true" signature="669:25811" ph="..." />
+                          <marker date="1470026599797" expanded="true" signature="4911:7239" ph="..." />
+                          <marker date="1470026599797" expanded="true" signature="4957:7239" ph="..." />
+                          <marker date="1470026599797" expanded="true" signature="24683:24772" ph="..." />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file leaf-file-name="loader.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="510">
+                        <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+                        <folding>
+                          <element signature="e#0#21#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
         </state>
       </content>
     </window>
@@ -62,33 +110,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teamwork.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+      <file leaf-file-name="pwl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../T3/trunk/externals/psychsim/pwl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="544" column="1" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
-              <folding>
-                <element signature="e#346#383#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/app/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2091">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="469">
+              <caret line="758" column="4" selection-start-line="758" selection-start-column="4" selection-end-line="758" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -180,7 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +272,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tutoring-for-Team-Training" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="externals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psychsim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Freedonia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,7 +371,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -698,6 +760,46 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9129">
+          <caret line="544" column="1" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
+          <folding>
+            <element signature="e#346#383#0" expanded="true" />
+            <element signature="e#3647#4872#0" expanded="false" />
+            <element signature="e#10608#12307#0" expanded="false" />
+            <element signature="e#12360#16080#0" expanded="false" />
+            <element signature="e#17918#20407#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
           <folding />
@@ -720,6 +822,10 @@
           <caret line="513" column="36" selection-start-line="513" selection-start-column="36" selection-end-line="513" selection-end-column="36" />
           <folding>
             <element signature="e#346#383#0" expanded="true" />
+            <element signature="e#3647#4872#0" expanded="false" />
+            <element signature="e#10608#12307#0" expanded="false" />
+            <element signature="e#12360#16080#0" expanded="false" />
+            <element signature="e#17918#20407#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -728,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,6 +857,10 @@
           <caret line="513" column="36" selection-start-line="513" selection-start-column="36" selection-end-line="513" selection-end-column="36" />
           <folding>
             <element signature="e#346#383#0" expanded="true" />
+            <element signature="e#3647#4872#0" expanded="false" />
+            <element signature="e#10608#12307#0" expanded="false" />
+            <element signature="e#12360#16080#0" expanded="false" />
+            <element signature="e#17918#20407#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1294">
           <caret line="445" column="28" selection-start-line="445" selection-start-column="28" selection-end-line="445" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,34 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/psychsim/examples/Freedonia/freedonia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="62" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/psychsim/pwl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/psychsim/examples/robot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="666" column="75" selection-start-line="666" selection-start-column="75" selection-end-line="666" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../T3/trunk/externals/psychsim/pwl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="1362" column="19" selection-start-line="1362" selection-start-column="19" selection-end-line="1362" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -944,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,39 +1033,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/app/__init__.py">
+    <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2091">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/teamwork/test.py">
+    <entry file="file://$PROJECT_DIR$/externals/psychsim/pwl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="367">
+          <caret line="101" column="8" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../T3/trunk/externals/psychsim/world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="385" column="42" selection-start-line="385" selection-start-column="42" selection-end-line="385" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../T3/trunk/externals/psychsim/pwl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="758" column="4" selection-start-line="758" selection-start-column="4" selection-end-line="758" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/externals/psychsim/examples/robot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="390" column="26" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/externals/psychsim/examples/teamofrivals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="733" column="79" selection-start-line="733" selection-start-column="79" selection-end-line="733" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/externals/psychsim/examples/Freedonia/freedonia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="106" column="74" selection-start-line="106" selection-start-column="74" selection-end-line="106" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="459" column="47" selection-start-line="459" selection-start-column="47" selection-end-line="459" selection-end-column="47" />
+          <folding>
+            <element signature="e#346#383#0" expanded="true" />
+            <element signature="e#3647#4872#0" expanded="false" />
+            <element signature="e#10608#12307#0" expanded="false" />
+            <element signature="e#12360#16080#0" expanded="false" />
+            <element signature="e#17918#20407#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/teamwork/loader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="194" column="27" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="27" />
+        <state relative-caret-position="510">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/teamwork/teamwork.py">
+    <entry file="jar://C:/Python27/Lib/site-packages/pyglet-1.2.4-py2.7.egg!/pyglet/app/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="544" column="1" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
-          <folding>
-            <element signature="e#346#383#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

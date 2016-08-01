@@ -13,8 +13,8 @@ from psychsim.world import *
 from psychsim.agent import *
 import pyglet
 from pyglet.window import key
-#from threading import Thread
-from multiprocessing import Process
+from threading import Thread
+# from multiprocessing import Process
 import time
 
 
@@ -51,13 +51,16 @@ class Scenario:
         self.AGENT = AGENT
 
         self.world = World()
+        self.world.defineState(None, 'turns', int)
+        self.world.setState(None, 'turns', 0)
+        self.world.addTermination(makeTree({'if': thresholdRow(stateKey(None, 'turns'), 10),
+                                            True: True, False: False}))
         self.create_friendly_agents()
         self.create_enemy_agents()
         self.create_distract_agents()
         self.create_base()
 
         self.paused = False
-
 
         # Parallel action
         # self.world.setOrder([set(self.world.agents.keys())])
@@ -148,8 +151,10 @@ class Scenario:
             self.world.setState(actor.name, 'goal_y', self.f_get_goal_y(index))
 
             # Positive reward for going towards goal
-            actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')), self.AGENT[0])
-            actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')), self.AGENT[0])
+            actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
+                            self.AGENT[0])
+            actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')),
+                            self.AGENT[0])
 
             # Negative reward for going towards enemy
             for i in range(0, self.E_ACTORS):
@@ -158,14 +163,24 @@ class Scenario:
                 actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(enemy, 'y')), self.AGENT[1])
 
             # Terminate if agent reaches goal
-            tree = makeTree({'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
-                             True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')),
-                                    True: True,
-                                    False: False},
-                             False: False})
-            self.world.addTermination(tree)
+            # tree = makeTree({'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')),
+            #                  True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')),
+            #                         True: True,
+            #                         False: False},
+            #                  False: False})
+            # tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), self.f_get_goal_x(index)),
+            #                  True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), self.f_get_goal_y(index)),
+            #                         True: True,
+            #                         False: False},
+            #                  False: False})
 
             self.set_friendly_actions(actor)
+
+            tree = {'if': equalRow(stateKey(actor.name, 'x'), str(self.f_get_goal_x(index))),
+                    True: {'if': equalRow(stateKey(actor.name, 'y'), str(self.f_get_goal_x(index))),
+                           True: True, False: False},
+                    False: False}
+            self.world.addTermination(makeTree(tree))
 
     def set_friendly_actions(self, actor):
         # Nop
@@ -174,11 +189,15 @@ class Scenario:
         self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
         tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 0.))
         self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
         # Increment X position
         action = actor.addAction({'verb': 'MoveRight'})
         tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 1.))
         self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics('turns', action, tree)
 
         # Rightmost boundary check
         tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), str(self.MAP_SIZE_X)),
@@ -191,6 +210,8 @@ class Scenario:
         action = actor.addAction({'verb': 'MoveLeft'})
         tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), -1.))
         self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
         # Leftmost boundary check, min X = 0
         tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '0'),
@@ -203,6 +224,8 @@ class Scenario:
         action = actor.addAction({'verb': 'MoveUp'})
         tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 1.))
         self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
         # Downmost boundary check, max Y
         tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), self.MAP_SIZE_Y - 1),
@@ -215,6 +238,8 @@ class Scenario:
         action = actor.addAction({'verb': 'MoveDown'})
         tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), -1.))
         self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
         # Upmost boundary check, min Y = 0
         tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '0'),
@@ -362,7 +387,7 @@ class Scenario:
             # actor.setReward(minimizeDifference(stateKey(enemy, 'x'), stateKey(enemy, 'goal_x')), ENEMY[2])
             # actor.setReward(minimizeDifference(stateKey(enemy, 'y'), stateKey(enemy, 'goal_y')), ENEMY[2])
 
-            self.set_enemy_actions( actor, index)
+            self.set_enemy_actions(actor, index)
 
             # Terminate if enemy captures agent
             tree = {'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey('Actor' + str(index), 'x')),
@@ -385,8 +410,9 @@ class Scenario:
         self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
 
         # Rightmost boundary check
-        tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), str(self.e_get_start_x(index) + self.E_PATROL_RANGE)),
-                         True: False, False: True})
+        tree = makeTree(
+            {'if': equalRow(stateKey(actor.name, 'x'), str(self.e_get_start_x(index) + self.E_PATROL_RANGE)),
+             True: False, False: True})
         actor.setLegal(action, tree)
 
         ##############################
@@ -397,8 +423,9 @@ class Scenario:
         self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
 
         # Leftmost boundary check, min X = 0
-        tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), str(self.e_get_start_x(index) - self.E_PATROL_RANGE)),
-                         True: False, False: True})
+        tree = makeTree(
+            {'if': equalRow(stateKey(actor.name, 'x'), str(self.e_get_start_x(index) - self.E_PATROL_RANGE)),
+             True: False, False: True})
         actor.setLegal(action, tree)
 
         ##############################
@@ -409,8 +436,9 @@ class Scenario:
         self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
 
         # Downmost boundary check, max Y
-        tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), str(self.e_get_start_y(index) + self.E_PATROL_RANGE)),
-                         True: False, False: True})
+        tree = makeTree(
+            {'if': equalRow(stateKey(actor.name, 'y'), str(self.e_get_start_y(index) + self.E_PATROL_RANGE)),
+             True: False, False: True})
         actor.setLegal(action, tree)
 
         ##############################
@@ -421,12 +449,31 @@ class Scenario:
         self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
 
         # Upmost boundary check, min Y = 0
-        tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), str(self.e_get_start_y(index) - self.E_PATROL_RANGE)),
-                         True: False, False: True})
+        tree = makeTree(
+            {'if': equalRow(stateKey(actor.name, 'y'), str(self.e_get_start_y(index) - self.E_PATROL_RANGE)),
+             True: False, False: True})
         actor.setLegal(action, tree)
 
-    def pause(self):
-        self.paused = True
+    def evaluate_score(self):
+        agent_goal_scores = []
+        for index in range(0, self.F_ACTORS):
+            ending_x = int(self.world.getState('Actor' + str(index), 'x').domain()[0])
+            ending_y = int(self.world.getState('Actor' + str(index), 'y').domain()[0])
+            agent_goal_scores.append(abs(self.f_get_goal_x(index) - ending_x) + abs(
+                self.f_get_goal_y(index) - ending_y))
+            print(agent_goal_scores[index])
+
+        agent_enemy_scores = []
+        for index in range(0, self.F_ACTORS):
+            soldier_x = int(self.world.getState('Actor' + str(index), 'x').domain()[0])
+            soldier_y = int(self.world.getState('Actor' + str(index), 'y').domain()[0])
+            enemy_x = int(self.world.getState('Enemy' + str(index), 'x').domain()[0])
+            enemy_y = int(self.world.getState('Enemy' + str(index), 'y').domain()[0])
+            agent_enemy_scores.append(abs(soldier_x - enemy_x) + abs(
+                soldier_y - enemy_y))
+            print(agent_enemy_scores[index])
+
+
 
     def run_visuals(self):
         pyglet.resource.path = ['../resources']
@@ -523,6 +570,8 @@ class Scenario:
             if not self.paused:
                 result = self.world.step()
                 self.world.explain(result, 2)
+                if self.world.terminated():
+                    self.evaluate_score()
 
             for index in range(0, self.F_ACTORS):
                 agents[index].x = int(self.world.getState('Actor' + str(index), 'x').domain()[0]) * 32
@@ -536,10 +585,10 @@ class Scenario:
                 distractors[index].x = int(self.world.getState('Distractor' + str(index), 'x').domain()[0]) * 32
                 distractors[index].y = int(self.world.getState('Distractor' + str(index), 'y').domain()[0]) * 32
 
-        pyglet.clock.schedule_interval(update, 20)
-        #pyglet.app.run()
-        # Thread(target=pyglet.app.run()).start()
-        Process(target=pyglet.app.run()).start()
+        pyglet.clock.schedule_interval(update, 1)
+        # pyglet.app.run()
+        Thread(target=pyglet.app.run()).start()
+        # target=pyglet.app.run()
 
 # if __name__ == '__main__':
 #
