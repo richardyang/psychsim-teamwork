@@ -2,29 +2,6 @@ from Tkinter import *
 from teamwork import *
 from time import sleep
 
-
-# stored = []
-# MAP_SIZE_X = 0
-# MAP_SIZE_Y = 0
-#
-# F_ACTORS = 0
-# F_START_LOC = []
-# F_GOAL_LOC = []
-#
-# E_ACTORS = 0
-# E_START_LOC = []
-# E_PATROL_RANGE = 5
-#
-# D_ACTORS = 0
-# D_START_LOC = []
-#
-# BASE = [0.0, 0.0]
-# DISTRACTOR = [0.0, 0.0]
-# ENEMY = [0.0, 0.0, 0.0]
-# AGENT = [0.0, 0.0]
-#
-# ready = False
-
 class BaseLoader:
 
     def __init__(self, master):
@@ -101,6 +78,11 @@ class BaseLoader:
                 AGENT
             )
             self.run.run_visuals()
+            del stored[:]
+            del fields[:]
+            for i in range(0, 5):
+                fields[i].configure(state='normal')
+
 
         # def stop():
         #     while True:

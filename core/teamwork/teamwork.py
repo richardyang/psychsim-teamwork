@@ -572,6 +572,8 @@ class Scenario:
                 self.world.explain(result, 2)
                 if self.world.terminated():
                     self.evaluate_score()
+                    window.close()
+
 
             for index in range(0, self.F_ACTORS):
                 agents[index].x = int(self.world.getState('Actor' + str(index), 'x').domain()[0]) * 32
@@ -585,7 +587,7 @@ class Scenario:
                 distractors[index].x = int(self.world.getState('Distractor' + str(index), 'x').domain()[0]) * 32
                 distractors[index].y = int(self.world.getState('Distractor' + str(index), 'y').domain()[0]) * 32
 
-        pyglet.clock.schedule_interval(update, 1)
+        pyglet.clock.schedule_interval(update, 0.1)
         # pyglet.app.run()
         Thread(target=pyglet.app.run()).start()
         # target=pyglet.app.run()
