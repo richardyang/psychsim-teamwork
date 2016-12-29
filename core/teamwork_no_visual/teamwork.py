@@ -11,9 +11,6 @@ from psychsim.pwl import *
 from psychsim.action import *
 from psychsim.world import *
 from psychsim.agent import *
-import pyglet
-from pyglet.window import key
-from threading import Thread
 from time import time
 import os
 
@@ -488,6 +485,7 @@ class Scenario:
         file.write("\n \n")
 
         max_distance = self.MAP_SIZE_X + self.MAP_SIZE_Y
+        capture_penalty = False
 
         file.write("Scores:\n")
         file.write("Soldier-Goal Manhattan Distance: \n")
@@ -514,6 +512,7 @@ class Scenario:
             file.write("Soldier" + str(index) + ": " + str(agent_enemy_scores[index]) + "\n")
             if(agent_enemy_scores[index] == 0):
                 file.write("Soldier was captured, penalty awarded")
+                capture_penalty = True
             # print(agent_enemy_scores[index])
 
         file.write("Helicopter Deployment Costs: \n")
@@ -526,138 +525,27 @@ class Scenario:
         file.write("Turns Taken: \n")
         turns = int(self.world.getState(None,'turns').domain()[0])
         file.write(str(turns) + "\n")
-        if(turns < 10):
-            file.write("Bonus for taking less than 10 turns")
 
         file.write("Overall Score: \n")
+        average_score = 0
         for index in range(0, self.F_ACTORS):
             score = agent_goal_scores[index] + agent_enemy_scores[index] + 20 - helicopter_cost_scores[index] + 20 - turns
             possible = max_distance + 20 + 20
             print(float(score * 100 / possible))
             total = float(score * 100 / possible)
+            total = (total-20) if capture_penalty else total
             file.write("Soldier" + str(index) + ": " + str(total))
+            average_score += total
+        if self.F_ACTORS > 1:
+            average_score = average_score/self.F_ACTORS
+            file.write("Average Score:" + str(average_score))
+
 
     def run_without_visual(self):
         while not self.world.terminated():
             result = self.world.step()
             self.world.explain(result, 2)
         self.evaluate_score()
-
-    def run_with_visual(self):
-        pyglet.resource.path = ['../resources']
-        pyglet.resource.reindex()
-
-        SCREEN_WIDTH = self.MAP_SIZE_X * 32
-        SCREEN_HEIGHT = self.MAP_SIZE_Y * 32
-        window = pyglet.window.Window(resizable=True)
-        window.set_size(SCREEN_WIDTH, SCREEN_HEIGHT)
-
-        tile_image = pyglet.resource.image("grass.png")
-        tiles_batch = pyglet.graphics.Batch()
-        tiles = []
-        for y in range(0, self.MAP_SIZE_Y):
-            for x in range(0, self.MAP_SIZE_X):
-                tiles.append(pyglet.sprite.Sprite(
-                    img=tile_image,
-                    x=x * 32,
-                    y=y * 32,
-                    batch=tiles_batch)
-                )
-
-        goal_image = pyglet.resource.image("target.png")
-        goals_batch = pyglet.graphics.Batch()
-        goals = []
-        for index in range(0, len(self.F_GOAL_LOC)):
-            goals.append(pyglet.sprite.Sprite(
-                img=goal_image,
-                x=self.f_get_goal_x(index) * 32,
-                y=self.f_get_goal_y(index) * 32,
-                batch=goals_batch)
-            )
-
-        agent_image = pyglet.resource.image("soldier_blue.png")
-        agents_batch = pyglet.graphics.Batch()
-        agents = []
-        for index in range(0, self.F_ACTORS):
-            agents.append(pyglet.sprite.Sprite(
-                img=agent_image,
-                x=self.f_get_start_x(index) * 32,
-                y=self.f_get_start_y(index) * 32,
-                batch=agents_batch)
-            )
-
-        enemy_image = pyglet.resource.image("soldier_red.png")
-        enemies_batch = pyglet.graphics.Batch()
-        enemies = []
-        for index in range(0, self.E_ACTORS):
-            enemies.append(pyglet.sprite.Sprite(
-                img=enemy_image,
-                x=self.e_get_start_x(index) * 32,
-                y=self.e_get_start_y(index) * 32,
-                batch=enemies_batch)
-            )
-
-        distractor_image = pyglet.resource.image("heli.png")
-        base_image = pyglet.resource.image("base.png")
-        allies_batch = pyglet.graphics.Batch()
-        bases = []
-        distractors = []
-        for index in range(0, self.D_ACTORS):
-            bases.append(pyglet.sprite.Sprite(
-                img=base_image,
-                x=self.d_get_start_x(index) * 32,
-                y=self.d_get_start_y(index) * 32,
-                batch=allies_batch)
-            )
-            distractors.append(pyglet.sprite.Sprite(
-                img=distractor_image,
-                x=self.d_get_start_x(index) * 32,
-                y=self.d_get_start_y(index) * 32,
-                batch=allies_batch)
-            )
-
-        @window.event
-        def on_draw():
-            window.clear()
-            tiles_batch.draw()
-            goals_batch.draw()
-            agents_batch.draw()
-            enemies_batch.draw()
-            allies_batch.draw()
-
-        @window.event
-        def on_key_press(symbol, modifiers):
-            if symbol == key.P:
-                self.paused = True
-                print('Paused')
-            if symbol == key.U:
-                self.paused = False
-                print('Resumed')
-
-        def update(dt):
-            if not self.paused:
-                result = self.world.step()
-                self.world.explain(result, 2)
-                if self.world.terminated():
-                    self.evaluate_score()
-                    window.close()
-
-            for index in range(0, self.F_ACTORS):
-                agents[index].x = int(self.world.getState('Actor' + str(index), 'x').domain()[0]) * 32
-                agents[index].y = int(self.world.getState('Actor' + str(index), 'y').domain()[0]) * 32
-
-            for index in range(0, self.E_ACTORS):
-                enemies[index].x = int(self.world.getState('Enemy' + str(index), 'x').domain()[0]) * 32
-                enemies[index].y = int(self.world.getState('Enemy' + str(index), 'y').domain()[0]) * 32
-
-            for index in range(0, self.D_ACTORS):
-                distractors[index].x = int(self.world.getState('Distractor' + str(index), 'x').domain()[0]) * 32
-                distractors[index].y = int(self.world.getState('Distractor' + str(index), 'y').domain()[0]) * 32
-
-        pyglet.clock.schedule_interval(update, 0.1)
-        # pyglet.app.run()
-        Thread(target=pyglet.app.run()).start()
-        # target=pyglet.app.run()
 
 if __name__ == '__main__':
 

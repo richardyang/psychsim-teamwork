@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <content url="file://$MODULE_DIR$/../externals" />
+    <content url="jar://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/pyglet-1.2.4-py3.5.egg!/" />
     <orderEntry type="jdk" jdkName="Python 2.7.13 (C:\Python27\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
