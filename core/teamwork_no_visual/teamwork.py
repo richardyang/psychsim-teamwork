@@ -29,7 +29,8 @@ class Scenario:
                  BASE=[0.0, 0.0],
                  DISTRACTOR=[0.0, 0.0],
                  ENEMY=[0.0, 0.0, 0.0],
-                 AGENT=[0.0, 0.0]):
+                 AGENT=[0.0, 0.0],
+		 TURNS=20):
 
         self.MAP_SIZE_X = MAP_SIZE_X
         self.MAP_SIZE_Y = MAP_SIZE_Y
@@ -45,11 +46,12 @@ class Scenario:
         self.DISTRACTOR = DISTRACTOR
         self.ENEMY = ENEMY
         self.AGENT = AGENT
+	self.MAX_TURNS = TURNS
 
         self.world = World()
         self.world.defineState(None, 'turns', int)
         self.world.setState(None, 'turns', 0)
-        self.world.addTermination(makeTree({'if': thresholdRow(stateKey(None, 'turns'), 20),
+        self.world.addTermination(makeTree({'if': thresholdRow(stateKey(None, 'turns'), self.MAX_TURNS),
                                             True: True, False: False}))
         self.create_friendly_agents()
         self.create_enemy_agents()
@@ -529,12 +531,13 @@ class Scenario:
         file.write("Overall Score: \n")
         average_score = 0
         for index in range(0, self.F_ACTORS):
-            score = agent_goal_scores[index] + agent_enemy_scores[index] + 20 - helicopter_cost_scores[index] + 20 - turns
-            possible = max_distance + 20 + 20
+            score = agent_goal_scores[index] + agent_enemy_scores[index] + self.MAX_TURNS - helicopter_cost_scores[index] + self.MAX_TURNS - turns
+            possible = max_distance + self.MAX_TURNS + self.MAX_TURNS
             print(float(score * 100 / possible))
             total = float(score * 100 / possible)
-            total = (total-20) if capture_penalty else total
+            total = (total-self.MAX_TURNS) if capture_penalty else total
             file.write("Soldier" + str(index) + ": " + str(total))
+	    print("Soldier" + str(index) + ": " + str(total))
             average_score += total
         if self.F_ACTORS > 1:
             average_score = average_score/self.F_ACTORS
