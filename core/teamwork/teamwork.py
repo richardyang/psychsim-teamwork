@@ -680,5 +680,5 @@ if __name__ == '__main__':
                 DISTRACTOR=[-1.0, 1.0],
                 ENEMY=[0.5, 0.6, -1.0],
                 AGENT=[sg, se])
-            run.run_without_visual()
+            run.run_with_visual()
 #     print('RUN COMPLETE!')

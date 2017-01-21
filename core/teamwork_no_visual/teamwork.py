@@ -30,7 +30,8 @@ class Scenario:
                  DISTRACTOR=[0.0, 0.0],
                  ENEMY=[0.0, 0.0, 0.0],
                  AGENT=[0.0, 0.0],
-		 TURNS=20):
+		 TURNS=20,
+		 SAVE_NAME=" "):
 
         self.MAP_SIZE_X = MAP_SIZE_X
         self.MAP_SIZE_Y = MAP_SIZE_Y
@@ -47,6 +48,7 @@ class Scenario:
         self.ENEMY = ENEMY
         self.AGENT = AGENT
 	self.MAX_TURNS = TURNS
+	self.SAVE_NAME = SAVE_NAME
 
         self.world = World()
         self.world.defineState(None, 'turns', int)
@@ -458,7 +460,7 @@ class Scenario:
         cwd = os.getcwd()
         print(cwd)
         t = str(time())
-        file = open(cwd + "\output\\" + t + ".txt", "w")
+        file = open(cwd + "/output/soldier_sweep/" + self.SAVE_NAME + ".txt", "w")
         file.write("Parameters:\n")
         file.write("Map Size X: " + str(self.MAP_SIZE_X) + "\n")
         file.write("Map Size Y: " + str(self.MAP_SIZE_Y) + "\n")
@@ -547,29 +549,34 @@ class Scenario:
     def run_without_visual(self):
         while not self.world.terminated():
             result = self.world.step()
-            self.world.explain(result, 2)
+            # self.world.explain(result, 2)
         self.evaluate_score()
 
 if __name__ == '__main__':
 
-    for i1 in range(0,10):
-        sg = float(i1/10)
-        for i2 in range(0,10):
-            se = float(i2/10)
-            run = Scenario(
-                MAP_SIZE_X=8,
-                MAP_SIZE_Y=5,
-                F_ACTORS=1,
-                F_START_LOC=["1,2"],
-                F_GOAL_LOC=["5,4"],
-                E_ACTORS=1,
-                E_START_LOC=["4,3"],
-                E_PATROL_RANGE=5,
-                D_ACTORS=1,
-                D_START_LOC=["0,0"],
-                BASE=[0.5, 0.2],
-                DISTRACTOR=[-1.0, 1.0],
-                ENEMY=[0.5, 0.6, -1.0],
-                AGENT=[sg, se])
-            run.run_without_visual()
+    for i1 in range(-10,10):
+        se = float(i1/10)
+        for i2 in range(-10,10):
+            he = float(i2/10)
+            for i3 in range(-10,10):
+		sg = float(i3/10)	
+		run = Scenario(
+                	MAP_SIZE_X=8,
+                	MAP_SIZE_Y=5,
+                	F_ACTORS=1,
+                	F_START_LOC=["1,2"],
+                	F_GOAL_LOC=["5,4"],
+                	E_ACTORS=1,
+                	E_START_LOC=["4,3"],
+                	E_PATROL_RANGE=5,
+                	D_ACTORS=1,
+                	D_START_LOC=["0,0"],
+                	BASE=[0.5, 0.2],
+                	DISTRACTOR=[-1.0, 1.0],
+                	ENEMY=[se, he, sg],
+                	AGENT=[sg, se],
+			TURNS=20,
+			SAVE_NAME=str(se)+"_"+str(he)+"_"+str(sg)
+	    	print ("Starting run with: se=" + str(se) + "; he=" + str(he) + "; sg=" + str(sg))
+            	run.run_without_visual()
 #     print('RUN COMPLETE!')
