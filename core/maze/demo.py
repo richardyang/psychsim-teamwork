@@ -86,7 +86,6 @@ world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
 # Boundary and Obstacle check
 tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '5'),
              True: False, False: add_branch_plus_x(len(obstacles)-1)})
-#tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), obstacles[i][0]-1), True: {'if': equalRow(stateKey(actor.name, 'y'), obstacles[i][1]), True: False, False: True}, False: True})
 actor.setLegal(action, tree)
 
 
@@ -209,5 +208,5 @@ def update(dt):
     agents[0].x = int(world.getState('Agent', 'x').domain()[0]) * 32
     agents[0].y = int(world.getState('Agent', 'y').domain()[0]) * 32
 
-pyglet.clock.schedule_interval(update, 1)
+pyglet.clock.schedule_interval(update, 0.5)
 pyglet.app.run()
