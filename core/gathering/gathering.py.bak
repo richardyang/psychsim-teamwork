@@ -1,0 +1,342 @@
+from psychsim.reward import *
+from psychsim.pwl import *
+from psychsim.action import *
+from psychsim.world import *
+from psychsim.agent import *
+import psychsim.probability
+import pyglet
+from pyglet.window import key
+from threading import Thread
+
+GATHERERS = 2
+
+class Gathering:
+	def __init__(self):
+		self.paused = False
+		self.world = World()
+		self.world.defineState(None, 'turns', int)
+		self.world.setState(None, 'turns', 0)
+
+		self.world.addTermination(makeTree({'if': thresholdRow(stateKey(None, 'turns'), 1000),
+		                            True: True, False: False}))
+		self.agts = []
+		self.create_agents()
+		for i in range(1,4):
+			for j in range(1,4):
+				self.generate_food(i,j)
+
+		# Parallel action
+		#self.world.setOrder([set(self.world.agents.keys())])
+		# Sequential action
+		self.world.setOrder(self.world.agents.keys())
+
+	def create_agents(self):
+		for i in range(0,GATHERERS):
+			actor = Agent('Actor'+str(i))
+			self.world.addAgent(actor)
+			actor.setHorizon(10)
+			# States
+			self.world.defineState(actor.name,'food',int)
+			self.world.setState(actor.name,'food',0)
+			self.world.defineState(actor.name,'x',int)
+			self.world.defineState(actor.name,'y',int)
+			if i==0:
+				self.world.setState(actor.name,'x',0)
+				self.world.setState(actor.name,'y',0)
+			else:
+				self.world.setState(actor.name,'x',4)
+				self.world.setState(actor.name,'y',4)
+
+			# Nop
+			action = actor.addAction({'verb': 'Wait'})
+			tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 0.))
+			self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+			tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 0.))
+			self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+			tree = makeTree(incrementMatrix('turns', 1.0))
+			self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+
+			# Increment X position
+			action = actor.addAction({'verb': 'MoveRight'})
+			tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 1.))
+			self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+			tree = makeTree(incrementMatrix('turns', 1.0))
+			self.world.setDynamics('turns', action, tree)
+
+			# Rightmost boundary check
+			tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '4'),
+			                 True: False, False: True})
+			actor.setLegal(action, tree)
+
+			# Check if food
+			'''
+			xp1 = incrementMatrix(stateKey(action['subject'], 'x'), 1.)
+			y = stateKey(action['subject'], 'y')
+			no_food = incrementMatrix(stateKey(action['subject'], 'food'),0)
+			yes_food = incrementMatrix(stateKey(action['subject'], 'food'),1.)
+			tree = makeTree({'if': equalRow(xp1, [1,2,3]),
+								True: {'if': equalRow(y,[1,2,3]),
+											True: {'if': trueRow(food),
+													True: yes_food,
+													False: no_food},
+											False: no_food},
+								False: no_food})
+
+			# Check if food
+			for i in range(1,4):
+				for j in range(1,4):
+					food = stateKey(str(i)+','+str(j), 'food')
+					xp1 = incrementMatrix(stateKey(action['subject'], 'x'), 1.)
+					y = stateKey(action['subject'], 'y')
+					tree = makeTree({'if': equalRow(xp1, i),
+										True: {'if': equalRow(y,j),
+													True: {'if': trueRow(food),
+															True: incrementMatrix(stateKey(action['subject'], 'food'),1.),
+															False: incrementMatrix(stateKey(action['subject'], 'food'),0)},
+	 												False: incrementMatrix(stateKey(action['subject'], 'food'),0)},
+										False: incrementMatrix(stateKey(action['subject'], 'food'),0)})
+
+					self.world.setDynamics(stateKey(action['subject'],'food'), action, tree)
+					tree = makeTree({'if': equalRow(xp1, i),
+										True: {'if': equalRow(y,j),
+													True: {'if': trueRow(food),
+															True: setFalseMatrix(food),
+															False: incrementMatrix(stateKey(action['subject'], 'food'),0)},
+	 												False: incrementMatrix(stateKey(action['subject'], 'food'),0)},
+										False: incrementMatrix(stateKey(action['subject'], 'food'),0)})
+					self.world.setDynamics(stateKey(str(i)+','+str(j),'food'), action, tree)
+			'''
+			##############################
+
+			# Decrement X position
+			action = actor.addAction({'verb': 'MoveLeft'})
+			tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), -1.))
+			self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+			tree = makeTree(incrementMatrix('turns', 1.0))
+			self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+
+			# Leftmost boundary check, min X = 0
+			tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '0'),
+			                 True: False, False: True})
+			actor.setLegal(action, tree)
+
+			##############################
+
+			# Increment Y position
+			action = actor.addAction({'verb': 'MoveUp'})
+			tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 1.))
+			self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+			tree = makeTree(incrementMatrix('turns', 1.0))
+			self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+
+			# Downmost boundary check, max Y
+			tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '4'),
+			                 True: False, False: True})
+			actor.setLegal(action, tree)
+
+			##############################
+
+			# Decrement Y position
+			action = actor.addAction({'verb': 'MoveDown'})
+			tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), -1.))
+			self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+			tree = makeTree(incrementMatrix('turns', 1.0))
+			self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+
+			# Upmost boundary check, min Y = 0
+			tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '0'),
+			                 True: False, False: True})
+			actor.setLegal(action, tree)
+
+			actor.setReward(maximizeFeature(stateKey(actor.name,'food')),1.0)
+			self.agts.append(actor)
+
+	def generate_food(self, i ,j):
+			location = Agent(str(i) + ',' + str(j))
+			self.world.addAgent(location)
+			self.world.defineState(location.name, 'food', bool)
+			self.world.setState(location.name, 'food', False)
+			self.world.defineState(location.name, 'x', int)
+			self.world.setState(location.name, 'x', i)
+			self.world.defineState(location.name, 'y', int)
+			self.world.setState(location.name, 'y', j)
+			location.addAction({
+			  'verb': 'nothing'
+			})
+			action = location.addAction({
+			  'verb': 'generate'
+			})
+			tree = makeTree({
+			  'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.5), (setFalseMatrix(stateKey(location.name, 'food')), 0.5)]
+			})
+			self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
+
+			tree = makeTree({
+			  'if': trueRow(stateKey(location.name, 'food')),
+			  True: False,
+			  False: True
+			})
+			location.setLegal(action, tree)
+
+			for i in range(0,GATHERERS):
+				action = location.addAction({
+				  'verb': 'food'+str(i)
+				})
+				tree = makeTree(setFalseMatrix(stateKey(location.name, 'food')))
+				self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
+				tree = makeTree(incrementMatrix(stateKey(self.agts[i].name, 'food'),1))
+				self.world.setDynamics(stateKey(self.agts[i].name, 'food'), action, tree)
+				tree = makeTree({
+					'if': trueRow(stateKey(location.name, 'food')),
+					True: {'if': equalFeatureRow(stateKey(location.name, 'x'), stateKey(self.agts[i].name,'x')),
+							True: {'if': equalFeatureRow(stateKey(location.name, 'y'), stateKey(self.agts[i].name,'y')),
+									True: True,
+									False: False
+									},
+							False: False
+							},
+					False: False
+					})
+				location.setLegal(action, tree)
+
+	def generate_food_obsolete(self):
+	    for i in range(0, 5):
+	    	for j in range(0, 5):
+	          location = Agent(str(i) + ',' + str(j))
+	          self.world.addAgent(location)
+	          self.world.defineState(location.name, 'food', bool)
+	          self.world.setState(location.name, 'food', False)
+
+	          location.addAction({
+	              'verb': 'nothing'
+	          })
+
+	          action = location.addAction({
+	              'verb': 'generate'
+	          })
+	          tree = makeTree({
+	              'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.5), (setFalseMatrix(stateKey(location.name, 'food')), 0.5)]
+	          })
+	          self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
+	          tree = makeTree({
+	              'if': trueRow(stateKey(location.name, 'food')),
+	              True: False,
+	              False: True
+	          })
+	          location.setLegal(action, tree)
+
+	def run_without_visual(self):
+	    while not self.world.terminated():
+	        result = self.world.step()
+	        self.world.explain(result, 2)
+	    self.evaluate_score()
+
+	def run_with_visual(self):
+	    pyglet.resource.path = ['../resources']
+	    pyglet.resource.reindex()
+
+	    SCREEN_WIDTH = 5 * 32
+	    SCREEN_HEIGHT = 5 * 32
+	    window = pyglet.window.Window(resizable=True)
+	    window.set_size(SCREEN_WIDTH, SCREEN_HEIGHT)
+
+	    tile_image = pyglet.resource.image("grass.png")
+	    tiles_batch = pyglet.graphics.Batch()
+	    tiles = []
+	    for y in range(0, 5):
+	        for x in range(0, 5):
+	            tiles.append(pyglet.sprite.Sprite(
+	                img=tile_image,
+	                x=x * 32,
+	                y=y * 32,
+	                batch=tiles_batch)
+	            )
+
+	    goal_image = pyglet.resource.image("target.png")
+	    goals_batch = pyglet.graphics.Batch()
+	    goals = []
+	    for i in range(0, 5):
+	    	goals_sub = []
+	    	for j in range(0, 5):
+	            goals_sub.append(pyglet.sprite.Sprite(
+	                img=goal_image,
+	                x= i * 32 + 1999,
+	                y= j * 32 + 1999,
+	                batch=goals_batch)
+	            )
+	        goals.append(goals_sub)
+
+	    agent_image = pyglet.resource.image("soldier_blue.png")
+	    agents_batch = pyglet.graphics.Batch()
+	    agents = []
+		for index in range(0, GATHERERS):
+		    agents.append(pyglet.sprite.Sprite(
+		        img=agent_image,
+		        x=index * 32,
+		        y=index * 32,
+		        batch=agents_batch)
+		    )
+
+		print agents
+
+	    @window.event
+	    def on_draw():
+	        window.clear()
+	        tiles_batch.draw()
+	        goals_batch.draw()
+	        agents_batch.draw()
+
+	    @window.event
+	    def on_key_press(symbol, modifiers):
+	        if symbol == key.P:
+	            self.paused = True
+	            print('Paused')
+	        if symbol == key.U:
+	            self.paused = False
+	            print('Resumed')
+
+	    def update(dt):
+	        if not self.paused:
+	            result = self.world.step()
+	            self.world.explain(result, 2)
+    	        for i in range(1,4):
+		        	for j in range(1,4):
+		        		val = self.world.getState(str(i)+','+str(j),'food').domain()[0]
+		        		#print str(i)+','+str(j)+':'+str(val)
+				if self.world.terminated():
+					window.close()
+
+	        for i in range(0,GATHERERS):
+	        	agents[i].x = int(self.world.getState('Actor' + str(index), 'x').domain()[0]) * 32
+	        	agents[i].y = int(self.world.getState('Actor' + str(index), 'y').domain()[0]) * 32
+
+	        for i in range(1,4):
+	        	for j in range(1,4):
+	        		val = self.world.getState(str(i)+','+str(j),'food').domain()[0]
+	        		if val:
+	        			goals[i][j].x = i * 32
+	        			goals[i][j].y = j * 32
+	        		else:
+	        			goals[i][j].x = i * 1999
+	        			goals[i][j].y = j * 1999
+	        '''
+	        for index in range(0, self.F_ACTORS):
+	            agents[index].x = int(self.world.getState('Actor' + str(index), 'x').domain()[0]) * 32
+	            agents[index].y = int(self.world.getState('Actor' + str(index), 'y').domain()[0]) * 32
+
+	        for index in range(0, self.E_ACTORS):
+	            enemies[index].x = int(self.world.getState('Enemy' + str(index), 'x').domain()[0]) * 32
+	            enemies[index].y = int(self.world.getState('Enemy' + str(index), 'y').domain()[0]) * 32
+
+	        for index in range(0, self.D_ACTORS):
+	            distractors[index].x = int(self.world.getState('Distractor' + str(index), 'x').domain()[0]) * 32
+	            distractors[index].y = int(self.world.getState('Distractor' + str(index), 'y').domain()[0]) * 32
+			'''
+	    pyglet.clock.schedule_interval(update, 0.1)
+	    # pyglet.app.run()
+	    Thread(target=pyglet.app.run()).start()
+	    # target=pyglet.app.run()
+
+if __name__ == '__main__':
+	run = Gathering()
+	run.run_with_visual()

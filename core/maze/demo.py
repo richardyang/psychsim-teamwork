@@ -3,6 +3,8 @@ from psychsim.pwl import *
 from psychsim.action import *
 from psychsim.world import *
 from psychsim.agent import *
+import psychsim.probability
+
 import pyglet
 
 # Initialize the Psychsim World
@@ -127,6 +129,16 @@ actor.setLegal(action, tree)
 # Set the Agent reward to minimize getting to goal
 actor.setReward(minimizeDifference(stateKey(actor.name, 'x'), stateKey(actor.name, 'goal_x')), 1.0)
 actor.setReward(minimizeDifference(stateKey(actor.name, 'y'), stateKey(actor.name, 'goal_y')), 1.0)
+
+
+################################
+# Testing beliefs
+################################
+world.defineState(None,'guess', bool)
+world.setModel(actor.name,True)
+value = 0.5
+actor.setBelief(stateKey(None,'guess'),psychsim.probability.Distribution({True: value, False: value}))
+actor.setRecursiveLevel(3)
 
 ################################
 # 5. Set Turn Order
