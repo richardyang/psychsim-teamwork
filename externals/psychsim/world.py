@@ -92,7 +92,7 @@ class World:
     """------------------"""
     """Simulation methods"""
     """------------------"""
-    
+
     def step(self,actions=None,state=None,real=True,select=True,keys=None):
         """
         The simulation method
@@ -170,7 +170,7 @@ class World:
         # Keep track of whether there is uncertainty about the actions to perform
         stochastic = []
         if not isinstance(outcome['actions'],ActionSet) and not isinstance(outcome['actions'],list):
-            # ActionSet indicates that we should perform just these actions. 
+            # ActionSet indicates that we should perform just these actions.
             # Otherwise, we look at whose turn it is:
             turn = self.next(vector)
             for name in outcome['actions'].keys():
@@ -194,7 +194,7 @@ class World:
             for action in outcome['actions'][stochastic[0]].domain():
                 prob = outcome['actions'][stochastic[0]][action]
                 actions = dict(outcome['actions'])
-                actions[stochastic[0]] = action 
+                actions[stochastic[0]] = action
                 effect = self.effect(actions,outcome['old'],prob,updateBeliefs=updateBeliefs,keys=keys)
                 if len(effect) == 0:
                     # No consistent transition for this action (don't blame me, I'm just the messenger)
@@ -362,7 +362,7 @@ class World:
                 return old
         else:
             return old
-        
+
     def deltaState(self,actions,old,effects,keys=None):
         """
         Computes the change across a subset of state features
@@ -474,7 +474,7 @@ class World:
                 action = Action(action)
             # Action -> ActionSet
             action = ActionSet([action])
-        assert self.variables.has_key(key),'No state element "%s"' % (key) 
+        assert self.variables.has_key(key),'No state element "%s"' % (key)
         if not action is True:
             for atom in action:
                 assert self.agents.has_key(atom['subject']),'Unknown actor %s' % (atom['subject'])
@@ -669,7 +669,7 @@ class World:
             return self.getActions(vector,agents,newActions)
         else:
             return actions
-                    
+
     """-------------"""
     """State methods"""
     """-------------"""
@@ -928,7 +928,7 @@ class World:
         else:
             # Otherwise, assume we're changing the model in the current state
             self.setFeature(key,distribution,state)
-        
+
     def setMentalModel(self,modeler,modelee,distribution,model=True):
         """
         Sets the distribution over mental models one agent has of another entity
@@ -1136,7 +1136,7 @@ class World:
                             envelope.add((newNode,horizon-1))
                             transition[newNode] = {'__predecessors__': set([node])}
         return transition
-            
+
     def nearestVector(self,vector,vectors):
         mapping = {}
         for candidate in vectors:
@@ -1261,7 +1261,7 @@ class World:
             for name,action in outcome['actions'].items():
                 print >> buf,action
         return set(outcome['actions'].values())
-        
+
 
     def explainDecision(self,decision,buf=None,level=2,prefix=''):
         """
@@ -1286,13 +1286,13 @@ class World:
                         t = V[state]['horizon']-node['horizon']
                         for index in range(t):
                             tab = prefix+tab+'\t'
-                        if level > 4: 
+                        if level > 4:
                             print >> buf,'%sState:' % (tab)
                             self.printVector(node['old'],buf,prefix=tab,first=False)
                         print >> buf,'%s%s (V_%s=%6.3f) [P=%d%%]' % (tab,ActionSet(node['actions']),V[state]['agent'],node['R'],node['probability']*100.)
                         for other in node['decisions'].keys():
                             self.explainDecision(node['decisions'][other],buf,level,prefix+'\t\t')
-                        if level > 3: 
+                        if level > 3:
                             print >> buf,'%sEffect:' % (tab+prefix)
                             self.printDelta(node['old'],node['new'],buf,prefix=tab+prefix)
                         for index in range(len(node['projection'])):
@@ -1474,7 +1474,7 @@ class World:
             except KeyError:
                 deltaDist[delta] = new[vector]
         self.printState(deltaDist,buf,prefix=prefix,beliefs=False)
-        
+
     """---------------------"""
     """Serialization methods"""
     """---------------------"""
@@ -1743,7 +1743,7 @@ class World:
         self.symbolList = self.symbolList[len(self.symbolList)/2:]
         for index in range(len(self.symbolList)):
             self.symbols[self.symbolList[index]] = index
-        
+
     def save(self,filename,compressed=True):
         """
         @param compressed: if C{True}, then save in compressed XML; otherwise, save in XML (default is C{True})
@@ -1792,7 +1792,7 @@ def state2feature(key):
         return key
     else:
         return key[index+3:]
-    
+
 def makePresent(key):
     """
     @return: a reference to the given state features' current value
@@ -1824,7 +1824,7 @@ def isTurnKey(key):
 def turn2name(key):
     return key[:-8]
 
-def actionKey(feature):    
+def actionKey(feature):
     return '__action__%s__' % (feature)
 
 def modelKey(name):
@@ -1913,4 +1913,3 @@ def scaleValue(value,entry):
         return float(value)/float(len(entry['elements']))
     else:
         return value
-

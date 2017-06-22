@@ -54,6 +54,7 @@ class Gathering:
                 self.world.setState(actor.name,'y',4)
 
             # Nop
+            '''
             action = actor.addAction({'verb': 'Wait'})
             tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 0.))
             self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
@@ -61,6 +62,7 @@ class Gathering:
             self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
             tree = makeTree(incrementMatrix('turns', 1.0))
             self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+            '''
 
             # Increment X position
             action = actor.addAction({'verb': 'MoveRight'})
@@ -129,13 +131,15 @@ class Gathering:
     def generate_food(self, i ,j):
         location = Agent(str(i) + ',' + str(j))
         self.world.addAgent(location)
+        location.setHorizon(1)
+
         self.world.defineState(location.name, 'food', bool)
-        self.world.setState(location.name, 'food', False)
+        self.world.setState(location.name, 'food', True)
         self.world.defineState(location.name, 'x', int)
         self.world.setState(location.name, 'x', i)
         self.world.defineState(location.name, 'y', int)
         self.world.setState(location.name, 'y', j)
-        location.addAction({
+        nothing = location.addAction({
           'verb': 'nothing'
         })
 
@@ -144,17 +148,25 @@ class Gathering:
           'verb': 'generate'
         })
         tree = makeTree({
-          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.2), (setFalseMatrix(stateKey(location.name, 'food')), 0.8)]
+          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.05), (setFalseMatrix(stateKey(location.name, 'food')), 0.95)]
         })
         self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
 
-        # Can't respawn if food is already food there
+        # Can't respawn food if food is already food there
         tree = makeTree({
           'if': trueRow(stateKey(location.name, 'food')),
           True: False,
           False: True
         })
         location.setLegal(action, tree)
+
+        # Force food tile to run generate when there's no food
+        tree = makeTree({
+          'if': trueRow(stateKey(location.name, 'food')),
+          True: True,
+          False: False
+        })
+        location.setLegal(nothing, tree)
 
         # If an agent is on a food tile, give the agent the food
         for i in range(0,GATHERERS):
@@ -178,6 +190,10 @@ class Gathering:
                     })
             location.setLegal(action, tree)
 
+        # hack: prioritize giving food over no action
+        location.setReward(achieveFeatureValue(stateKey(location.name,'food'),False),1.)
+
+
     def modeltest(self,trueModels,A,B,strongerBelief):
         agts = self.agts
         for i in range(2):
@@ -189,10 +205,10 @@ class Gathering:
                 else:
                     name = model
                 if name == 'Selfish':
-                    me.setReward(maximizeFeature(stateKey(me.name,'money')),1.0,model)
+                    me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
                 elif name == 'Altruistic':
-                    me.setReward(maximizeFeature(stateKey(me.name,'money')),1.0,model)
-                    me.setReward(maximizeFeature(stateKey(other.name,'money')),1.0,model)
+                    me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
+                    me.setReward(maximizeFeature(stateKey(other.name,'food')),1.0,model)
                 #elif name == 'Sadistic':
                 #    me.setReward(minimizeFeature(stateKey(other.name,'money')),1.0,model)
                 #    me.setReward(maximizeFeature(stateKey(other.name,'money')),1.0,model)
@@ -213,7 +229,7 @@ class Gathering:
 
     # Graphics
     def run_with_visual(self):
-        pyglet.resource.path = ['../resources']
+        pyglet.resource.path = ['../resources/gathering']
         pyglet.resource.reindex()
 
         SCREEN_WIDTH = 5 * 32
@@ -221,7 +237,7 @@ class Gathering:
         window = pyglet.window.Window(resizable=True)
         window.set_size(SCREEN_WIDTH, SCREEN_HEIGHT)
 
-        tile_image = pyglet.resource.image("grass.png")
+        tile_image = pyglet.resource.image("black.jpg")
         tiles_batch = pyglet.graphics.Batch()
         tiles = []
         for y in range(0, 5):
@@ -233,7 +249,7 @@ class Gathering:
                     batch=tiles_batch)
                 )
 
-        goal_image = pyglet.resource.image("target.png")
+        goal_image = pyglet.resource.image("green.jpg")
         goals_batch = pyglet.graphics.Batch()
         goals = []
         for i in range(0, 5):
@@ -247,17 +263,26 @@ class Gathering:
                 )
             goals.append(goals_sub)
 
-        agent_image = pyglet.resource.image("soldier_blue.png")
+        #agent_image = pyglet.resource.image("white.jpg")
+        agent0_image = pyglet.resource.image("0.jpg")
+        agent1_image = pyglet.resource.image("1.jpg")
         agents_batch = pyglet.graphics.Batch()
         agents = []
         for index in range(0, GATHERERS):
-            agents.append(pyglet.sprite.Sprite(
-                img=agent_image,
-                x=index * 32,
-                y=index * 32,
-                batch=agents_batch)
-            )
-        print agents
+            if index == 0:
+                agents.append(pyglet.sprite.Sprite(
+                    img=agent0_image,
+                    x=index * 32,
+                    y=index * 32,
+                    batch=agents_batch))
+            else:
+                agents.append(pyglet.sprite.Sprite(
+                        img=agent1_image,
+                        x=index * 32,
+                        y=index * 32,
+                        batch=agents_batch))
+
+
 
         @window.event
         def on_draw():
@@ -307,7 +332,7 @@ class Gathering:
 
 if __name__ == '__main__':
     run = Gathering()
-    trueModels = {'Actor0': 'Altruistic',
-                  'Actor1': 'Altruistic'}
-    run.modeltest(trueModels,'Altruistic','Altruistic',1.0)
-    run.run_without_visual()
+    trueModels = {'Actor0': 'Selfish',
+                  'Actor1': 'Selfish'}
+    run.modeltest(trueModels,'Selfish','Selfish',1.0)
+    run.run_with_visual()
