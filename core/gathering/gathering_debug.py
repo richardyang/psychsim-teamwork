@@ -8,7 +8,7 @@ import pyglet
 from pyglet.window import key
 from threading import Thread
 
-GATHERERS = 2
+GATHERERS = 1
 TURNS = 10000
 
 class Gathering:
@@ -24,8 +24,8 @@ class Gathering:
         self.agts = []
         self.tiles = []
         self.create_agents()
-        for i in range(1,4):
-            for j in range(1,4):
+        for i in range(2,3):
+            for j in range(3,4):
                 self.generate_food(i,j)
 
         # Parallel action
@@ -36,99 +36,94 @@ class Gathering:
 
     def create_agents(self):
         # Create multiple agents
-        for i in range(0,GATHERERS):
-            actor = Agent('Actor'+str(i))
-            self.world.addAgent(actor)
-            actor.setHorizon(10)
+        actor = Agent('Actor'+str(0))
+        self.world.addAgent(actor)
+        actor.setHorizon(2)
 
-            # States
-            self.world.defineState(actor.name,'food',int)
-            self.world.setState(actor.name,'food',0)
-            self.world.defineState(actor.name,'x',int)
-            self.world.defineState(actor.name,'y',int)
+        # States
+        self.world.defineState(actor.name,'food',int)
+        self.world.setState(actor.name,'food',0)
+        self.world.defineState(actor.name,'x',int)
+        self.world.defineState(actor.name,'y',int)
 
-            # Start at different locations
-            if i==0:
-                self.world.setState(actor.name,'x',0)
-                self.world.setState(actor.name,'y',0)
-            else:
-                self.world.setState(actor.name,'x',4)
-                self.world.setState(actor.name,'y',4)
+        # Start at different locations
+        self.world.setState(actor.name,'x',2)
+        self.world.setState(actor.name,'y',2)
 
-            # Nop
-            '''
-            action = actor.addAction({'verb': 'Wait'})
-            tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 0.))
-            self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
-            tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 0.))
-            self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
-            tree = makeTree(incrementMatrix('turns', 1.0))
-            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
-            '''
+        # Nop
+        '''
+        action = actor.addAction({'verb': 'Wait'})
+        tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 0.))
+        self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+        tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 0.))
+        self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+        '''
 
-            # Increment X position
-            action = actor.addAction({'verb': 'MoveRight'})
-            tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 1.))
-            self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
-            tree = makeTree(incrementMatrix('turns', 1.0))
-            self.world.setDynamics('turns', action, tree)
+        # Increment X position
+        action = actor.addAction({'verb': 'MoveRight'})
+        tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), 1.))
+        self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics('turns', action, tree)
 
-            # Rightmost boundary check
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '4'),
-                             True: False, False: True})
-            actor.setLegal(action, tree)
+        # Rightmost boundary check
+        tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '4'),
+                         True: False, False: True})
+        actor.setLegal(action, tree)
 
-            ##############################
+        ##############################
 
-            # Decrement X position
-            action = actor.addAction({'verb': 'MoveLeft'})
-            tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), -1.))
-            self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
-            tree = makeTree(incrementMatrix('turns', 1.0))
-            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+        # Decrement X position
+        action = actor.addAction({'verb': 'MoveLeft'})
+        tree = makeTree(incrementMatrix(stateKey(action['subject'], 'x'), -1.))
+        self.world.setDynamics(stateKey(action['subject'], 'x'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
-            # Leftmost boundary check, min X = 0
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '0'),
-                             True: False, False: True})
-            actor.setLegal(action, tree)
+        # Leftmost boundary check, min X = 0
+        tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '0'),
+                         True: False, False: True})
+        actor.setLegal(action, tree)
 
-            ##############################
+        ##############################
 
-            # Increment Y position
-            action = actor.addAction({'verb': 'MoveUp'})
-            tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 1.))
-            self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
-            tree = makeTree(incrementMatrix('turns', 1.0))
-            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+        # Increment Y position
+        action = actor.addAction({'verb': 'MoveUp'})
+        tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), 1.))
+        self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
-            # Downmost boundary check, max Y
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '4'),
-                             True: False, False: True})
-            actor.setLegal(action, tree)
+        # Downmost boundary check, max Y
+        tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '4'),
+                         True: False, False: True})
+        actor.setLegal(action, tree)
 
-            ##############################
+        ##############################
 
-            # Decrement Y position
-            action = actor.addAction({'verb': 'MoveDown'})
-            tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), -1.))
-            self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
-            tree = makeTree(incrementMatrix('turns', 1.0))
-            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+        # Decrement Y position
+        action = actor.addAction({'verb': 'MoveDown'})
+        tree = makeTree(incrementMatrix(stateKey(action['subject'], 'y'), -1.))
+        self.world.setDynamics(stateKey(action['subject'], 'y'), action, tree)
+        tree = makeTree(incrementMatrix('turns', 1.0))
+        self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
-            # Upmost boundary check, min Y = 0
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '0'),
-                             True: False, False: True})
-            actor.setLegal(action, tree)
+        # Upmost boundary check, min Y = 0
+        tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '0'),
+                         True: False, False: True})
+        actor.setLegal(action, tree)
 
-            # Maximize your current food count
-            #actor.setReward(maximizeFeature(stateKey(actor.name,'food')),1.0)
+        # Maximize your current food count
+        #actor.setReward(maximizeFeature(stateKey(actor.name,'food')),1.0)
 
-            # Models of belief
-            actor.addModel('Selfish',R={},level=2,rationality=10.,selection='distribution')
-            actor.addModel('Altruistic',R={},level=2,rationality=10.,selection='distribution')
-            #actor.addModel('Sadistic',R={},level=2,rationality=10.,selection='distribution')
+        # Models of belief
+        actor.addModel('Selfish',R={},level=2,rationality=10.,selection='distribution')
+        actor.addModel('Altruistic',R={},level=2,rationality=10.,selection='distribution')
+        #actor.addModel('Sadistic',R={},level=2,rationality=10.,selection='distribution')
 
-            self.agts.append(actor)
+        self.agts.append(actor)
 
     def generate_food(self, i ,j):
         location = Agent(str(i) + ',' + str(j))
@@ -151,7 +146,7 @@ class Gathering:
           'verb': 'generate'
         })
         tree = makeTree({
-          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.05), (setFalseMatrix(stateKey(location.name, 'food')), 0.95)]
+          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.99), (setFalseMatrix(stateKey(location.name, 'food')), 0.01)]
         })
         self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
 
@@ -308,8 +303,8 @@ class Gathering:
             if not self.paused:
                 result = self.world.step()
                 self.world.explain(result, 2)
-            for i in range(1,4):
-                for j in range(1,4):
+            for i in range(2,3):
+                for j in range(3,4):
                     val = self.world.getState(str(i)+','+str(j),'food').domain()[0]
                     #print str(i)+','+str(j)+':'+str(val)
                 if self.world.terminated():
@@ -319,8 +314,8 @@ class Gathering:
                 agents[i].x = int(self.world.getState('Actor' + str(i), 'x').domain()[0]) * 32
                 agents[i].y = int(self.world.getState('Actor' + str(i), 'y').domain()[0]) * 32
 
-            for i in range(1,4):
-                for j in range(1,4):
+            for i in range(2,3):
+                for j in range(3,4):
                     val = self.world.getState(str(i)+','+str(j),'food').domain()[0]
                     if val:
                         goals[i][j].x = i * 32
@@ -336,7 +331,7 @@ class Gathering:
 
 if __name__ == '__main__':
     run = Gathering()
-    trueModels = {'Actor0': 'Selfish',
-                  'Actor1': 'Selfish'}
-    run.modeltest(trueModels,'Selfish','Selfish',1.0)
+    #trueModels = {'Actor0': 'Selfish',
+    #              'Actor1': 'Selfish'}
+    #run.modeltest(trueModels,'Selfish','Selfish',1.0)
     run.run_with_visual()
