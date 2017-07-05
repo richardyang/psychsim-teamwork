@@ -9,7 +9,7 @@ from pyglet.window import key
 from threading import Thread
 
 GATHERERS = 2
-TURNS = 10000
+TURNS = 30
 
 class Gathering:
     def __init__(self):
@@ -41,8 +41,12 @@ class Gathering:
             # Create multiple agents
             actor = Agent('Actor'+str(i))
             self.world.addAgent(actor)
-            actor.setHorizon(3)
+            actor.setHorizon(5)
             self.agts.append(actor)
+
+            # Active state (can be disabled by beam)
+            self.world.defineState(actor.name, 'active',bool)
+            self.world.setState(actor.name, 'active', False)
 
 
         for i in range(0, GATHERERS):
@@ -55,10 +59,10 @@ class Gathering:
             # States
             self.world.defineState(actor.name,'food',int)
             self.world.setState(actor.name,'food',0)
-            self.world.defineState(actor.name,'x',int)
-            self.world.defineState(actor.name,'y',int)
 
             # Start at different locations
+            self.world.defineState(actor.name,'x',int)
+            self.world.defineState(actor.name,'y',int)
             self.world.setState(actor.name,'x',i*2+1)
             self.world.setState(actor.name,'y',2)
 
@@ -81,8 +85,11 @@ class Gathering:
             self.world.setDynamics('turns', action, tree)
 
             # Rightmost boundary check
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '4'),
-                             True: False, False: True})
+            act = stateKey(actor.name,'active')
+            tree = makeTree({'if': trueRow(act),
+                            True: {'if': equalRow(stateKey(actor.name, 'x'), '4'),
+                                True: False, False: True},
+                            False: False})
             actor.setLegal(action, tree)
 
             # Check other agent
@@ -99,13 +106,13 @@ class Gathering:
             self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
             # Leftmost boundary check, min X = 0
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'x'), '0'),
-                             True: False, False: True})
+            tree = makeTree({'if': trueRow(act),
+                            True: {'if': equalRow(stateKey(actor.name, 'x'), '0'),
+                                True: False, False: True},
+                            False: False})
             actor.setLegal(action, tree)
 
             # Check other agent
-            #tree = makeTree({'if': equalFeatureRow(incrementMatrix(stateKey(actor.name,'x'),-1.),stateKey(other.name,'x')),True: False, False: True})
-            #actor.setLegal(action,tree)
             #tree = makeTree({'if': differenceRow(stateKey(actor.name,'x'),stateKey(other.name,'x'),1), True: True, False: False})
             #actor.setLegal(action,tree)
 
@@ -119,13 +126,13 @@ class Gathering:
             self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
             # Downmost boundary check, max Y
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '4'),
-                             True: False, False: True})
+            tree = makeTree({'if': trueRow(act),
+                            True: {'if': equalRow(stateKey(actor.name, 'y'), '4'),
+                                True: False, False: True},
+                            False: False})
             actor.setLegal(action, tree)
 
             # Check other agent
-            #tree = makeTree({'if': equalFeatureRow(incrementMatrix(stateKey(actor.name,'y'),1.),stateKey(other.name,'y')),True: False, False: True})
-            #actor.setLegal(action,tree)
             #tree = makeTree({'if': differenceRow(stateKey(actor.name,'y'),stateKey(other.name,'y'),1), True: True, False: False})
             #actor.setLegal(action,tree)
 
@@ -139,23 +146,59 @@ class Gathering:
             self.world.setDynamics(stateKey(None, 'turns'), action, tree)
 
             # Upmost boundary check, min Y = 0
-            tree = makeTree({'if': equalRow(stateKey(actor.name, 'y'), '0'),
-                             True: False, False: True})
+            tree = makeTree({'if': trueRow(act),
+                            True: {'if': equalRow(stateKey(actor.name, 'y'), '0'),
+                                True: False, False: True},
+                            False: False})
             actor.setLegal(action, tree)
 
             # Check other agent
-            #tree = makeTree({'if': equalFeatureRow(incrementMatrix(stateKey(actor.name,'y'),-1.),stateKey(other.name,'y')),True: False, False: True})
-            #actor.setLegal(action,tree)
             #tree = makeTree({'if': differenceRow(stateKey(actor.name,'y'),stateKey(other.name,'y'),1), True: True, False: False})
             #actor.setLegal(action,tree)
 
+            ##############################
+
+            # Beams
+            action = actor.addAction({'verb': 'VerticalBeam'})
+            tree = makeTree(incrementMatrix('turns', 1.0))
+            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+            tree = makeTree(setFalseMatrix(stateKey(other.name,'active')))
+            self.world.setDynamics(stateKey(other.name,'active'),action,tree)
+            tree = makeTree({'if': trueRow(act),
+                            True: {'if': equalFeatureRow(stateKey(actor.name, 'x'), stateKey(other.name,'x')),
+                                True: True, False: False},
+                            False: False})
+            #tree = makeTree({'if': equalFeatureRow(stateKey(actor.name,'x'),stateKey(other.name,'x')), True: True, False: False})
+            actor.setLegal(action, tree)
+
+            action = actor.addAction({'verb': 'HorizontalBeam'})
+            tree = makeTree(incrementMatrix('turns', 1.0))
+            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+            tree = makeTree(setFalseMatrix(stateKey(other.name,'active')))
+            self.world.setDynamics(stateKey(other.name,'active'),action,tree)
+            tree = makeTree({'if': trueRow(act),
+                            True: {'if': equalFeatureRow(stateKey(actor.name, 'y'), stateKey(other.name,'y')),
+                                True: True, False: False},
+                            False: False})
+            #tree = makeTree({'if': equalFeatureRow(stateKey(actor.name,'y'),stateKey(other.name,'y')), True: True, False: False})
+            actor.setLegal(action, tree)
+
+            # Activate
+            action = actor.addAction({'verb': 'Activate'})
+            tree = makeTree(incrementMatrix('turns', 1.0))
+            self.world.setDynamics(stateKey(None, 'turns'), action, tree)
+            tree = makeTree(setTrueMatrix(stateKey(actor.name,'active')))
+            self.world.setDynamics(stateKey(actor.name,'active'),action,tree)
+            tree = makeTree({'if': trueRow(stateKey(actor.name,'active')),True: False, False: True})
+            actor.setLegal(action, tree)
+
             # Maximize your current food count
-            actor.setReward(maximizeFeature(stateKey(actor.name,'food')),1.0)
+            #actor.setReward(maximizeFeature(stateKey(actor.name,'food')),1.0)
 
             # Models of belief
-            #actor.addModel('Selfish',R={},level=2,rationality=10.,selection='distribution')
-            #actor.addModel('Altruistic',R={},level=2,rationality=10.,selection='distribution')
-            #actor.addModel('Sadistic',R={},level=2,rationality=10.,selection='distribution')
+            actor.addModel('Selfish',R={},level=2,rationality=10.,selection='distribution')
+            actor.addModel('Altruistic',R={},level=2,rationality=10.,selection='distribution')
+            actor.addModel('Sadistic',R={},level=2,rationality=10.,selection='distribution')
 
     def generate_food(self, i ,j):
         location = Agent(str(i) + ',' + str(j))
@@ -177,9 +220,12 @@ class Gathering:
         action = location.addAction({
           'verb': 'generate'
         })
+        '''
         tree = makeTree({
-          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.5), (setFalseMatrix(stateKey(location.name, 'food')), 0.5)]
+          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.1), (setFalseMatrix(stateKey(location.name, 'food')), 0.9)]
         })
+        '''
+        tree = makeTree(setFalseMatrix(stateKey(location.name, 'food')))
         self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
 
         # Can't respawn food if food is already food there
@@ -240,9 +286,10 @@ class Gathering:
                 elif name == 'Altruistic':
                     me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
                     me.setReward(maximizeFeature(stateKey(other.name,'food')),1.0,model)
-                #elif name == 'Sadistic':
-                #    me.setReward(minimizeFeature(stateKey(other.name,'money')),1.0,model)
-                #    me.setReward(maximizeFeature(stateKey(other.name,'money')),1.0,model)
+                elif name == 'Sadistic':
+                    me.setReward(minimizeFeature(stateKey(other.name,'food')),1.0,model)
+                    me.setReward(achieveFeatureValue(stateKey(other.name,'active'),False),1.0,model)
+                    #me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
 
         weakBelief = 1.0 - strongerBelief
         belief = {'Selfish': weakBelief,'Altruistic': weakBelief}
@@ -337,6 +384,8 @@ class Gathering:
                 for i in range(0,GATHERERS):
                     print(self.world.getState('Actor' + str(i), 'food').domain()[0])
                 self.world.explain(result, 2)
+                turn = self.world.getState(None, 'turns')
+                pyglet.image.get_buffer_manager().get_color_buffer().save('run/'+str(turn)+'.png')
             for i in range(1,4):
                 for j in range(1,4):
                     val = self.world.getState(str(i)+','+str(j),'food').domain()[0]
@@ -358,14 +407,14 @@ class Gathering:
                         goals[i][j].x = i * 1999
                         goals[i][j].y = j * 1999
 
-        pyglet.clock.schedule_interval(update, 0.1)
+        pyglet.clock.schedule_interval(update, 1.0)
         # pyglet.app.run()
         Thread(target=pyglet.app.run()).start()
         # target=pyglet.app.run()
 
 if __name__ == '__main__':
     run = Gathering()
-    #trueModels = {'Actor0': 'Selfish',
-    #              'Actor1': 'Selfish'}
-    #run.modeltest(trueModels,'Selfish','Selfish',1.0)
+    trueModels = {'Actor0': 'Selfish',
+                  'Actor1': 'Sadistic'}
+    run.modeltest(trueModels,'Selfish','Selfish',1.0)
     run.run_with_visual()

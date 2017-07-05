@@ -1,0 +1,417 @@
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+['Sadistic', True, 'Altruistic', 'Selfish']
+1
+1
+100%
+1,2-food0
+1,3-nothing
+3,2-food1
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+	V(1,2-food0) =  1.000
+	V(1,2-nothing) =  0.000
+	V(3,2-food1) =  1.000
+	V(3,2-nothing) =  0.000
+1
+1
+100%
+Actor0-Activate
+1
+1
+100%
+Actor1-Activate
+1
+1
+100%
+1,2-generate
+1,3-nothing
+3,2-generate
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+1
+1
+100%
+Actor0-MoveUp
+	V(Actor0-MoveDown) =  9.000
+	V(Actor0-MoveLeft) =  6.000
+	V(Actor0-MoveRight) =  9.000
+	V(Actor0-MoveUp) =  9.000
+	V(Actor0-VerticalBeam) =  6.000
+1
+1
+100%
+Actor1-MoveUp
+	V(Actor1-MoveDown) = -11.000
+	V(Actor1-MoveLeft) = -10.500
+	V(Actor1-MoveRight) = -11.000
+	V(Actor1-MoveUp) = -10.500
+2
+2
+100%
+1,2-generate
+1,3-food0
+3,2-nothing
+3,3-food1
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+	V(1,3-food0) =  1.000
+	V(1,3-nothing) =  0.000
+	V(3,3-food1) =  1.000
+	V(3,3-nothing) =  0.000
+2
+2
+100%
+Actor0-MoveRight
+	V(Actor0-MoveDown) = 15.000
+	V(Actor0-MoveLeft) = 12.000
+	V(Actor0-MoveRight) = 15.000
+	V(Actor0-MoveUp) = 12.000
+	V(Actor0-VerticalBeam) = 12.000
+2
+2
+100%
+Actor1-MoveLeft
+	V(Actor1-MoveDown) = -16.750
+	V(Actor1-MoveLeft) = -12.750
+	V(Actor1-MoveRight) = -17.000
+	V(Actor1-MoveUp) = -17.000
+	V(Actor1-VerticalBeam) = -16.000
+3
+2
+100%
+1,2-nothing
+1,3-generate
+3,2-nothing
+3,3-generate
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-food0
+2,2-nothing
+	V(2,3-food0) =  1.000
+	V(2,3-food1) =  1.000
+	V(2,3-nothing) =  0.000
+3
+2
+100%
+Actor0-MoveRight
+	V(Actor0-HorizontalBeam) = 18.000
+	V(Actor0-MoveDown) = 21.000
+	V(Actor0-MoveLeft) = 21.000
+	V(Actor0-MoveRight) = 21.000
+	V(Actor0-MoveUp) = 18.000
+	V(Actor0-VerticalBeam) = 18.000
+3
+2
+100%
+Actor1-MoveRight
+	V(Actor1-MoveDown) = -22.500
+	V(Actor1-MoveLeft) = -23.000
+	V(Actor1-MoveRight) = -18.500
+	V(Actor1-MoveUp) = -22.500
+	V(Actor1-VerticalBeam) = -22.000
+3
+3
+100%
+1,2-nothing
+1,3-nothing
+3,2-nothing
+3,3-food1
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-generate
+2,2-nothing
+	V(3,3-food0) =  1.000
+	V(3,3-food1) =  1.000
+	V(3,3-nothing) =  0.000
+3
+3
+100%
+Actor0-MoveDown
+	V(Actor0-HorizontalBeam) = 18.000
+	V(Actor0-MoveDown) = 21.000
+	V(Actor0-MoveLeft) = 21.000
+	V(Actor0-MoveRight) = 18.000
+	V(Actor0-MoveUp) = 18.000
+	V(Actor0-VerticalBeam) = 18.000
+3
+3
+100%
+Actor1-HorizontalBeam
+	V(Actor1-HorizontalBeam) = -22.000
+	V(Actor1-MoveDown) = -22.500
+	V(Actor1-MoveLeft) = -22.500
+	V(Actor1-MoveRight) = -23.000
+	V(Actor1-MoveUp) = -23.000
+4
+3
+100%
+1,2-nothing
+1,3-nothing
+3,2-food0
+3,3-generate
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+	V(3,2-food0) =  1.000
+	V(3,2-nothing) =  0.000
+4
+3
+100%
+Actor0-Activate
+4
+3
+100%
+Actor1-MoveDown
+	V(Actor1-HorizontalBeam) = -24.500
+	V(Actor1-MoveDown) = -24.250
+	V(Actor1-MoveLeft) = -24.500
+	V(Actor1-MoveRight) = -25.000
+	V(Actor1-MoveUp) = -25.000
+4
+3
+100%
+1,2-nothing
+1,3-nothing
+3,2-generate
+3,3-generate
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+4
+3
+100%
+Actor0-MoveLeft
+	V(Actor0-HorizontalBeam) = 24.000
+	V(Actor0-MoveDown) = 24.000
+	V(Actor0-MoveLeft) = 27.000
+	V(Actor0-MoveRight) = 24.000
+	V(Actor0-MoveUp) = 24.000
+	V(Actor0-VerticalBeam) = 24.000
+4
+3
+100%
+Actor1-MoveLeft
+	V(Actor1-MoveDown) = -28.750
+	V(Actor1-MoveLeft) = -24.750
+	V(Actor1-MoveRight) = -29.000
+	V(Actor1-MoveUp) = -28.750
+	V(Actor1-VerticalBeam) = -28.000
+5
+3
+100%
+1,2-nothing
+1,3-nothing
+3,2-generate
+3,3-generate
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-food0
+	V(2,2-food0) =  1.000
+	V(2,2-food1) =  1.000
+	V(2,2-nothing) =  0.000
+5
+3
+100%
+Actor0-MoveLeft
+	V(Actor0-HorizontalBeam) = 30.000
+	V(Actor0-MoveDown) = 33.000
+	V(Actor0-MoveLeft) = 33.000
+	V(Actor0-MoveRight) = 30.000
+	V(Actor0-MoveUp) = 33.000
+	V(Actor0-VerticalBeam) = 30.000
+5
+3
+100%
+Actor1-MoveLeft
+	V(Actor1-MoveDown) = -34.750
+	V(Actor1-MoveLeft) = -30.500
+	V(Actor1-MoveRight) = -34.750
+	V(Actor1-MoveUp) = -35.000
+	V(Actor1-VerticalBeam) = -34.000
+6
+3
+100%
+1,2-food0
+1,3-nothing
+3,2-generate
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-generate
+	V(1,2-food0) =  1.000
+	V(1,2-food1) =  1.000
+	V(1,2-nothing) =  0.000
+6
+3
+100%
+Actor0-MoveUp
+	V(Actor0-HorizontalBeam) = 36.000
+	V(Actor0-MoveDown) = 39.000
+	V(Actor0-MoveLeft) = 36.000
+	V(Actor0-MoveRight) = 39.000
+	V(Actor0-MoveUp) = 39.000
+	V(Actor0-VerticalBeam) = 36.000
+6
+3
+100%
+Actor1-MoveUp
+	V(Actor1-HorizontalBeam) = -40.000
+	V(Actor1-MoveDown) = -40.750
+	V(Actor1-MoveLeft) = -41.000
+	V(Actor1-MoveRight) = -40.500
+	V(Actor1-MoveUp) = -36.250
+7
+3
+100%
+1,2-generate
+1,3-food0
+3,2-generate
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+	V(1,3-food0) =  1.000
+	V(1,3-food1) =  1.000
+	V(1,3-nothing) =  0.000
+7
+3
+100%
+Actor0-MoveUp
+	V(Actor0-HorizontalBeam) = 42.000
+	V(Actor0-MoveDown) = 42.000
+	V(Actor0-MoveLeft) = 42.000
+	V(Actor0-MoveRight) = 42.000
+	V(Actor0-MoveUp) = 42.000
+	V(Actor0-VerticalBeam) = 42.000
+7
+3
+100%
+Actor1-HorizontalBeam
+	V(Actor1-HorizontalBeam) = -42.000
+	V(Actor1-MoveDown) = -42.500
+	V(Actor1-MoveLeft) = -42.500
+	V(Actor1-MoveRight) = -42.500
+	V(Actor1-MoveUp) = -42.250
+7
+3
+100%
+1,2-generate
+1,3-generate
+3,2-nothing
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
+7
+3
+100%
+Actor0-Activate
+7
+3
+100%
+Actor1-MoveRight
+	V(Actor1-HorizontalBeam) = -42.000
+	V(Actor1-MoveDown) = -42.500
+	V(Actor1-MoveLeft) = -42.000
+	V(Actor1-MoveRight) = -42.000
+	V(Actor1-MoveUp) = -42.000
+7
+4
+100%
+1,2-generate
+1,3-nothing
+3,2-nothing
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-food1
+2,2-nothing
+	V(2,3-food1) =  1.000
+	V(2,3-nothing) =  0.000
+7
+4
+100%
+Actor0-MoveDown
+	V(Actor0-MoveDown) = 45.000
+	V(Actor0-MoveLeft) = 42.000
+	V(Actor0-MoveRight) = 42.000
+7
+4
+100%
+Actor1-VerticalBeam
+	V(Actor1-MoveDown) = -46.250
+	V(Actor1-MoveLeft) = -46.750
+	V(Actor1-MoveRight) = -46.750
+	V(Actor1-MoveUp) = -46.750
+	V(Actor1-VerticalBeam) = -46.000
+8
+4
+100%
+1,2-generate
+1,3-food0
+3,2-nothing
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-generate
+2,2-nothing
+	V(1,3-food0) =  1.000
+	V(1,3-nothing) =  0.000
+8
+4
+100%
+Actor0-Activate
+8
+4
+100%
+Actor1-MoveLeft
+	V(Actor1-MoveDown) = -48.500
+	V(Actor1-MoveLeft) = -48.000
+	V(Actor1-MoveRight) = -48.750
+	V(Actor1-MoveUp) = -48.500
+	V(Actor1-VerticalBeam) = -48.500
+8
+4
+100%
+1,2-generate
+1,3-generate
+3,2-nothing
+3,3-nothing
+1,1-nothing
+2,1-nothing
+3,1-nothing
+2,3-nothing
+2,2-nothing
