@@ -11,10 +11,27 @@ from threading import Thread
 GATHERERS = 2
 TURNS = 50
 
-myfile = open("runs.txt","a")
+myfile = open("ea_runs.txt","a")
 
 class Gathering:
-    def __init__(self):
+    def __init__(self,genome):
+
+        self.weights = {}
+        #self.weights['model'] = genome[0] # primary tendency, int 1,2,3
+        # Genome for first agent
+        self.weights['selfish_0'] = genome[1] # selfish strand, float 0.0-0.5
+        self.weights['altruistic_0'] = genome[2] # altruistic strand, float 0.0-0.5
+        self.weights['mean_0'] = genome[3] # mean strand, float 0.0-0.5
+        self.weights['rationality_0'] = genome[4] # rationality, int 1-10
+        self.weights['belief_0'] = genome[5] # belief level, int 0,1,2
+
+        # Genome for second agent
+        self.weights['selfish_1'] = genome[7] # selfish strand, float 0.0-0.5
+        self.weights['altruistic_1'] = genome[8] # altruistic strand, float 0.0-0.5
+        self.weights['mean_1'] = genome[9] # mean strand, float 0.0-0.5
+        self.weights['rationality_1'] = genome[10] # rationality, int 1-10
+        self.weights['belief_1'] = genome[11] # belief level, int 0,1,2
+
         self.paused = False
         self.world = World()
         self.world.defineState(None, 'turns', int)
@@ -187,11 +204,19 @@ class Gathering:
 
             # Maximize your current food count
             #actor.setReward(maximizeFeature(stateKey(actor.name,'food')),1.0)
+            #me.setReward(maximizeFeature(stateKey(me.name,'food')),self.weights['selfish'])
+            #me.setReward(maximizeFeature(stateKey(other.name,'food')),self.weights['altruistic'])
+            #me.setReward(achieveFeatureValue(stateKey(other.name,'active'),False),self.weights['mean'])
 
             # Models of belief
-            actor.addModel('Selfish',R={},level=2,rationality=10.,selection='distribution')
-            actor.addModel('Altruistic',R={},level=2,rationality=10.,selection='distribution')
-            actor.addModel('Mean',R={},level=2,rationality=10.,selection='distribution')
+            if i == 0:
+                actor.addModel('Selfish',R={},level=self.weights['belief_0'],rationality=self.weights['rationality_0'],selection='distribution')
+                actor.addModel('Altruistic',R={},level=self.weights['belief_0'],rationality=self.weights['rationality_0'],selection='distribution')
+                actor.addModel('Mean',R={},level=self.weights['belief_0'],rationality=self.weights['rationality_0'],selection='distribution')
+            elif i == 1:
+                actor.addModel('Selfish',R={},level=self.weights['belief_1'],rationality=self.weights['rationality_1'],selection='distribution')
+                actor.addModel('Altruistic',R={},level=self.weights['belief_1'],rationality=self.weights['rationality_1'],selection='distribution')
+                actor.addModel('Mean',R={},level=self.weights['belief_1'],rationality=self.weights['rationality_1'],selection='distribution')
 
     def generate_food(self, i ,j):
         location = Agent(str(i) + ',' + str(j))
@@ -269,20 +294,34 @@ class Gathering:
             me = agts[i]
             other = agts[1-i]
             for model in me.models.keys():
-                print me.models.keys()
+                #print me.models.keys()
                 if model is True:
                     name = trueModels[me.name]
                 else:
                     name = model
                 if name == 'Selfish':
-                    me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
+                    if i == 0:
+                        me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
+                        me.setReward(maximizeFeature(stateKey(other.name,'food')),self.weights['altruistic_0'],model)
+                        me.setReward(achieveFeatureValue(stateKey(other.name,'active'),False),self.weights['mean_0'],model)
+                    elif i == 1:
+                        me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
+                        me.setReward(maximizeFeature(stateKey(other.name,'food')),self.weights['altruistic_1'],model)
+                        me.setReward(achieveFeatureValue(stateKey(other.name,'active'),False),self.weights['mean_1'],model)
                 elif name == 'Altruistic':
-                    me.setReward(maximizeFeature(stateKey(me.name,'food')),1.0,model)
+                    if i == 0:
+                        me.setReward(maximizeFeature(stateKey(me.name,'food')),self.weights['selfish_0'],model)
+                    elif i == 1:
+                        me.setReward(maximizeFeature(stateKey(me.name,'food')),self.weights['selfish_1'],model)
                     me.setReward(maximizeFeature(stateKey(other.name,'food')),1.0,model)
+                    me.setReward(achieveFeatureValue(stateKey(other.name,'active'),False),0,model)
                 elif name == 'Mean':
-                    me.setReward(minimizeFeature(stateKey(other.name,'food')),1.0,model)
+                    if i == 0:
+                        me.setReward(maximizeFeature(stateKey(me.name,'food')),self.weights['selfish_0'],model)
+                    elif i == 1:
+                        me.setReward(maximizeFeature(stateKey(me.name,'food')),self.weights['selfish_1'],model)
+                    me.setReward(maximizeFeature(stateKey(other.name,'food')),-1.0,model)
                     me.setReward(achieveFeatureValue(stateKey(other.name,'active'),False),1.0,model)
-                    me.setReward(maximizeFeature(stateKey(me.name,'food')),0.5,model)
 
         weakBelief = 1.0 - strongerBelief
         belief = {'Selfish': weakBelief,'Altruistic': weakBelief}
@@ -299,6 +338,7 @@ class Gathering:
         foodzero=self.world.getState('Actor0', 'food').domain()[0]
         foodone=self.world.getState('Actor1', 'food').domain()[0]
         myfile.write("Score: "+str(foodzero)+","+str(foodone))
+        return foodzero+foodone
 
     # Graphics
     def run_with_visual(self):
@@ -388,7 +428,7 @@ class Gathering:
                 if self.world.terminated():
                     foodzero=self.world.getState('Actor0', 'food').domain()[0]
                     foodone=self.world.getState('Actor1', 'food').domain()[0]
-                    myfile.write(str(foodzero)+","+str(foodone))
+                    #myfile.write(str(foodzero)+","+str(foodone))
                     window.close()
 
             for i in range(0,GATHERERS):
@@ -410,12 +450,38 @@ class Gathering:
         Thread(target=pyglet.app.run()).start()
         # target=pyglet.app.run()
 
+def run(genome):
+    print("Starting new run with "+str(genome))
+    myfile.write(str(genome)+":")
+    models = []
+    if genome[0] == 1:
+        models.append('Selfish')
+    elif genome[0] == 2:
+        models.append('Altruistic')
+    elif genome[0] == 3:
+        models.append('Mean')
+
+    if genome[6] == 1:
+        models.append('Selfish')
+    elif genome[6] == 2:
+        models.append('Altruistic')
+    elif genome[6] == 3:
+        models.append('Mean')
+
+    run = Gathering(genome)
+    trueModels = {'Actor0': models[0],
+                  'Actor1': models[1]}
+    run.modeltest(trueModels,'Selfish','Mean',1.0)
+    result = run.run_without_visual()
+    return (result,)
+
 if __name__ == '__main__':
+    '''
     runone = True
     runall = False
 
     if runall:
-        myfile.write("7/14\n")
+        #myfile.write("7/14\n")
         models = ['Selfish','Altruistic','Mean']
         for zero in range(0,3):
             for one in range(0,3):
@@ -425,7 +491,7 @@ if __name__ == '__main__':
                         trueone=models[one]
                         beliefzero=models[i]
                         beliefone=models[j]
-                        myfile.write(truezero[0]+","+trueone[0]+","+beliefzero[0]+","+beliefone[0]+",")
+                        #myfile.write(truezero[0]+","+trueone[0]+","+beliefzero[0]+","+beliefone[0]+",")
                         #myfile.write("Food: 100%\n")
                         #myfile.write("True Models: "+truezero+","+trueone+"\n")
                         #myfile.write("Belief Models: "+beliefzero+","+beliefone+"\n")
@@ -435,10 +501,11 @@ if __name__ == '__main__':
                                       'Actor1': trueone}
                         run.modeltest(trueModels,beliefzero,beliefone,1.0)
                         run.run_without_visual()
-                        myfile.write("\n")
+                        #myfile.write("\n")
     elif runone:
         run = Gathering()
         trueModels = {'Actor0': 'Selfish',
                       'Actor1': 'Mean'}
         run.modeltest(trueModels,'Selfish','Mean',1.0)
         run.run_with_visual()
+    '''

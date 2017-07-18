@@ -76,7 +76,6 @@ class Agent:
         @param actions: possible action choices (default is all legal actions)
         @param keys: subset of state features to project over (default is all state features)
         """
-        selection = 'random'
         if model is None:
             model = self.world.getModel(self.name,vector)
         if selection is None:

@@ -1,0 +1,596 @@
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 12,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 10,9
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 14,13
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 8,9
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Selfish,Selfish
+Confidence: 0.5
+Score: 14,13
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Selfish,Altruistic
+Confidence: 0.5
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Selfish,Sadistic
+Confidence: 0.5
+Score: 8,10
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Altruistic,Selfish
+Confidence: 0.5
+Score: 13,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Altruistic,Altruistic
+Confidence: 0.5
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Altruistic,Sadistic
+Confidence: 0.5
+Score: 10,7
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Sadistic,Selfish
+Confidence: 0.5
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Sadistic,Altruistic
+Confidence: 0.5
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Sadistic,Sadistic
+Confidence: 0.5
+Score: 8,8
+
+7/14
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 13,13
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 12,12
+
+Food: 100%
+True Models: Selfish,Selfish
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Altruistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 8,7
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 8,7
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 9,6
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 9,8
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 10,7
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 9,9
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 10,11
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 8,9
+
+Food: 100%
+True Models: Selfish,Sadistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 10,9
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 13,13
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 13,13
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 13,13
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Selfish
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 14,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Altruistic,Altruistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 13,14
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 7,8
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 8,7
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 8,7
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 11,7
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 8,10
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 9,13
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 9,6
+
+Food: 100%
+True Models: Altruistic,Sadistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 9,10
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Selfish
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 8,9
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Altruistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Selfish,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Selfish,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Selfish,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Altruistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Altruistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Altruistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Sadistic,Selfish
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Sadistic,Altruistic
+Confidence: 1.0
+Score: 8,8
+
+Food: 100%
+True Models: Sadistic,Sadistic
+Belief Models: Sadistic,Sadistic
+Confidence: 1.0
+Score: 8,8
+
