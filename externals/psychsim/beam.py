@@ -337,7 +337,7 @@ class Gathering:
             #self.world.explain(result, 2)
         foodzero=self.world.getState('Actor0', 'food').domain()[0]
         foodone=self.world.getState('Actor1', 'food').domain()[0]
-        myfile.write("Score: "+str(foodzero)+","+str(foodone))
+        myfile.write("Score: "+str(foodzero)+","+str(foodone)+"\n")
         return foodzero+foodone
 
     # Graphics
@@ -451,7 +451,21 @@ class Gathering:
         # target=pyglet.app.run()
 
 def run(genome):
-    print("Starting new run with "+str(genome))
+    #print(genome)
+    genome[0] = min(3,max(genome[0],1))
+    genome[1] = min(0.5,max(genome[1],0))
+    genome[2] = min(0.5,max(genome[2],0))
+    genome[3] = min(0.5,max(genome[3],0))
+    genome[4] = min(10,max(genome[3],1))
+    genome[5] = min(2,max(genome[3],0))
+    genome[6] = min(3,max(genome[0],1))
+    genome[7] = min(0.5,max(genome[1],0))
+    genome[8] = min(0.5,max(genome[2],0))
+    genome[9] = min(0.5,max(genome[3],0))
+    genome[10] = min(10,max(genome[3],1))
+    genome[11] = min(2,max(genome[3],0))
+
+    #print("Starting new run with "+str(genome))
     myfile.write(str(genome)+":")
     models = []
     if genome[0] == 1:
@@ -475,7 +489,51 @@ def run(genome):
     result = run.run_without_visual()
     return (result,)
 
+def demo(genome):
+    #print(genome)
+    genome[0] = min(3,max(genome[0],1))
+    genome[1] = min(0.5,max(genome[1],0))
+    genome[2] = min(0.5,max(genome[2],0))
+    genome[3] = min(0.5,max(genome[3],0))
+    genome[4] = min(10,max(genome[3],1))
+    genome[5] = min(2,max(genome[3],0))
+    genome[6] = min(3,max(genome[0],1))
+    genome[7] = min(0.5,max(genome[1],0))
+    genome[8] = min(0.5,max(genome[2],0))
+    genome[9] = min(0.5,max(genome[3],0))
+    genome[10] = min(10,max(genome[3],1))
+    genome[11] = min(2,max(genome[3],0))
+
+    #print("Starting new run with "+str(genome))
+    myfile.write(str(genome)+":")
+    models = []
+    if genome[0] == 1:
+        models.append('Selfish')
+    elif genome[0] == 2:
+        models.append('Altruistic')
+    elif genome[0] == 3:
+        models.append('Mean')
+
+    if genome[6] == 1:
+        models.append('Selfish')
+    elif genome[6] == 2:
+        models.append('Altruistic')
+    elif genome[6] == 3:
+        models.append('Mean')
+
+    run = Gathering(genome)
+    trueModels = {'Actor0': models[0],
+                  'Actor1': models[1]}
+    run.modeltest(trueModels,'Selfish','Mean',1.0)
+    result = run.run_with_visual()
+    return (result,)
+
 if __name__ == '__main__':
+    #print(run([1,0.5,0.5,-0.5,10,2,1,0.5,0.5,-0.5,10,2]))
+    print(demo([1,0.5,0.5,-0.5,10,2,1,0.5,0.5,-0.5,10,2]))
+    print(demo([3,0.5,-0.5,0.5,10,2,3,0.5,-0.5,0.5,10,2]))
+
+
     '''
     runone = True
     runall = False

@@ -1,82 +1,82 @@
-7/14
-S,S,S,S,Score: 22,22
-S,S,S,A,Score: 22,22
-S,S,S,M,Score: 22,22
-S,S,A,S,Score: 22,22
-S,S,A,A,Score: 23,22
-S,S,A,M,Score: 23,23
-S,S,M,S,Score: 20,21
-S,S,M,A,Score: 23,22
-S,S,M,M,Score: 23,22
-S,A,S,S,Score: 23,23
-S,A,S,A,Score: 23,23
-S,A,S,M,Score: 23,23
-S,A,A,S,Score: 23,23
-S,A,A,A,Score: 23,23
-S,A,A,M,Score: 23,23
-S,A,M,S,Score: 23,23
-S,A,M,A,Score: 23,23
-S,A,M,M,Score: 23,23
-S,M,S,S,Score: 12,0
-S,M,S,A,Score: 12,0
-S,M,S,M,Score: 12,0
-S,M,A,S,Score: 12,0
-S,M,A,A,Score: 12,0
-S,M,A,M,Score: 12,0
-S,M,M,S,Score: 12,0
-S,M,M,A,Score: 12,0
-S,M,M,M,Score: 12,0
-A,S,S,S,Score: 23,21
-A,S,S,A,Score: 21,22
-A,S,S,M,Score: 22,22
-A,S,A,S,Score: 23,22
-A,S,A,A,Score: 23,22
-A,S,A,M,Score: 23,22
-A,S,M,S,Score: 14,23
-A,S,M,A,Score: 22,23
-A,S,M,M,Score: 18,23
-A,A,S,S,Score: 23,23
-A,A,S,A,Score: 23,23
-A,A,S,M,Score: 23,23
-A,A,A,S,Score: 23,23
-A,A,A,A,Score: 23,23
-A,A,A,M,Score: 23,23
-A,A,M,S,Score: 22,23
-A,A,M,A,Score: 21,23
-A,A,M,M,Score: 16,23
-A,M,S,S,Score: 12,0
-A,M,S,A,Score: 12,0
-A,M,S,M,Score: 12,0
-A,M,A,S,Score: 12,0
-A,M,A,A,Score: 12,0
-A,M,A,M,Score: 12,0
-A,M,M,S,Score: 9,16
-A,M,M,A,Score: 12,0
-A,M,M,M,Score: 12,16
-M,S,S,S,Score: 0,0
-M,S,S,A,Score: 0,0
-M,S,S,M,Score: 0,0
-M,S,A,S,Score: 0,0
-M,S,A,A,Score: 0,0
-M,S,A,M,Score: 0,0
-M,S,M,S,Score: 0,0
-M,S,M,A,Score: 0,0
-M,S,M,M,Score: 0,0
-M,A,S,S,Score: 0,0
-M,A,S,A,Score: 0,0
-M,A,S,M,Score: 0,0
-M,A,A,S,Score: 0,0
-M,A,A,A,Score: 0,0
-M,A,A,M,Score: 0,0
-M,A,M,S,Score: 0,0
-M,A,M,A,Score: 0,0
-M,A,M,M,Score: 0,0
-M,M,S,S,Score: 0,0
-M,M,S,A,Score: 0,0
-M,M,S,M,Score: 0,0
-M,M,A,S,Score: 0,0
-M,M,A,A,Score: 0,0
-M,M,A,M,Score: 0,0
-M,M,M,S,Score: 0,0
-M,M,M,A,Score: 0,0
-M,M,M,M,Score: 0,0
+True 0,True 1,Belief 0,Belief 1,Score 0,Score 1,Valid Beliefs?
+S,S,S,S,22,22,Valid
+S,S,S,A,22,22,Invalid
+S,S,S,M,22,22,Invalid
+S,S,A,S,22,22,Invalid
+S,S,A,A,23,22,Invalid
+S,S,A,M,23,23,Invalid
+S,S,M,S,20,21,Invalid
+S,S,M,A,23,22,Invalid
+S,S,M,M,23,22,Invalid
+S,A,S,S,23,23,Invalid
+S,A,S,A,23,23,Valid
+S,A,S,M,23,23,Invalid
+S,A,A,S,23,23,Invalid
+S,A,A,A,23,23,Invalid
+S,A,A,M,23,23,Invalid
+S,A,M,S,23,23,Invalid
+S,A,M,A,23,23,Invalid
+S,A,M,M,23,23,Invalid
+S,M,S,S,12,0,Invalid
+S,M,S,A,12,0,Invalid
+S,M,S,M,12,0,Valid
+S,M,A,S,12,0,Invalid
+S,M,A,A,12,0,Invalid
+S,M,A,M,12,0,Invalid
+S,M,M,S,12,0,Invalid
+S,M,M,A,12,0,Invalid
+S,M,M,M,12,0,Invalid
+A,S,S,S,23,21,Invalid
+A,S,S,A,21,22,Invalid
+A,S,S,M,22,22,Invalid
+A,S,A,S,23,22,Valid
+A,S,A,A,23,22,Invalid
+A,S,A,M,23,22,Invalid
+A,S,M,S,14,23,Invalid
+A,S,M,A,22,23,Invalid
+A,S,M,M,18,23,Invalid
+A,A,S,S,23,23,Invalid
+A,A,S,A,23,23,Invalid
+A,A,S,M,23,23,Invalid
+A,A,A,S,23,23,Invalid
+A,A,A,A,23,23,Valid
+A,A,A,M,23,23,Invalid
+A,A,M,S,22,23,Invalid
+A,A,M,A,21,23,Invalid
+A,A,M,M,16,23,Invalid
+A,M,S,S,12,0,Invalid
+A,M,S,A,12,0,Invalid
+A,M,S,M,12,0,Invalid
+A,M,A,S,12,0,Invalid
+A,M,A,A,12,0,Invalid
+A,M,A,M,12,0,Valid
+A,M,M,S,9,16,Invalid
+A,M,M,A,12,0,Invalid
+A,M,M,M,12,16,Invalid
+M,S,S,S,0,0,Invalid
+M,S,S,A,0,0,Invalid
+M,S,S,M,0,0,Invalid
+M,S,A,S,0,0,Invalid
+M,S,A,A,0,0,Invalid
+M,S,A,M,0,0,Invalid
+M,S,M,S,0,0,Valid
+M,S,M,A,0,0,Invalid
+M,S,M,M,0,0,Invalid
+M,A,S,S,0,0,Invalid
+M,A,S,A,0,0,Invalid
+M,A,S,M,0,0,Invalid
+M,A,A,S,0,0,Invalid
+M,A,A,A,0,0,Invalid
+M,A,A,M,0,0,Invalid
+M,A,M,S,0,0,Invalid
+M,A,M,A,0,0,Valid
+M,A,M,M,0,0,Invalid
+M,M,S,S,0,0,Invalid
+M,M,S,A,0,0,Invalid
+M,M,S,M,0,0,Invalid
+M,M,A,S,0,0,Invalid
+M,M,A,A,0,0,Invalid
+M,M,A,M,0,0,Invalid
+M,M,M,S,0,0,Invalid
+M,M,M,A,0,0,Invalid
+M,M,M,M,0,0,Valid

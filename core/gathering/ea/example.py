@@ -22,25 +22,20 @@ toolbox.register("mean_1", np.random.uniform, 0, 0.5)
 toolbox.register("rationality_1", random.randint, 1, 10)
 toolbox.register("belief_1", random.randint, 0, 2)
 
-def listCreator(zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven):
-    return [zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven]
+toolbox.register("individual", tools.initCycle, creator.Individual,
+                    (toolbox.model_0,
+                    toolbox.selfish_0,
+                    toolbox.altruistic_0,
+                    toolbox.mean_0,
+                    toolbox.rationality_0,
+                    toolbox.belief_0,
+                    toolbox.model_1,
+                    toolbox.selfish_1,
+                    toolbox.altruistic_1,
+                    toolbox.mean_1,
+                    toolbox.rationality_1,
+                    toolbox.belief_1), n=1)
 
-def initlist(container,zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven):
-    return container([zero,one,two,three,four,five,six,seven,eight,nine,ten,eleven])
-
-toolbox.register("buildlist", listCreator, float(random.randint(1, 3)),
-                    np.random.uniform(0, 0.5),
-                    np.random.uniform(0, 0.5),
-                    np.random.uniform(0, 0.5),
-                    float(random.randint(1, 10)),
-                    float(random.randint(0, 2)),
-                    float(random.randint(1, 3)),
-                    np.random.uniform(0, 0.5),
-                    np.random.uniform(0, 0.5),
-                    np.random.uniform(0, 0.5),
-                    float(random.randint(1, 10)),
-                    float(random.randint(0, 2)))
-toolbox.register("individual", tools.initIterate, creator.Individual, toolbox.buildlist)
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
 def evalOneMax(individual):
@@ -54,8 +49,8 @@ toolbox.register("select", tools.selTournament, tournsize=3)
 def main():
     import numpy
 
-    pop = toolbox.population(n=5)
-    hof = tools.HallOfFame(1)
+    pop = toolbox.population(n=10)
+    hof = tools.HallOfFame(3)
     stats = tools.Statistics(lambda ind: ind.fitness.values)
     stats.register("avg", numpy.mean)
     stats.register("min", numpy.min)
@@ -66,6 +61,7 @@ def main():
     return pop, logbook, hof
 
 if __name__ == "__main__":
+    myfile = open("log.txt","a")
     '''
     ind = toolbox.individual()
     print(ind)
@@ -74,3 +70,14 @@ if __name__ == "__main__":
     '''
     pop, log, hof = main()
     print("Best individual is: %s\nwith fitness: %s" % (hof[0], hof[0].fitness))
+    myfile.write(str(pop)+"\n"+str(log)+"\n"+str(hof)+"\n")
+
+    import matplotlib.pyplot as plt
+    gen, avg, min_, max_ = log.select("gen", "avg", "min", "max")
+    plt.plot(gen, avg, label="average")
+    plt.plot(gen, min_, label="minimum")
+    plt.plot(gen, max_, label="maximum")
+    plt.xlabel("Generation")
+    plt.ylabel("Fitness")
+    plt.legend(loc="lower right")
+    plt.show()
