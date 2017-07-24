@@ -30,14 +30,14 @@ class Centipede:
             self.world.addAgent(me)
             # State
             self.world.defineState(me.name,'money',int)
-            me.setState('money',0)  
+            me.setState('money',0)
             mePass = me.addAction({'verb': 'pass','object': other.name})
             meTake = me.addAction({'verb': 'take','object': other.name})
             # Parameters
             me.setHorizon(6)
             me.setAttribute('discount',1.)
             # me.setAttribute('discount',0.9)
-        
+
             # Levels of belief
         david.setRecursiveLevel(3)
         stacy.setRecursiveLevel(3)
@@ -50,7 +50,7 @@ class Centipede:
         self.world.setState(None,'gameOver',False)
 
         self.world.addTermination(makeTree({'if': thresholdRow(stateKey(None,'round'),self.maxRounds),
-                                            True: True, 
+                                            True: True,
                                             False: {'if': trueRow(stateKey(None,'gameOver')),
                                                     True: True,
                                                     False: False}}))
@@ -75,7 +75,7 @@ class Centipede:
                                      True: setToConstantMatrix(key,self.payoff[agts[i]][self.maxRounds]),
                                      False: noChangeMatrix(key)})
                     self.world.setDynamics(stateKey(agts[i],'money'),action,tree)
-                
+
 
 # really need to ask david about these levels - if adding modesl with levels, can
 # the true model point to these but have a different level
@@ -111,7 +111,7 @@ class Centipede:
                     me.setReward(maximizeFeature(stateKey(me.name,'money')),1.0,model)
                     me.setReward(maximizeFeature(stateKey(other.name,'money')),1.0,model)
 
-        weakBelief = 1.0 - strongerBelief          
+        weakBelief = 1.0 - strongerBelief
         belief = {'Christian': weakBelief,'Capitalist': weakBelief}
         belief[davidBeliefAboutStacy] = strongerBelief
         self.world.setMentalModel('David','Stacy',belief)
@@ -128,7 +128,7 @@ class Centipede:
             #self.world.state.select()
             # self.world.printState()
             if self.world.terminated():
-                break        
+                break
 
 # Parameters
 #           me.setHorizon(6)
@@ -139,7 +139,7 @@ class Centipede:
 #        level 2 models
 # Rounds
 #        self.maxRounds=4
-#  
+#
 # Rationality = .01
 
 # TEST Runs Scripting
@@ -178,8 +178,7 @@ for payoffDict in [{'Stacy': [2,0,3,1,3],
     #         world.step({agent.name: action})
     #     world.printState(state)
     # break
-        
+
     negagts = Centipede(turnOrder, len(payoffDict['Stacy'])-1, payoffDict)
     negagts.modeltest(trueModels,'Capitalist','Capitalist', 1.0)
     negagts.runit("Capitalist and Correct beliefs")
-

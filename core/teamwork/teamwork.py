@@ -544,7 +544,7 @@ class Scenario:
         self.evaluate_score()
 
     def run_with_visual(self):
-        pyglet.resource.path = ['../resources']
+        pyglet.resource.path = ['../resources/teamwork']
         pyglet.resource.reindex()
 
         SCREEN_WIDTH = self.MAP_SIZE_X * 32
