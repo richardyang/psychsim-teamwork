@@ -2,7 +2,7 @@ import random
 import numpy as np
 from deap import creator, base, tools, algorithms
 
-import psychsim.beam as bm
+import psychsim.beama as bm
 
 creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMax)

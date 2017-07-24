@@ -241,7 +241,7 @@ class Gathering:
         })
 
         tree = makeTree({
-          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.25), (setFalseMatrix(stateKey(location.name, 'food')), 0.75)]
+          'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.5), (setFalseMatrix(stateKey(location.name, 'food')), 0.5)]
         })
 
         #tree = makeTree(setTrueMatrix(stateKey(location.name, 'food')))
