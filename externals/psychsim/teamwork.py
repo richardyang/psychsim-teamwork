@@ -557,8 +557,9 @@ class Scenario:
 
         helicopter_score = int(self.world.getState('Distractor'+str(0), 'cost').domain()[0])
 
-        overall = soldier_enemy_distance - soldier_goal_distance + 20 - helicopter_score
-        return (overall,)
+        return(soldier_goal_distance,soldier_enemy_distance,helicopter_score)
+        #overall = soldier_enemy_distance - soldier_goal_distance + 20 - helicopter_score
+        #return (overall,)
 
     def run_without_visual(self):
         while not self.world.terminated():
@@ -568,7 +569,7 @@ class Scenario:
         #self.evaluate_score()
 
     def run_with_visual(self):
-        pyglet.resource.path = ['../Resources/teamwork']
+        pyglet.resource.path = ['../resources']
         pyglet.resource.reindex()
 
         SCREEN_WIDTH = self.MAP_SIZE_X * 32
@@ -706,7 +707,7 @@ def run(genome):
         DISTRACTOR=[h1, h2],
         ENEMY=[0.5, 0.6, -1.0],
         AGENT=[s1, s2])
-    score = run.run_with_visual()
+    score = run.run_without_visual()
 
     return score
 
@@ -719,7 +720,7 @@ def run(genome):
 
 
 if __name__ == '__main__':
-    print(run([-0.4219082416329605, -0.3776566392876486, 0.43254428266334544, 0.0, -0.6093841194695164, -0.2128550551796511]))
+    print(run([0.5,0.5,0.5,0.2,-1.0,1.0]))
     '''
     for i1 in range(0,10):
         sg = float(i1/10)
