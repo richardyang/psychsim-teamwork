@@ -344,7 +344,8 @@ class Gathering:
         foodzero=self.world.getState('Actor0', 'food').domain()[0]
         foodone=self.world.getState('Actor1', 'food').domain()[0]
         myfile.write("Score: "+str(foodzero)+","+str(foodone)+"\n")
-        return foodzero+foodone
+        #return foodzero+foodone
+        return foodzero
 
     # Graphics
     def run_with_visual(self):
@@ -476,18 +477,18 @@ def run(genome):
     myfile.write(str(genome)+":")
     model = ""
     guessmodel = ""
-    if genome[0] == 1:
+    if genome[0] == 0:
         model='Selfish'
-    elif genome[0] == 2:
+    elif genome[0] == 1:
         model='Altruistic'
-    elif genome[0] == 3:
+    elif genome[0] == 2:
         model='Mean'
 
-    if genome[0] == 1:
+    if genome[0] == 0:
         guessmodel='Selfish'
-    elif genome[0] == 2:
+    elif genome[0] == 1:
         guessmodel='Altruistic'
-    elif genome[0] == 3:
+    elif genome[0] == 2:
         guessmodel='Mean'
 
     run = Gathering(genome)
@@ -515,18 +516,18 @@ def demo(genome):
     #print("Starting new run with "+str(genome))
     myfile.write(str(genome)+":")
     models = []
-    if genome[0] == 1:
+    if genome[0] == 0:
         models.append('Selfish')
-    elif genome[0] == 2:
+    elif genome[0] == 1:
         models.append('Altruistic')
-    elif genome[0] == 3:
+    elif genome[0] == 2:
         models.append('Mean')
 
-    if genome[6] == 1:
+    if genome[6] == 0:
         models.append('Selfish')
-    elif genome[6] == 2:
+    elif genome[6] == 1:
         models.append('Altruistic')
-    elif genome[6] == 3:
+    elif genome[6] == 2:
         models.append('Mean')
 
     run = Gathering(genome)

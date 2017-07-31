@@ -235,16 +235,15 @@ class Gathering:
         })
 
         # Probability of spawning a food on the current tile
-
         action = location.addAction({
           'verb': 'generate'
         })
-
+        '''
         tree = makeTree({
           'distribution': [(setTrueMatrix(stateKey(location.name, 'food')), 0.25), (setFalseMatrix(stateKey(location.name, 'food')), 0.75)]
         })
-
-        #tree = makeTree(setTrueMatrix(stateKey(location.name, 'food')))
+        '''
+        tree = makeTree(setTrueMatrix(stateKey(location.name, 'food')))
         self.world.setDynamics(stateKey(location.name, 'food'), action, tree)
 
         # Can't respawn food if food is already food there
