@@ -59,7 +59,7 @@ def main():
     return pop, logbook, hof
 
 if __name__ == "__main__":
-    myfile = open("07302017_updatebeliefs/log_ga.txt","a")
+    myfile = open("07312017_updatebeliefs/log_ga.txt","a")
     '''
     ind = toolbox.individual()
     print(ind)
@@ -79,5 +79,5 @@ if __name__ == "__main__":
     plt.xlabel("Generation")
     plt.ylabel("Fitness")
     plt.legend(loc="lower right")
-    plt.savefig("07302017_updatebeliefs/gathering.png")
+    plt.savefig("07312017_updatebeliefs/gathering.png")
     plt.show()
