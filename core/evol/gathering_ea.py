@@ -49,14 +49,14 @@ toolbox.register("select", tools.selTournament, tournsize=3)
 def main():
     import numpy
 
-    pop = toolbox.population(n=10)
+    pop = toolbox.population(n=25)
     hof = tools.HallOfFame(3)
     stats = tools.Statistics(lambda ind: ind.fitness.values)
     stats.register("avg", numpy.mean)
     stats.register("min", numpy.min)
     stats.register("max", numpy.max)
 
-    pop, logbook = algorithms.eaSimple(pop, toolbox, cxpb=0.5, mutpb=0.2, ngen=5, stats=stats, halloffame=hof, verbose=True)
+    pop, logbook = algorithms.eaSimple(pop, toolbox, cxpb=0.5, mutpb=0.2, ngen=10, stats=stats, halloffame=hof, verbose=True)
 
     return pop, logbook, hof
 
@@ -81,5 +81,5 @@ if __name__ == "__main__":
     plt.xlabel("Generation")
     plt.ylabel("Fitness")
     plt.legend(loc="lower right")
-    plt.show()
     plt.savefig("gathering.png")
+    plt.show()
