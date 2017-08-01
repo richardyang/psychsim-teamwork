@@ -484,11 +484,11 @@ def run(genome):
     elif genome[0] == 2:
         model='Mean'
 
-    if genome[0] == 0:
+    if genome[6] == 0:
         guessmodel='Selfish'
-    elif genome[0] == 1:
+    elif genome[6] == 1:
         guessmodel='Altruistic'
-    elif genome[0] == 2:
+    elif genome[6] == 2:
         guessmodel='Mean'
 
     run = Gathering(genome)

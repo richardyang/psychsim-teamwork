@@ -8,7 +8,7 @@ creator.create("FitnessMax", base.Fitness, weights=(1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMax)
 
 toolbox = base.Toolbox()
-toolbox.register("model_0", random.randint, 1, 3)
+toolbox.register("model_0", random.randint, 0, 2)
 toolbox.register("selfish_0", np.random.uniform, 0, 0.5)
 toolbox.register("altruistic_0", np.random.uniform, 0, 0.5)
 toolbox.register("mean_0", np.random.uniform, 0, 0.5)
